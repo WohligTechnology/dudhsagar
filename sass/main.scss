@@ -4,15 +4,56 @@
 @import "../bower_components/flexslider/flexslider.css";
 @import "../bower_components/font-awesome/css/font-awesome.min.css";
 
+@font-face {
+    font-family: "Armonioso";
+    src: url('../fonts/armonioso.otf');
+}
+@font-face {
+    font-family: "ITCAvantGarde";
+    src: url('../fonts/itcavantgarde.otf');
+}
+@font-face {
+    font-family: "Calibri";
+    src: url('../fonts/calibri.ttf');
+}
+
 /* Bootstrap Variables Goes Here */
 
-$brand-primary: #0d9dff !default;
+$brand-primary: #feba12 !default;
 $brand-success: #84ce3c !default;
 $brand-warning: #ffec39 !default;
 $brand-danger: #fc483f !default;
 $brand-info: #000072 !default;
 
+$font-color: #242424 !default;
+
+$body-bg: #fff !default;
+$text-color: $font-color !default;
+
+$section-bg: #d3d3d3 !default;
+
+$link-color: $font-color !default;
+$link-hover-color: $font-color !default;
+$link-hover-decoration: none !default;
+
+$font-family-sans-serif: "ITCAvantGarde", "Helvetica Neue", Helvetica, Arial, sans-serif !default;
+$font-family-serif: "ITCAvantGarde", Georgia, "Times New Roman", Times, serif !default;
+$font-funky: "Armonioso", "Helvetiva Neue", Helvetica !default;
+$font-calibri: "Calibri", "Helvetiva Neue", Helvetica !default;
+
+$border-radius-base: 0 !default;
+$border-radius-large: 0 !default;
+$border-radius-small: 0 !default;
+
+$facebook: #3a579d !default;
+$google: #dd4d3c !default;
+$twitter: #49c8f5 !default;
+$instagram: #396d9a !default;
+
 @import "../bower_components/bootstrap-sass/assets/stylesheets/bootstrap";
+
+.primary { color: $brand-primary; }
+.primary-bg { background-color: $brand-primary; }
 
 body {
   padding-top: 70px;
