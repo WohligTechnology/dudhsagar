@@ -32,10 +32,10 @@ angular.module('phonecatControllers', ['templateservicemod', 'navigationservice'
   $scope.navigation = NavigationService.getnav();
 })
 
-.controller('ClassicCtrl', function($scope, TemplateService, NavigationService, $timeout) {
+.controller('MilkCtrl', function($scope, TemplateService, NavigationService, $timeout) {
   //Used to name the .html file
-  $scope.template = TemplateService.changecontent("classic");
-  $scope.menutitle = NavigationService.makeactive("Classic");
+  $scope.template = TemplateService.changecontent("milk");
+  $scope.menutitle = NavigationService.makeactive("Milk");
   TemplateService.title = $scope.menutitle;
   $scope.navigation = NavigationService.getnav();
 })

@@ -37,10 +37,10 @@ firstapp.config(function($stateProvider, $urlRouterProvider,$httpProvider) {
         controller: 'DahiCtrl'
     })
 
-    .state('classic', {
-        url: "/classic",
+    .state('milk', {
+        url: "/milk",
         templateUrl: "views/template.html",
-        controller: 'ClassicCtrl'
+        controller: 'MilkCtrl'
     })
 
     .state('paneer', {
