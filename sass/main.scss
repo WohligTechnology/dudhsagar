@@ -24,6 +24,7 @@ $brand-success: #84ce3c !default;
 $brand-warning: #ffec39 !default;
 $brand-danger: #fc483f !default;
 $brand-info: #000072 !default;
+$brand-title: #0d58c8 !default;
 
 $font-color: #242424 !default;
 
@@ -53,7 +54,17 @@ $instagram: #396d9a !default;
 @import "../bower_components/bootstrap-sass/assets/stylesheets/bootstrap";
 
 .primary { color: $brand-primary; }
+.brand-title { color: $brand-title; }
 .primary-bg { background-color: $brand-primary; }
+.brand-title-bg { background-color: $brand-title; }
+.primary-gradient {
+  background: #ea8806;
+  background: -moz-linear-gradient(top,  #ea8806 0%, #feba12 30%, #feba12 30%, #feba12 100%, #feba12 100%);
+  background: -webkit-linear-gradient(top,  #ea8806 0%,#feba12 30%,#feba12 30%,#feba12 100%,#feba12 100%);
+  background: linear-gradient(to bottom,  #ea8806 0%,#feba12 30%,#feba12 30%,#feba12 100%,#feba12 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ea8806', endColorstr='#feba12', GradientType=0 );
+}
+.font-funky { font-family: $font-funky; }
 
 body {
   padding-top: 70px;
@@ -65,7 +76,6 @@ img.loading {
   height: auto;
 }
 img {
-  opacity: 0;
   @include transition(all 300ms ease);
 }
 img.doneLoading {
@@ -74,4 +84,67 @@ img.doneLoading {
 nav li:hover .dropdown-menu {
   display: block;
 }
+.ab { position: absolute; }
 /* Start writing sass here */
+.at { margin-bottom: -150px; }
+.pattern {
+  width: 100%;
+  height: auto;
+  position: relative;
+  top: 120px;
+}
+
+// /////////////////////////
+// HOME
+// /////////////////////////
+
+.home-logo {
+  padding-top: 200px;
+  img {
+    margin: 0 auto;
+  }
+}
+.milky {
+  position: relative;
+  .milk-dahi-paneer {
+    width: 100%;
+    height: auto;
+    position: relative;
+    top: -300px;
+  }
+}
+.milk, .dahi, .paneer {
+  width: 200px;
+}
+.milk {
+  top: 1400px;
+}
+.dahi {
+  top: 2000px;
+}
+.paneer {
+  top: 2700px;
+  z-index: 1;
+}
+.aboutus {
+  margin: 0 100px;
+  top: 3300px;
+  z-index: 1;
+}
+.contactus {
+  display: none;
+}
+
+// /////////////////////////
+// ABOUT US
+// /////////////////////////
+
+.about, .team {
+  margin-top: 100px;
+  text-align: justify;
+  h2 {
+    margin-bottom: 50px;
+    color: white;
+    font-size: 48px;
+  }
+}
