@@ -55,6 +55,7 @@ $instagram: #396d9a !default;
 
 .primary { color: $brand-primary; }
 .brand-title { color: $brand-title; }
+.white { color: $body-bg; }
 .primary-bg { background-color: $brand-primary; }
 .brand-title-bg { background-color: $brand-title; }
 .primary-gradient {
@@ -85,13 +86,16 @@ nav li:hover .dropdown-menu {
   display: block;
 }
 .ab { position: absolute; }
+.at { padding: 10px; }
+.text-up { text-transform: uppercase; }
+.mar-top { margin-top: 100px; }
 /* Start writing sass here */
-.at { margin-bottom: -150px; }
 .pattern {
   width: 100%;
   height: auto;
   position: relative;
   top: 120px;
+  margin-top: -125px;
 }
 
 // /////////////////////////
@@ -140,7 +144,6 @@ nav li:hover .dropdown-menu {
 // /////////////////////////
 
 .about, .team {
-  margin-top: 100px;
   text-align: justify;
   h2 {
     margin-bottom: 50px;
@@ -148,3 +151,32 @@ nav li:hover .dropdown-menu {
     font-size: 48px;
   }
 }
+.team-members {
+  margin-bottom: 20px;
+  p { margin-top: -5px; }
+  p + p { margin: 0; }
+}
+
+// /////////////////////////
+// CONTACT US
+// /////////////////////////
+
+.contact-address { margin-top: 50px; }
+.add, .add-head {
+  font-size: 16px;
+  font-weight: 700;
+}
+.add-head {
+  margin-bottom: 0px;
+}
+.form {
+  button { margin: 0 auto; }
+}
+.form-group {
+  input, textarea {
+    background: transparent;
+    border: 1px solid white;
+    outline: none;
+  }
+}
+button { margin: 0 auto; }
