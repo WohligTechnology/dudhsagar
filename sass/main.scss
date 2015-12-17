@@ -169,9 +169,11 @@ nav li:hover .dropdown-menu {
 .add-head {
   margin-bottom: 0px;
 }
-.form {
-  button {
-    margin: 0 auto;
+.submit {
+  border: 1px solid white;
+  background: transparent;
+  &:hover {
+    border: 1px solid white;
   }
 }
 .form-group {
@@ -181,4 +183,3 @@ nav li:hover .dropdown-menu {
     outline: none;
   }
 }
-button { margin: 0 auto; }
