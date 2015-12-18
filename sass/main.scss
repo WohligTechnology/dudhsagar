@@ -68,7 +68,7 @@ $instagram: #396d9a !default;
 .font-funky { font-family: $font-funky; }
 
 body {
-  padding-top: 70px;
+  font-family: $font-family-sans-serif;
 }
 img.loading {
   text-align: center;
@@ -85,9 +85,11 @@ img.doneLoading {
 nav li:hover .dropdown-menu {
   display: block;
 }
+ul { list-style: none; }
 .ab { position: absolute; }
 .at { padding: 10px; }
 .text-up { text-transform: uppercase; }
+.text-bold { font-weight: bold; }
 .mar-top { margin-top: 100px; }
 /* Start writing sass here */
 .pattern {
@@ -147,7 +149,6 @@ nav li:hover .dropdown-menu {
   text-align: justify;
   h2 {
     margin-bottom: 50px;
-    color: white;
     font-size: 48px;
   }
 }
@@ -233,8 +234,39 @@ button { margin: 0 auto; }
 // /////////////////////////
 .plant {
   h2 {
+      padding-top: 100px;
     margin-bottom: 50px;
-    color: white;
     font-size: 48px;
+  }
+  .plant-detail {
+    p { text-align: justify; }
+  }
+}
+
+// /////////////////////////
+// HEADER
+// /////////////////////////
+header {
+  margin: 50px 0;
+}
+
+// /////////////////////////
+// FOOTER
+// /////////////////////////
+footer {
+  margin: 150px 0 50px;
+  .social {
+    text-align: center;
+    .social-icons {
+      padding: 2px;
+      margin-right: 10px;
+      background: black;
+      display: inline;
+      border-radius: 50%;
+      font-size: 20px;
+      .fb, .tw, .in { padding: 0 4px; }
+      .tw { margin: 0 -5px 0 0; }
+    }
+    .social-icons:last-child { margin: 0; }
   }
 }
