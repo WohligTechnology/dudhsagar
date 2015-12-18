@@ -233,8 +233,8 @@ button { margin: 0 auto; }
 // PLANT
 // /////////////////////////
 .plant {
+  padding-top: 100px;
   h2 {
-      padding-top: 100px;
     margin-bottom: 50px;
     font-size: 48px;
   }
@@ -247,7 +247,14 @@ button { margin: 0 auto; }
 // HEADER
 // /////////////////////////
 header {
-  margin: 50px 0;
+  margin: 50px 0 -15px;
+  text-align: center;
+  .menu { display: none; }
+  .logo {
+    img {
+      display: inline;
+    }
+  }
 }
 
 // /////////////////////////
