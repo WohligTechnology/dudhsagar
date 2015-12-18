@@ -91,6 +91,7 @@ ul { list-style: none; }
 .text-up { text-transform: uppercase; }
 .text-bold { font-weight: bold; }
 .mar-top { margin-top: 100px; }
+.f48 { font-size: 48px; }
 /* Start writing sass here */
 .pattern {
   width: 100%;
@@ -149,14 +150,26 @@ ul { list-style: none; }
   text-align: justify;
   h2 {
     margin-bottom: 50px;
-    font-size: 48px;
   }
 }
 .team-members {
   margin-bottom: 20px;
-  p { margin-top: -5px; }
-  p + p { margin: 0; }
+  .manan, .aadil, .viraj {
+    width: 100%;
+    height: 250px;
+    border-radius: 50%;
+    background-size: cover;
+    background-position: 100% 100%;
+  }
+  .manan { background-image: url("../img/manan.png"); }
+  .aadil { background-image: url("../img/aadil.png"); }
+  .viraj { background-image: url("../img/viraj.png"); }
+  .member-detail {
+    transform: translate(0%, 25%);
+    p { margin-top: -5px; }
+    p + p { margin: 0; }
     img { width: 100%; }
+  }
 }
 
 // /////////////////////////
@@ -175,21 +188,26 @@ ul { list-style: none; }
     margin: 100px 0 20px;
     h2 { margin-bottom: 50px; }
 }
-.submit {
+.form-group {
+  input, textarea {
+    background: transparent;
+    border: 1px solid white;
+  }
+  textarea { height: 200px; }
+}
+.send-button {
+  margin-top: 30px;
+  text-align: center;
+  .submit {
+    padding: 7px 30px;
     border: 1px solid white;
     background: $body-bg;
     color: $brand-primary;
     &:hover {
      border: 1px solid white;
     }
-}
-.form-group {
-  input, textarea {
-    background: transparent;
-    border: 1px solid white;
   }
 }
-button { margin: 0 auto; }
 
 // /////////////////////////
 // DAHI
@@ -236,7 +254,6 @@ button { margin: 0 auto; }
   padding-top: 100px;
   h2 {
     margin-bottom: 50px;
-    font-size: 48px;
   }
   .plant-detail {
     p { text-align: justify; }
@@ -249,6 +266,15 @@ button { margin: 0 auto; }
 header {
   margin: 50px 0 -15px;
   text-align: center;
+  .hamburger {
+    span {
+      width: 30px;
+      height: 2px;
+      margin: 5px 0;
+      display: block;
+      background-color: black;
+    }
+  }
   .menu { display: none; }
   .logo {
     img {
