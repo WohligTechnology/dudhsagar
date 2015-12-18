@@ -33,32 +33,38 @@ angular.module('phonecatControllers', ['templateservicemod', 'navigationservice'
 })
 
 .controller('MilkCtrl', function($scope, TemplateService, NavigationService, $timeout) {
-  //Used to name the .html file
-  $scope.template = TemplateService.changecontent("milk");
-  $scope.menutitle = NavigationService.makeactive("Milk");
-  TemplateService.title = $scope.menutitle;
-  $scope.navigation = NavigationService.getnav();
-})
-.controller('PaneerCtrl', function($scope, TemplateService, NavigationService, $timeout) {
-  //Used to name the .html file
-  $scope.template = TemplateService.changecontent("paneer");
-  $scope.menutitle = NavigationService.makeactive("Paneer");
-  TemplateService.title = $scope.menutitle;
-  $scope.navigation = NavigationService.getnav();
-})
-.controller('PlantCtrl', function($scope, TemplateService, NavigationService, $timeout) {
-  //Used to name the .html file
-  $scope.template = TemplateService.changecontent("plant");
-  $scope.menutitle = NavigationService.makeactive("Plant");
-  TemplateService.title = $scope.menutitle;
-  $scope.navigation = NavigationService.getnav();
-})
+    //Used to name the .html file
+    $scope.template = TemplateService.changecontent("milk");
+    $scope.menutitle = NavigationService.makeactive("Milk");
+    TemplateService.title = $scope.menutitle;
+    $scope.navigation = NavigationService.getnav();
+  })
+  .controller('PaneerCtrl', function($scope, TemplateService, NavigationService, $timeout) {
+    //Used to name the .html file
+    $scope.template = TemplateService.changecontent("paneer");
+    $scope.menutitle = NavigationService.makeactive("Paneer");
+    TemplateService.title = $scope.menutitle;
+    $scope.navigation = NavigationService.getnav();
+  })
+  .controller('PlantCtrl', function($scope, TemplateService, NavigationService, $timeout) {
+    //Used to name the .html file
+    $scope.template = TemplateService.changecontent("plant");
+    $scope.menutitle = NavigationService.makeactive("Plant");
+    TemplateService.title = $scope.menutitle;
+    $scope.navigation = NavigationService.getnav();
+  })
 
 .controller('headerctrl', function($scope, TemplateService) {
   $scope.template = TemplateService;
+  $scope.showme = "menu-out";
+  $scope.getnav = function() {
+    if($scope.showme == "menu-out")
+    $scope.showme = "menu-in";
+    else
+      $scope.showme = "menu-out";
+  }
   $scope.$on('$stateChangeSuccess', function(event, toState, toParams, fromState, fromParams) {
     $(window).scrollTop(0);
   });
-})
 
-;
+});

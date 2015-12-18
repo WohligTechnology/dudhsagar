@@ -92,6 +92,10 @@ ul { list-style: none; }
 .text-bold { font-weight: bold; }
 .mar-top { margin-top: 100px; }
 .f48 { font-size: 48px; }
+.black-line {
+  border-left: 1px solid black;
+  border-right: 1px solid black;
+}
 /* Start writing sass here */
 .pattern {
   width: 100%;
@@ -104,7 +108,6 @@ ul { list-style: none; }
 // /////////////////////////
 // HOME
 // /////////////////////////
-
 .home-logo {
   padding-top: 200px;
   img {
@@ -120,15 +123,9 @@ ul { list-style: none; }
     top: -300px;
   }
 }
-.milk, .dahi, .paneer {
-  width: 200px;
-}
-.milk {
-  top: 1400px;
-}
-.dahi {
-  top: 2000px;
-}
+.milk, .dahi, .paneer { width: 200px; }
+.milk { top: 1400px; }
+.dahi { top: 2000px; }
 .paneer {
   top: 2700px;
   z-index: 1;
@@ -138,9 +135,7 @@ ul { list-style: none; }
   top: 3300px;
   z-index: 1;
 }
-.contactus {
-  display: none;
-}
+.contactus { display: none; }
 
 // /////////////////////////
 // ABOUT US
@@ -148,9 +143,7 @@ ul { list-style: none; }
 
 .about, .team {
   text-align: justify;
-  h2 {
-    margin-bottom: 50px;
-  }
+  h2 { margin-bottom: 50px; }
 }
 .team-members {
   margin-bottom: 20px;
@@ -177,6 +170,7 @@ ul { list-style: none; }
 // /////////////////////////
 
 .contact-address { margin-top: 50px; }
+.contact-add { transform: translate(0%, 25%); }
 .add, .add-head {
   font-size: 16px;
   font-weight: 700;
@@ -218,7 +212,7 @@ ul { list-style: none; }
     .dahi-image, .milk-image, .paneer-image {
         margin: 100px 0 50px;
     }
-    p.dahi-detail {
+    p.dahi-detail, p.milk-detail, p.paneer-detail {
         text-align: justify;
     }
 }
@@ -266,7 +260,10 @@ ul { list-style: none; }
 header {
   margin: 50px 0 -15px;
   text-align: center;
+  .pull-left { position: absolute; }
   .hamburger {
+    position: absolute;
+    z-index: 2;
     span {
       width: 30px;
       height: 2px;
@@ -275,14 +272,18 @@ header {
       background-color: black;
     }
   }
-  .menu { display: none; }
   .logo {
-    img {
-      display: inline;
-    }
+    img { display: inline; }
   }
 }
-
+.menu-out {
+  @include transform(translateY(-200px));
+  transition: all 1500ms ease;
+}
+.menu-in {
+  @include transform(translateY(200px));
+  transition: all 1500ms ease;
+}
 // /////////////////////////
 // FOOTER
 // /////////////////////////

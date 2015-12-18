@@ -1,4 +1,4 @@
-<header>
+<header ng-controller="headerctrl">
    <!-- <nav class="navbar navbar-default navbar-fixed-top">
     <div class="container">
         <div class="navbar-header">
@@ -18,14 +18,14 @@
 </nav> -->
 <nav>
     <div class="container">
-        <div class="pull-left">
-            <div class="hamburger">
-                <div class="click">
+        <div class="">
+            <div class="hamburger" ng-click="getnav();">
+                <div class="">
                     <span></span>
                     <span></span>
                     <span></span>
                 </div>
-                <div class="menu">
+                <div class="menu {{showme}}">
                     <ul>
                         <li><a href="#/home" title="Home">Home</a></li>
                         <li><a href="#/overview" title="Overview">Overview</a></li>
@@ -36,6 +36,7 @@
                     </ul>
                 </div>
             </div>
+            <img src="img/pattern.png" class="pattern">
         </div>
         <div class="text-center logo"><a href=""><img src="img/logo_white.png" alt="" class="img-responsive"></a></div>
     </div>
