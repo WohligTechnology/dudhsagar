@@ -304,11 +304,11 @@ header {
 }
 .menu-out {
   @include transform(translateY(-400px));
-  transition: all 1500ms ease;
+  transition: all 500ms ease;
 }
 .menu-in {
   @include transform(translateY(60px));
-  transition: all 1500ms ease;
+  transition: all 500ms ease;
 }
 .inline { display: inline-block; }
 .block { display: block; }
