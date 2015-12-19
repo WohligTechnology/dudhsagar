@@ -99,10 +99,12 @@ ul { list-style: none; }
 /* Start writing sass here */
 .pattern {
   width: 100%;
-  height: auto;
+  height: 200px;
   position: relative;
-  top: 120px;
-  margin-top: -125px;
+  margin: -150px 0 30px;
+  background-image: url("../img/pattern.png");
+  background-size: cover;
+  background-position: center;
 }
 
 // /////////////////////////
@@ -260,30 +262,75 @@ ul { list-style: none; }
 header {
   margin: 50px 0 -15px;
   text-align: center;
-  .pull-left { position: absolute; }
   .hamburger {
-    position: absolute;
-    z-index: 2;
-    span {
-      width: 30px;
-      height: 2px;
-      margin: 5px 0;
-      display: block;
-      background-color: black;
+    height: 20px;
+    .ham-menu {
+      position: absolute;
+      left: 50px;
+      z-index: 2;
+      span {
+        width: 30px;
+        height: 2px;
+        margin: 5px 0;
+        display: block;
+        background-color: black;
+      }
+    }
+    .menu {
+      width: 100%;
+      padding: 100px 0 50px;
+      position: relative;
+      background-color: white;
+      font-size: 16px;
+      text-align: center;
+      z-index: 1;
+      ul {
+        margin: 0;
+        padding: 0;
+        li.inline { margin-right: 30px; }
+        li:last-child { margin: 0; }
+      }
+      .sub-menu {
+        padding-top: 30px;
+        display: none;
+        position: absolute;
+        left: 0;
+        top: 0;
+      }
+      .rel{
+        position: relative;
+      }
+      .rel:hover .sub-menu {
+        display: block;
+      }
+      .pattern-white {
+        width: 100%;
+        height: 150px;
+        background-image: url("../img/pattern_white.png");
+        background-size: cover;
+        background-position: center;
+        position: absolute;
+        bottom: -150px;
+      }
     }
   }
   .logo {
+    position: relative;
+    z-index: 3;
     img { display: inline; }
   }
 }
 .menu-out {
-  @include transform(translateY(-200px));
+  @include transform(translateY(-400px));
   transition: all 1500ms ease;
 }
 .menu-in {
-  @include transform(translateY(200px));
+  @include transform(translateY(60px));
   transition: all 1500ms ease;
 }
+.inline { display: inline-block; }
+.block { display: block; }
+
 // /////////////////////////
 // FOOTER
 // /////////////////////////
@@ -292,13 +339,12 @@ footer {
   .social {
     text-align: center;
     .social-icons {
-      padding: 2px;
+      padding: 8px 8px 4px;
       margin-right: 10px;
       background: black;
       display: inline;
       border-radius: 50%;
       font-size: 20px;
-      .fb, .tw, .in { padding: 0 4px; }
       .tw { margin: 0 -5px 0 0; }
     }
     .social-icons:last-child { margin: 0; }
