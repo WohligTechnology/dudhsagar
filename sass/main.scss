@@ -83,7 +83,11 @@ img.doneLoading {
 nav li:hover .dropdown-menu {
   display: block;
 }
-ul { list-style: none; }
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
 a:hover {
   color: $brand-primary;
   transition: all 0.5s ease;
@@ -93,6 +97,7 @@ a:hover {
 .text-up { text-transform: uppercase; }
 .text-bold { font-weight: bold; }
 .mar-top { margin-top: 100px; }
+.f18 { font-size: 18px; }
 .f48 { font-size: 48px; }
 .black-line {
   border-left: 1px solid black;
@@ -114,9 +119,7 @@ a:hover {
 // /////////////////////////
 .home-logo {
   padding-top: 200px;
-  img {
-    margin: 0 auto;
-  }
+  img { margin: 0 auto; }
 }
 .milky {
   position: relative;
@@ -152,8 +155,9 @@ a:hover {
 .team-members {
   margin-bottom: 20px;
   .manan, .aadil, .viraj {
-    width: 100%;
-    height: 250px;
+    width: 200px;
+    height: 200px;
+    margin: 25px 0 0 50px;
     border-radius: 50%;
     background-size: cover;
     background-position: 100% 100%;
@@ -172,7 +176,7 @@ a:hover {
 // /////////////////////////
 // CONTACT US
 // /////////////////////////
-
+.cont { margin-bottom: -150px; }
 .contact-address { margin-top: 50px; }
 .contact-add { transform: translate(0%, 25%); }
 .add, .add-head {
@@ -228,12 +232,19 @@ a:hover {
     margin-top: -10px;
     font-size: 24px;
 }
+.milk-details, .dahi-details, .paneer-details {
+  margin: 0 -50px;
+  padding: 0 50px;
+  border-left: 1px solid black;
+  border-right: 1px solid black;
+}
 
 // /////////////////////////
 // MILK
 // /////////////////////////
 .milk-pack { h3 { margin-bottom: 50px; } }
 .milk-variants { margin-top: 50px; }
+.milk-var { margin-bottom: 50px; }
 
 // /////////////////////////
 // PLANT
@@ -250,18 +261,19 @@ a:hover {
 // HEADER
 // /////////////////////////
 header {
-  margin: 50px 0 -15px;
+  margin-bottom: -15px;
   text-align: center;
   .hamburger {
-    display: inline-block;
     height: 20px;
+    cursor: pointer;
     .ham-menu {
       position: absolute;
+      margin-top: 30px;
       left: 50px;
       z-index: 2;
       span {
         width: 30px;
-        height: 2px;
+        height: 3px;
         margin: 5px 0;
         display: block;
         background-color: black;
@@ -272,7 +284,8 @@ header {
       padding: 100px 0 50px;
       position: relative;
       background-color: white;
-      font-size: 16px;
+      font-size: 18px;
+      font-weight: 700;
       text-align: center;
       z-index: 1;
       ul {
@@ -282,11 +295,14 @@ header {
         li:last-child { margin: 0; }
       }
       .sub-menu {
-        padding-top: 30px;
+        padding-top: 50px;
         display: none;
         position: absolute;
         left: 0;
         top: 0;
+        font-size: 16px;
+        font-weight: 300;
+        z-index: 4;
       }
       .rel{ position: relative; }
       .rel:hover .sub-menu { display: block; }
