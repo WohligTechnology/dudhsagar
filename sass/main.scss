@@ -67,9 +67,7 @@ $instagram: #396d9a !default;
 }
 .font-funky { font-family: $font-funky; }
 
-body {
-  font-family: $font-family-sans-serif;
-}
+body { font-family: $font-family-sans-serif; }
 img.loading {
   text-align: center;
   opacity: 1;
@@ -177,9 +175,7 @@ ul { list-style: none; }
   font-size: 16px;
   font-weight: 700;
 }
-.add-head {
-  margin-bottom: 0px;
-}
+.add-head { margin-bottom: 0px; }
 .enquire {
     margin: 100px 0 20px;
     h2 { margin-bottom: 50px; }
@@ -211,12 +207,8 @@ ul { list-style: none; }
 
 .dahi-pack, .milk-pack, .paneer-pack {
     text-align: center;
-    .dahi-image, .milk-image, .paneer-image {
-        margin: 100px 0 50px;
-    }
-    p.dahi-detail, p.milk-detail, p.paneer-detail {
-        text-align: justify;
-    }
+    .dahi-image, .milk-image, .paneer-image { margin: 100px 0 50px; }
+    p.dahi-detail, p.milk-detail, p.paneer-detail { text-align: justify; }
 }
 .dahi-text, .milk-text, .paneer-text {
     margin-top: 40px;
@@ -236,21 +228,15 @@ ul { list-style: none; }
 // /////////////////////////
 // MILK
 // /////////////////////////
-.milk-pack {
-    h3 { margin-bottom: 50px; }
-}
-.milk-variants {
-    margin-top: 50px;
-}
+.milk-pack { h3 { margin-bottom: 50px; } }
+.milk-variants { margin-top: 50px; }
 
 // /////////////////////////
 // PLANT
 // /////////////////////////
 .plant {
   padding-top: 100px;
-  h2 {
-    margin-bottom: 50px;
-  }
+  h2 { margin-bottom: 50px; }
   .plant-detail {
     p { text-align: justify; }
   }
@@ -297,12 +283,8 @@ header {
         left: 0;
         top: 0;
       }
-      .rel{
-        position: relative;
-      }
-      .rel:hover .sub-menu {
-        display: block;
-      }
+      .rel{ position: relative; }
+      .rel:hover .sub-menu { display: block; }
       .pattern-white {
         width: 100%;
         height: 150px;
