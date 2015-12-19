@@ -84,6 +84,10 @@ nav li:hover .dropdown-menu {
   display: block;
 }
 ul { list-style: none; }
+a:hover {
+  color: $brand-primary;
+  transition: all 0.5s ease;
+}
 .ab { position: absolute; }
 .at { padding: 10px; }
 .text-up { text-transform: uppercase; }
@@ -249,6 +253,7 @@ header {
   margin: 50px 0 -15px;
   text-align: center;
   .hamburger {
+    display: inline-block;
     height: 20px;
     .ham-menu {
       position: absolute;
@@ -332,3 +337,5 @@ footer {
     .social-icons:last-child { margin: 0; }
   }
 }
+
+@import "mobile.scss"
