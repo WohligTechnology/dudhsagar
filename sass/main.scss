@@ -70,6 +70,19 @@ $instagram: #396d9a !default;
     color: $body-bg;
 }
 
+.btn-white {
+    border: 1px solid #fff;
+    background-color: #fff;
+    color: $brand-primary;
+    @include transition(all 300ms ease);
+    &:hover {
+        border: 1px solid #F7F7F7;
+        background-color: #F7F7F7;
+        color: $brand-primary;
+        @include transition(all 300ms ease);
+    }
+}
+
 .primary-bg {
     background-color: $brand-primary;
 }
@@ -78,12 +91,16 @@ $instagram: #396d9a !default;
     background-color: $brand-title;
 }
 
+.title {
+    font-size: 45px;
+}
+
 .primary-gradient {
+    position: relative;
     background: #ea8806;
     background: -moz-linear-gradient(top, #ea8806 0%, #feba12 30%, #feba12 30%, #feba12 100%, #feba12 100%);
     background: -webkit-linear-gradient(top, #ea8806 0%, #feba12 30%, #feba12 30%, #feba12 100%, #feba12 100%);
     background: linear-gradient(to bottom, #ea8806 0%, #feba12 30%, #feba12 30%, #feba12 100%, #feba12 100%);
-//    filter: progid: DXImageTransform.Microsoft.gradient( startColorstr='#ea8806', endColorstr='#feba12', GradientType=0);
 }
 
 .font-funky {
@@ -149,7 +166,7 @@ a:hover {
 }
 
 .f48 {
-    font-size: 48px;
+    font-size: 70px;
 }
 
 .black-line {
@@ -193,21 +210,21 @@ a:hover {
 .milk,
 .dahi,
 .paneer {
-    width: 200px;
+    width: 300px;
 }
 
 .milk {
-    top: 1400px;
+    top: 28%;
     z-index: 2;
 }
 
 .dahi {
-    top: 2000px;
+    top: 44%;
     z-index: 2;
 }
 
 .paneer {
-    top: 2700px;
+    top: 62%;
     z-index: 1;
 }
 
@@ -233,9 +250,9 @@ a:hover {
     .manan,
     .aadil,
     .viraj {
-        width: 200px;
-        height: 200px;
-        margin: 25px 0 0 50px;
+        width: 175px;
+        height: 175px;
+        margin: 35px 0 0 75px;
         border-radius: 50%;
         background-size: cover;
         background-position: 100% 100%;
@@ -252,10 +269,7 @@ a:hover {
     .member-detail {
         transform: translate(0%, 25%);
         p {
-            margin-top: -5px;
-        }
-        p + p {
-            margin: 0;
+            margin-top: 20px;
         }
         img {
             width: 100%;
@@ -266,6 +280,27 @@ a:hover {
 // /////////////////////////
 // CONTACT US
 // /////////////////////////
+.contactus {
+    position: relative;
+    a {
+        &:hover {
+            color: $brand-title;
+        }
+    }
+}
+.social-icon {
+    a {
+        width: 30px;
+        height: 30px;
+        border-radius: 100%;
+        line-height: 35px;
+        background-color: #fff;
+        i {
+            color :$brand-warning;
+            font-size: 20px;
+        }
+    }
+}
 .cont {
     margin-bottom: -150px;
 }
@@ -523,5 +558,6 @@ footer {
         }
     }
 }
+
 @import "harsh";
 @import "mobile";
