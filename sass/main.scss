@@ -311,6 +311,9 @@ a:hover {
             color: $brand-warning;
             font-size: 20px;
         }
+        &:hover {
+            opacity: .7;
+        }
     }
 }
 
@@ -459,7 +462,7 @@ a:hover {
 // HEADER
 // /////////////////////////
 header {
-    padding: 20px 0 0;
+    padding: 25px 0 0;
     position: relative;
     z-index: 99;
     text-align: center;
