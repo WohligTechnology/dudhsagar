@@ -1,0 +1,25 @@
+///////////////////////////////////////////
+// HARSH.SCSS
+// BY HARSH THAKKAR
+// 2015
+//////////////////////////////////////////
+
+// CONTACT PAGE
+.cont {
+  .enquire {
+    input:focus,
+    textarea:focus,
+    .submit:focus {
+      outline: none;
+      border-color: white;
+      box-shadow: none;
+    }
+    .submit {
+      &:hover {
+        transition: all 0.5s ease;
+        background-color: #feba12;
+        color: white;
+      }
+    }
+  }
+}

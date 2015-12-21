@@ -312,7 +312,7 @@ a:hover {
     margin-top: 30px;
     text-align: center;
     .submit {
-        padding: 7px 30px;
+        padding: 10px 30px 4px;
         border: 1px solid white;
         background: $body-bg;
         color: $brand-primary;
@@ -477,7 +477,7 @@ header {
         height: 80px;
         position: relative;
         margin: 0 auto -10px;
-        z-index: 3;        
+        z-index: 3;
         img {
             cursor: pointer;
         }
@@ -525,5 +525,5 @@ footer {
         }
     }
 }
-@import "harsh.scss";
-@import "mobile.scss";
+@import "harsh";
+@import "mobile";
