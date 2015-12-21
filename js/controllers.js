@@ -60,9 +60,10 @@ angular.module('phonecatControllers', ['templateservicemod', 'navigationservice'
         TemplateService.title = $scope.menutitle;
         $scope.navigation = NavigationService.getnav();
         $scope.plantslider = [
-      "../img/aadil.png",
-      "../img/manan.png",
-      "../img/viraj.png"
+      "../img/plant/plant1.jpg",
+      "../img/plant/plant2.jpg",
+      "../img/plant/plant3.jpg",
+      "../img/plant/plant4.jpg"
     ];
     })
 
