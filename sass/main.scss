@@ -160,7 +160,9 @@ a:hover {
 .mar-top {
     margin-top: 100px;
 }
-
+.big-menu {
+    margin-left: 40px;
+}
 .f18 {
     font-size: 18px;
 }
@@ -390,9 +392,9 @@ a:hover {
     .paneer-image {
         margin: 100px 0 50px;
     }
-    p.dahi-detail,
-    p.milk-detail,
-    p.paneer-detail {
+    .dahi-detail,
+    .milk-detail,
+    .paneer-detail {
         text-align: justify;
     }
 }
@@ -420,8 +422,7 @@ a:hover {
 .milk-details,
 .dahi-details,
 .paneer-details {
-    margin: 0 -50px;
-    padding: 0 50px;
+    padding: 0 20px;
     border-left: 1px solid black;
     border-right: 1px solid black;
 }
@@ -566,15 +567,14 @@ footer {
     .social {
         text-align: center;
         .social-icons {
-            padding: 8px 8px 4px;
+            width: 35px;
+            height: 35px;
+            line-height: 36px;
             margin-right: 10px;
             background: black;
-            display: inline;
+         display: inline-block;
             border-radius: 50%;
             font-size: 20px;
-            .tw {
-                margin: 0 -5px 0 0;
-            }
         }
         .social-icons:last-child {
             margin: 0;
