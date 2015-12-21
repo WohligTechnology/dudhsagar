@@ -29,7 +29,6 @@
 }
 
 table.table-curved {
-  margin: 40px 0 0 10px;
   border: 2px solid;
   border-collapse: separate;
   overflow: hidden;
@@ -49,4 +48,13 @@ table.table-curved {
   tr:last-child td {
     border-bottom: 0;
   }
+}
+.table-milk {
+  margin: 30px 0 0 10px;
+}
+.table-dahi {
+  margin: 30px 0 0 10px;
+}
+.table-paneer {
+  margin: 30px 0 0 10px;
 }
