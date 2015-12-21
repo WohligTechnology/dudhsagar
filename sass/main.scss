@@ -287,8 +287,20 @@ a:hover {
             color: $brand-title;
         }
     }
+    .follow {
+        p {
+            margin-right: 10px;
+            display: inline-block;
+        }
+        .list-inline > li {
+            padding: 0;
+            padding: 0;
+        }
+    }
 }
+
 .social-icon {
+    display: inline-block;
     a {
         width: 30px;
         height: 30px;
@@ -296,17 +308,25 @@ a:hover {
         line-height: 35px;
         background-color: #fff;
         i {
-            color :$brand-warning;
+            color: $brand-warning;
             font-size: 20px;
         }
     }
 }
+
 .cont {
     margin-bottom: -150px;
 }
 
 .contact-address {
     margin-top: 50px;
+}
+
+.address {
+    margin: 0;
+    a {
+        margin: 10px 0;
+    }
 }
 
 .contact-add {
