@@ -1,11 +1,15 @@
 <section class="primary-bg">
   <div class="milk-pack">
-    <flex-slider flex-slide="milk in milkslider" class="milk-image">
-      <li>
-        <img ng-src="{{milk}}">
-      </li>
-    </flex-slider>
     <div class="container">
+      <div class="slider milk-slide">
+        <flex-slider flex-slide="milk in milkslider track by $index" class="milk-image" animation="slide">
+          <li>
+            <div class="milk-images">
+              <img ng-src="{{milk}}">
+            </div>
+          </li>
+        </flex-slider>
+      </div>
       <div class="row">
         <div class="col-md-4">
           <h2 class="milk-text text-center text-up white">Classic</h2>
@@ -61,7 +65,7 @@
       <div class="milk-variants">
         <div class="row">
           <h2 class="milk-var text-center text-up white">Milk Variants</h2>
-          <div class="col-md-offset-2 col-md-2 col-sm-offset-1 col-sm-2">
+          <!-- <div class="col-md-offset-2 col-md-2 col-sm-offset-1 col-sm-2">
             <img src="img/milk-slim.png" alt="" />
           </div>
           <div class="col-md-offset-1 col-md-2 col-sm-offset-1 col-sm-2">
@@ -69,6 +73,13 @@
           </div>
           <div class="col-md-offset-1 col-md-2 col-sm-offset-1 col-sm-2">
             <img src="img/milk-health.png" alt="" />
+          </div> -->
+          <div class="variant-images">
+            <ul>
+              <li><img src="img/milk-slim.png" alt="Milk Slim"></li>
+              <li><img src="img/milk-nourish.png" alt="Milk Nourish"></li>
+              <li><img src="img/milk-health.png" alt="Milk Health"></li>
+            </ul>
           </div>
         </div>
       </div>

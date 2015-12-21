@@ -42,8 +42,9 @@ angular.module('phonecatControllers', ['templateservicemod', 'navigationservice'
         $scope.navigation = NavigationService.getnav();
         $scope.milkslider = [
       "../img/products/milk_pack.png",
-      "../img/products/milk-slim.png",
-      "../img/products/milk-health.png"
+      "../img/products/milk_pack.png",
+      "../img/products/milk_pack.png",
+      "../img/products/milk_pack.png"
     ];
     })
     .controller('PaneerCtrl', function ($scope, TemplateService, NavigationService, $timeout) {
