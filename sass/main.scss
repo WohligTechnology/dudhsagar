@@ -406,12 +406,15 @@ a:hover {
 // HEADER
 // /////////////////////////
 header {
+    padding: 20px 0 0;
+    position: relative;
+    z-index: 99;
     text-align: center;
     .hamburger {
         position: relative;
         .ham-menu {
             position: absolute;
-            top: 30px;
+            top: 0;
             left: 50px;
             cursor: pointer;
             z-index: 5;
@@ -522,5 +525,5 @@ footer {
         }
     }
 }
-
-@import "mobile.scss"
+@import "harsh.scss";
+@import "mobile.scss";
