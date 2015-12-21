@@ -38,6 +38,11 @@ angular.module('phonecatControllers', ['templateservicemod', 'navigationservice'
     $scope.menutitle = NavigationService.makeactive("Milk");
     TemplateService.title = $scope.menutitle;
     $scope.navigation = NavigationService.getnav();
+    $scope.milkslider = [
+      "../img/products/milk_pack.png",
+      "../img/products/milk-slim.png",
+      "../img/products/milk-health.png"
+    ];
   })
   .controller('PaneerCtrl', function($scope, TemplateService, NavigationService, $timeout) {
     //Used to name the .html file
@@ -52,6 +57,11 @@ angular.module('phonecatControllers', ['templateservicemod', 'navigationservice'
     $scope.menutitle = NavigationService.makeactive("Plant");
     TemplateService.title = $scope.menutitle;
     $scope.navigation = NavigationService.getnav();
+    $scope.plantslider = [
+      "../img/aadil.png",
+      "../img/manan.png",
+      "../img/viraj.png"
+    ];
   })
 
 .controller('headerctrl', function($scope, TemplateService) {

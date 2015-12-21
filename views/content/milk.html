@@ -1,6 +1,11 @@
 <section class="primary-bg">
   <div class="milk-pack">
-    <img class="milk-image" src="img/products/milk_pack.png" />
+    <flex-slider flex-slide="milk in milkslider" class="milk-image">
+      <li>
+        <img ng-src="{{milk}}">
+      </li>
+    </flex-slider>
+    <!-- <img class="milk-image" src="img/products/milk_pack.png" /> -->
     <div class="container">
       <div class="row">
         <div class="col-md-4">
