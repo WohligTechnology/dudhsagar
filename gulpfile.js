@@ -2,6 +2,8 @@ var jsArray = [
 './bower_components/jquery/dist/jquery.min.js',
 './bower_components/bootstrap-sass/assets/javascripts/bootstrap.min.js',
 './bower_components/flexslider/jquery.flexslider-min.js',
+'./bower_components/swiper/dist/js/swiper.js',
+'./bower_components/lodash/lodash.min.js',
 './bower_components/angular/angular.min.js',
 './bower_components/angular-sanitize/angular-sanitize.min.js',
 './bower_components/angular-animate/angular-animate.min.js',
@@ -9,6 +11,9 @@ var jsArray = [
 './bower_components/angular-bootstrap/ui-bootstrap-tpls.min.js',
 './bower_components/ui-router/release/angular-ui-router.min.js',
 './bower_components/angular-flexslider/angular-flexslider.js',
+'./bower_components/angular-swiper/dist/angular-swiper.js',
+
+//User JS
 './js/app.js',
 './js/controllers.js',
 './js/templateservice.js',
