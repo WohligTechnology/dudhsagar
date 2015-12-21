@@ -7,11 +7,16 @@
       <div class="row">
         <div class="col-md-6 col-sm-6">
           <div class="slider">
-            <flex-slider flex-slide="plant in plantslider" class="carousel" anination="slide">
-              <li>
-                <img ng-src="{{plant}}">
-              </li>
-            </flex-slider>
+           <div class="slide-imgholder">
+               <img src="img/plant/plant1.jpg" alt="" class="img-responsive">
+           </div>
+          <div class="main-slidepart">
+                  <flex-slider flex-slide="plant in plantslider" class="carousel" animation="slide" item-width="180" item-margin="30">
+                  <li class="img-slide-hold">
+                    <img ng-src="{{plant}}" class="img-circle">                
+                  </li>
+                </flex-slider>
+            </div>
           </div>
         </div>
         <div class="col-md-6 col-sm-6">

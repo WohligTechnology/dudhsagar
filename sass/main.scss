@@ -160,9 +160,11 @@ a:hover {
 .mar-top {
     margin-top: 100px;
 }
+
 .big-menu {
     margin-left: 40px;
 }
+
 .f18 {
     font-size: 18px;
 }
@@ -392,10 +394,13 @@ a:hover {
     .paneer-image {
         margin: 100px 0 50px;
     }
-    .dahi-detail,
-    .milk-detail,
-    .paneer-detail {
+    .dahi-details,
+    .milk-details,
+    .paneer-details {
         text-align: justify;
+        .prices {
+            text-align: center;
+        }
     }
 }
 
@@ -456,6 +461,29 @@ a:hover {
         p {
             text-align: justify;
         }
+    }
+}
+
+.slider {
+    .slide-imgholder {
+        width: 500px;
+        height: 350px;
+    }
+    .main-slidepart {
+        width: 80%;
+        margin: 0 auto;
+        .img-slide-hold {
+            width: 120px !important;
+            height: 120px;
+            img {
+                min-height: 100%;
+                max-height: 120px;
+            }
+        }
+    }
+    .flexslider {
+        background-color: transparent;
+        border: none;
     }
 }
 
@@ -572,7 +600,7 @@ footer {
             line-height: 36px;
             margin-right: 10px;
             background: black;
-         display: inline-block;
+            display: inline-block;
             border-radius: 50%;
             font-size: 20px;
         }
