@@ -1,14 +1,27 @@
-<div class="container">
-  <div class="row">
-    <div class="aboutus">
-      <div class="col-md-7"></div>
-      <div class="col-md-5">
-        <h2 class="font-funky brand-title title">about us</h2>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute
-          irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur
-          adipisicing dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-        <a href="#/aboutus" class="btn butn button-fix text-uppercase">Know More</a>
-      </div>
+<div class="about-bg">
+    <div class="container">
+        <div class="row">
+            <div class="aboutus">
+                <div class="col-md-7">
+                    <div class="abt-slider">
+                        <div class="overlap">
+                            <img src="img/abtoverlap.png" alt="" class="img-responsive">
+                        </div>
+                        <div class="abt-flex">
+                            <flex-slider flex-slide="abt in abtimages track by $index" class="carousel" animation="slide" direction-nav="false">
+                                <li>
+                                    <img ng-src="{{abt}}" alt="" class="img-responsive">
+                                </li>
+                            </flex-slider>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-5">
+                    <h2 class="font-funky brand-title title">about us</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipisicing dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                    <a href="#/aboutus" class="btn butn button-fix text-uppercase">Know More</a>
+                </div>
+            </div>
+        </div>
     </div>
-  </div>
 </div>
