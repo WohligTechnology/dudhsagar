@@ -150,6 +150,28 @@ a:hover {
   background-position: center;
 }
 
+////////
+// enquire btn
+////////
+.enquire-now {
+    position: fixed;
+    top: 220px;
+    right: -62px;
+    @include transform(rotate(-90deg));
+    
+    .enquire-btn {
+        border: 1px solid $body-bg;
+        padding: 10px 32px;
+        color: $body-bg;
+        @include transition(all 500ms ease);
+        &:hover {
+            background-color: $body-bg;
+            color: $brand-primary;
+            @include transition(all 500ms ease);
+        }
+    }
+}
+
 // /////////////////////////
 // HOME
 // /////////////////////////
