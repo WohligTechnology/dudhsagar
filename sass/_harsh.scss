@@ -49,7 +49,7 @@ table.table-curved {
   }
 }
 .table-milk {
-  margin: 30px 0 0 10px;
+  margin-top: 10px;
 }
 .table-dahi {
   margin: 30px 0 0 10px;
@@ -70,9 +70,6 @@ table.table-curved {
   .flex-control-nav {
     display: none;
   }
-  .flex-next, .flex-prev {
-    top: 35%;
-  }
 }
 .variant-images {
   ul {
@@ -84,4 +81,8 @@ table.table-curved {
       margin: 0;
     }
   }
+}
+// Main.scss
+.milk-details {
+  padding: 0 30px;
 }
