@@ -153,8 +153,9 @@ a:hover {
     position: fixed;
     top: 220px;
     right: -62px;
+    z-index: 50;
     @include transform(rotate(-90deg));
-    
+
     .enquire-btn {
         border: 1px solid $body-bg;
         padding: 10px 32px;
@@ -351,9 +352,8 @@ a:hover {
   text-align: center;
   .dahi-image,
   .milk-image,
-  .paneer-image {
-    margin: 100px 0 50px;
-  }
+  .paneer-image { margin: 100px 0 50px; }
+
   .dahi-details,
   .milk-details,
   .paneer-details {
@@ -361,12 +361,8 @@ a:hover {
     padding: 0 30px;
     border-left: 1px solid black;
     border-right: 1px solid black;
-    .dahi-detail, .milk-detail, .paneer-detail {
-      font-size: 12px;
-    }
-    .prices {
-      text-align: center;
-    }
+    .dahi-detail, .milk-detail, .paneer-detail { font-size: 12px; }
+    .prices { text-align: center; }
   }
 }
 .dahi-title {
@@ -382,9 +378,14 @@ a:hover {
     font-size: 26px;
   }
 }
+.paneer-title {
+  margin: 50px -120px 0 0;
+  .paneer-text, .paneer-text2 { margin: 0; }
+  .paneer-text2 { margin-top: -15px; }
+}
 .dahi-text,
 .milk-text,
-.paneer-text {
+.paneer-text, .paneer-text2 {
   margin-top: 25px;
   font-family: $font-calibri;
   font-size: 70px;
@@ -394,12 +395,8 @@ a:hover {
 // MILK
 // /////////////////////////
 .milk-pack {
-  h2 {
-    margin-bottom: -10px;
-  }
-  h2 ~ p {
-    font-size: 26px;
-  }
+  h2 { margin-bottom: -10px; }
+  h2 ~ p { font-size: 26px; }
 }
 .milk-variants {
   margin-top: 50px;
@@ -407,9 +404,7 @@ a:hover {
     font-size: 28px;
     font-weight: 100;
   }
-  .variant-images {
-    margin-top: 50px;
-  }
+  .variant-images { margin-top: 50px; }
 }
 
 // /////////////////////////
