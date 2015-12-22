@@ -363,7 +363,11 @@ a:hover {
     padding: 0 30px;
     border-left: 1px solid black;
     border-right: 1px solid black;
-    .dahi-detail, .milk-detail, .paneer-detail { font-size: 12px; }
+    .dahi-detail, .milk-detail, .paneer-detail {
+      display: block;
+      line-height: 18px;
+      font-size: 12px;
+    }
     .prices { text-align: center; }
   }
 }
