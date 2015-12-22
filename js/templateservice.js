@@ -13,7 +13,7 @@ templateservicemod.service('TemplateService', function() {
         this.menu = "views/menu.html";
         this.slider = "views/slider.html";
         this.content = "views/content/content.html";
-        this.footermenu = "views/footermenu.html";
+        this.footer2 = "views/section/footer.html";
         this.footer = "views/footer.html";
     };
 
@@ -23,7 +23,7 @@ templateservicemod.service('TemplateService', function() {
         data.content = "views/content/" + page + ".html";
         return data;
     };
-    
+
     this.init();
 
 });

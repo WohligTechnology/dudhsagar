@@ -7,7 +7,15 @@ angular.module('phonecatControllers', ['templateservicemod', 'navigationservice'
     TemplateService.title = $scope.menutitle;
     $scope.navigation = NavigationService.getnav();
     TemplateService.header = "";
-    TemplateService.footer = "";
+    TemplateService.footer = "views/section/footer.html";
+    $scope.section = {
+      one: "views/section/section1.html",
+      two: "views/section/section2.html",
+      three: "views/section/section3.html",
+      four: "views/section/section4.html",
+      five: "views/section/section5.html",
+    };
+
 })
 
 .controller('AboutusCtrl', function ($scope, TemplateService, NavigationService, $timeout) {
