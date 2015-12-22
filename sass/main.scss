@@ -1,517 +1,518 @@
     @import "../bower_components/bourbon/app/assets/stylesheets/bourbon";
-@import "../bower_components/bootstrap-sass/assets/stylesheets/bootstrap/mixins";
-@import "../bower_components/bootstrap-sass/assets/stylesheets/bootstrap-sprockets";
-@import "../bower_components/flexslider/flexslider.css";
-@import "../bower_components/font-awesome/css/font-awesome.min.css";
-@font-face {
-    font-family: "Armonioso";
-    src: url('../fonts/armonioso.otf');
-}
-
-@font-face {
-    font-family: "ITCAvantGarde";
-    src: url('../fonts/itcavantgarde.otf');
-}
-
-@font-face {
-    font-family: "Calibri";
-    src: url('../fonts/calibri.ttf');
-}
-
-
-/* Bootstrap Variables Goes Here */
-
-$brand-primary: #feba12 !default;
-$brand-success: #84ce3c !default;
-$brand-warning: #ffec39 !default;
-$brand-danger: #fc483f !default;
-$brand-info: #000072 !default;
-$brand-title: #0d58c8 !default;
-$font-color: #242424 !default;
-$body-bg: #fff !default;
-$text-color: $font-color !default;
-$section-bg: #d3d3d3 !default;
-$link-color: $font-color !default;
-$link-hover-color: $font-color !default;
-$link-hover-decoration: none !default;
-$font-family-sans-serif: "ITCAvantGarde",
-"Helvetica Neue",
-Helvetica,
-Arial,
-sans-serif !default;
-$font-family-serif: "ITCAvantGarde",
-Georgia,
-"Times New Roman",
-Times,
-serif !default;
-$font-funky: "Armonioso",
-"Helvetiva Neue",
-Helvetica !default;
-$font-calibri: "Calibri",
-"Helvetiva Neue",
-Helvetica !default;
-$border-radius-base: 0 !default;
-$border-radius-large: 0 !default;
-$border-radius-small: 0 !default;
-$facebook: #3a579d !default;
-$google: #dd4d3c !default;
-$twitter: #49c8f5 !default;
-$instagram: #396d9a !default;
-@import "../bower_components/bootstrap-sass/assets/stylesheets/bootstrap";
-.primary {
-    color: $brand-primary;
-}
-
-.brand-title {
-    color: $brand-title;
-}
-
-.white {
-    color: $body-bg;
-}
-
-.btn-white {
-    border: 1px solid #fff;
-    background-color: #fff;
-    color: $brand-primary;
-    @include transition(all 300ms ease);
-    &:hover {
-        border: 1px solid #F7F7F7;
-        background-color: #F7F7F7;
+    @import "../bower_components/bootstrap-sass/assets/stylesheets/bootstrap/mixins";
+    @import "../bower_components/bootstrap-sass/assets/stylesheets/bootstrap-sprockets";
+    @import "../bower_components/flexslider/flexslider.css";
+    @import "../bower_components/font-awesome/css/font-awesome.min.css";
+    @font-face {
+        font-family: "Armonioso";
+        src: url('../fonts/armonioso.otf');
+    }
+    
+    @font-face {
+        font-family: "ITCAvantGarde";
+        src: url('../fonts/itcavantgarde.otf');
+    }
+    
+    @font-face {
+        font-family: "Calibri";
+        src: url('../fonts/calibri.ttf');
+    }
+    /* Bootstrap Variables Goes Here */
+    
+    $brand-primary: #feba12 !default;
+    $brand-success: #84ce3c !default;
+    $brand-warning: #ffec39 !default;
+    $brand-danger: #fc483f !default;
+    $brand-info: #000072 !default;
+    $brand-title: #0d58c8 !default;
+    $font-color: #242424 !default;
+    $body-bg: #fff !default;
+    $text-color: $font-color !default;
+    $section-bg: #d3d3d3 !default;
+    $link-color: $font-color !default;
+    $link-hover-color: $font-color !default;
+    $link-hover-decoration: none !default;
+    $font-family-sans-serif: "ITCAvantGarde",
+    "Helvetica Neue",
+    Helvetica,
+    Arial,
+    sans-serif !default;
+    $font-family-serif: "ITCAvantGarde",
+    Georgia,
+    "Times New Roman",
+    Times,
+    serif !default;
+    $font-funky: "Armonioso",
+    "Helvetiva Neue",
+    Helvetica !default;
+    $font-calibri: "Calibri",
+    "Helvetiva Neue",
+    Helvetica !default;
+    $border-radius-base: 0 !default;
+    $border-radius-large: 0 !default;
+    $border-radius-small: 0 !default;
+    $facebook: #3a579d !default;
+    $google: #dd4d3c !default;
+    $twitter: #49c8f5 !default;
+    $instagram: #396d9a !default;
+    @import "../bower_components/bootstrap-sass/assets/stylesheets/bootstrap";
+    .primary {
+        color: $brand-primary;
+    }
+    
+    .brand-title {
+        color: $brand-title;
+    }
+    
+    .white {
+        color: $body-bg;
+    }
+    
+    .btn-white {
+        border: 1px solid #fff;
+        background-color: #fff;
         color: $brand-primary;
         @include transition(all 300ms ease);
+        &:hover {
+            border: 1px solid #F7F7F7;
+            background-color: #F7F7F7;
+            color: $brand-primary;
+            @include transition(all 300ms ease);
+        }
     }
-}
-
-.primary-bg {
-    background-color: $brand-primary;
-}
-
-.brand-title-bg {
-    background-color: $brand-title;
-}
-
-.title {
-    font-size: 45px;
-}
-
-.primary-gradient {
-    position: relative;
-    background: #ea8806;
-    background: -moz-linear-gradient(top, #ea8806 0%, #feba12 30%, #feba12 30%, #feba12 100%, #feba12 100%);
-    background: -webkit-linear-gradient(top, #ea8806 0%, #feba12 30%, #feba12 30%, #feba12 100%, #feba12 100%);
-    background: linear-gradient(to bottom, #ea8806 0%, #feba12 30%, #feba12 30%, #feba12 100%, #feba12 100%);
-}
-
-.font-funky {
-    font-family: $font-funky;
-}
-
-body {
-    font-family: $font-family-sans-serif;
-}
-
-img.loading {
-    text-align: center;
-    opacity: 1;
-    width: 32px !important;
-    height: auto;
-}
-
-img {
-    @include transition(all 300ms ease);
-}
-
-img.doneLoading {
-    opacity: 1;
-}
-
-nav li:hover .dropdown-menu {
-    display: block;
-}
-
-ul {
-    list-style: none;
-    margin: 0;
-    padding: 0;
-}
-
-a:hover {
-    color: $brand-primary;
-    transition: all 0.5s ease;
-}
-
-.ab {
-    position: absolute;
-}
-
-.at {
-    padding: 10px;
-}
-
-.text-up {
-    text-transform: uppercase;
-}
-
-.text-bold {
-    font-weight: bold;
-}
-
-.mar-top {
-    margin-top: 100px;
-}
-
-.big-menu {
-    margin-left: 40px;
-}
-
-.f18 {
-    font-size: 18px;
-}
-
-.f48 {
-    font-size: 70px;
-}
-
-.black-line {
-    border-left: 1px solid black;
-    border-right: 1px solid black;
-}
-
-
-/* Start writing sass here */
-
-.pattern {
-    width: 100%;
-    height: 200px;
-    position: relative;
-    margin: -150px 0 30px;
-    background-image: url("../img/pattern.png");
-    background-size: cover;
-    background-position: center;
-}
-
-// /////////////////////////
-// HOME
-// /////////////////////////
-.home-logo {
-    padding-top: 200px;
-    img {
-        margin: 0 auto;
+    
+    .primary-bg {
+        background-color: $brand-primary;
     }
-}
-
-.milky {
-    position: relative;
-    .milk-dahi-paneer {
-        width: 100%;
-        height: auto;
+    
+    .brand-title-bg {
+        background-color: $brand-title;
+    }
+    
+    .title {
+        font-size: 45px;
+    }
+    
+    .primary-gradient {
         position: relative;
-        top: -300px;
+        background: #ea8806;
+        background: -moz-linear-gradient(top, #ea8806 0%, #feba12 30%, #feba12 30%, #feba12 100%, #feba12 100%);
+        background: -webkit-linear-gradient(top, #ea8806 0%, #feba12 30%, #feba12 30%, #feba12 100%, #feba12 100%);
+        background: linear-gradient(to bottom, #ea8806 0%, #feba12 30%, #feba12 30%, #feba12 100%, #feba12 100%);
     }
-}
-
-.milk,
-.dahi,
-.paneer {
-    width: 300px;
-}
-
-.milk {
-    top: 28%;
-    z-index: 2;
-}
-
-.dahi {
-    top: 44%;
-    z-index: 2;
-}
-
-.paneer {
-    top: 62%;
-    z-index: 1;
-}
-
-.aboutus {
-    margin: 0 100px;
-    top: 3300px;
-    z-index: 1;
-}
-
-// /////////////////////////
-// ABOUT US
-// /////////////////////////
-.about,
-.team {
-    text-align: justify;
-    h2 {
-        margin-bottom: 50px;
+    
+    .font-funky {
+        font-family: $font-funky;
     }
-}
-
-.team-members {
-    margin-bottom: 20px;
-    .manan,
-    .aadil,
-    .viraj {
-        width: 175px;
-        height: 175px;
-        margin: 35px 0 0 75px;
-        border-radius: 50%;
-        background-size: cover;
-        background-position: 100% 100%;
+    
+    body {
+        font-family: $font-family-sans-serif;
     }
-    .manan {
-        background-image: url("../img/manan.png");
+    
+    img.loading {
+        text-align: center;
+        opacity: 1;
+        width: 32px !important;
+        height: auto;
     }
-    .aadil {
-        background-image: url("../img/aadil.png");
+    
+    img {
+        @include transition(all 300ms ease);
     }
-    .viraj {
-        background-image: url("../img/viraj.png");
+    
+    img.doneLoading {
+        opacity: 1;
     }
-    .member-detail {
-        transform: translate(0%, 25%);
-        p {
-            margin-top: 10px;
-        }
-        img {
-            width: 100%;
-        }
+    
+    nav li:hover .dropdown-menu {
+        display: block;
     }
-}
-
-// /////////////////////////
-// CONTACT US
-// /////////////////////////
-.contactus {
-    position: relative;
-    a {
-        &:hover {
-            color: $brand-title;
-        }
+    
+    ul {
+        list-style: none;
+        margin: 0;
+        padding: 0;
     }
-    .follow {
-        p {
-            margin-right: 10px;
-            display: inline-block;
-        }
-        .list-inline > li {
-            padding: 0;
-            padding: 0;
-        }
-    }
-}
-
-.social-icon {
-    display: inline-block;
-    a {
-        width: 30px;
-        height: 30px;
-        border-radius: 100%;
-        line-height: 35px;
-        background-color: #fff;
-        i {
-            color: $brand-warning;
-            font-size: 20px;
-        }
-        &:hover {
-            opacity: .7;
-        }
-    }
-}
-
-.cont {
-    margin-bottom: -150px;
-}
-
-.contact-address {
-    margin-top: 50px;
-}
-
-.address {
-    margin: 0;
-    a {
-        margin: 10px 0;
-    }
-}
-
-.contact-add {
-    transform: translate(0%, 25%);
-}
-
-.add,
-.add-head {
-    font-size: 16px;
-    font-weight: 700;
-}
-
-.add-head {
-    margin-bottom: 0px;
-}
-
-.enquire {
-    margin: 100px 0 20px;
-    h2 {
-        margin-bottom: 50px;
-    }
-}
-
-.form-group {
-    input,
-    textarea {
-        background: transparent;
-        border: 1px solid white;
-    }
-    textarea {
-        height: 200px;
-    }
-}
-
-.send-button {
-    margin-top: 30px;
-    text-align: center;
-    .submit {
-        padding: 10px 30px 4px;
-        border: 1px solid white;
-        background: $body-bg;
+    
+    a:hover {
         color: $brand-primary;
-        &:hover {
+        transition: all 0.5s ease;
+    }
+    
+    .ab {
+        position: absolute;
+    }
+    
+    .at {
+        padding: 10px;
+    }
+    
+    .text-up {
+        text-transform: uppercase;
+    }
+    
+    .text-bold {
+        font-weight: bold;
+    }
+    
+    .mar-top {
+        margin-top: 100px;
+    }
+    
+    .big-menu {
+        margin-left: 40px;
+    }
+    
+    .f18 {
+        font-size: 18px;
+    }
+    
+    .f48 {
+        font-size: 70px;
+    }
+    
+    .black-line {
+        border-left: 1px solid black;
+        border-right: 1px solid black;
+    }
+    /* Start writing sass here */
+    
+    .pattern {
+        width: 100%;
+        height: 200px;
+        position: relative;
+        margin: -150px 0 30px;
+        background-image: url("../img/pattern.png");
+        background-size: cover;
+        background-position: center;
+    }
+    
+    // /////////////////////////
+    // HOME
+    // /////////////////////////
+    .home-logo {
+        padding-top: 200px;
+        img {
+            margin: 0 auto;
+        }
+    }
+    
+    .milky {
+        position: relative;
+        .milk-dahi-paneer {
+            width: 100%;
+            height: auto;
+            position: relative;
+            top: -300px;
+        }
+    }
+    
+    .milk,
+    .dahi,
+    .paneer {
+        width: 300px;
+    }
+    
+    .milk {
+        top: 28%;
+        z-index: 2;
+    }
+    
+    .dahi {
+        top: 44%;
+        z-index: 2;
+    }
+    
+    .paneer {
+        top: 62%;
+        z-index: 1;
+    }
+    
+    .aboutus {
+        margin: 0 100px;
+        top: 3300px;
+        z-index: 1;
+    }
+    
+    // /////////////////////////
+    // ABOUT US
+    // /////////////////////////
+    .about,
+    .team {
+        text-align: justify;
+        h2 {
+            margin-bottom: 50px;
+        }
+    }
+    
+    .team-members {
+        margin-bottom: 20px;
+        .manan,
+        .aadil,
+        .viraj {
+            width: 175px;
+            height: 175px;
+            margin: 35px 0 0 75px;
+            border-radius: 50%;
+            background-size: cover;
+            background-position: 100% 100%;
+        }
+        .manan {
+            background-image: url("../img/manan.png");
+        }
+        .aadil {
+            background-image: url("../img/aadil.png");
+        }
+        .viraj {
+            background-image: url("../img/viraj.png");
+        }
+        .member-detail {
+            transform: translate(0%, 25%);
+            p {
+                margin-top: 10px;
+            }
+            img {
+                width: 100%;
+            }
+        }
+    }
+    
+    // /////////////////////////
+    // CONTACT US
+    // /////////////////////////
+    .contactus {
+        position: relative;
+        a {
+            &:hover {
+                color: $brand-title;
+            }
+        }
+        .follow {
+            p {
+                margin-right: 10px;
+                display: inline-block;
+            }
+            .list-inline > li {
+                padding: 0;
+                padding: 0;
+            }
+        }
+    }
+    
+    .social-icon {
+        display: inline-block;
+        a {
+            width: 30px;
+            height: 30px;
+            border-radius: 100%;
+            line-height: 35px;
+            background-color: #fff;
+            i {
+                color: $brand-warning;
+                font-size: 20px;
+            }
+            &:hover {
+                opacity: .7;
+            }
+        }
+    }
+    
+    .cont {
+        margin-bottom: -150px;
+    }
+    
+    .contact-address {
+        margin-top: 50px;
+    }
+    
+    .address {
+        margin: 0;
+        a {
+            margin: 10px 0;
+        }
+    }
+    
+    .contact-add {
+        transform: translate(0%, 25%);
+    }
+    
+    .add,
+    .add-head {
+        font-size: 16px;
+        font-weight: 700;
+    }
+    
+    .add-head {
+        margin-bottom: 0px;
+    }
+    
+    .enquire {
+        margin: 100px 0 20px;
+        h2 {
+            margin-bottom: 50px;
+        }
+    }
+    
+    .form-group {
+        input,
+        textarea {
+            background: transparent;
             border: 1px solid white;
         }
-    }
-}
-
-// /////////////////////////
-// DAHI
-// /////////////////////////
-.dahi-pack,
-.milk-pack,
-.paneer-pack {
-    text-align: center;
-    .dahi-image,
-    .milk-image,
-    .paneer-image {
-        margin: 100px 0 50px;
-    }
-    .dahi-details,
-    .milk-details,
-    .paneer-details {
-        text-align: justify;
-        .prices {
-            text-align: center;
+        textarea {
+            height: 200px;
         }
     }
-}
-
-.dahi-text,
-.milk-text,
-.paneer-text {
-    margin-top: 40px;
-    font-family: $font-calibri;
-    font-size: 60px;
-}
-
-.energy {
-    width: 100%;
-    height: 100%;
-    padding: 20px 50px 50px;
-}
-
-.past-milk,
-.stand-milk {
-    margin-top: -10px;
-    font-size: 24px;
-}
-
-.milk-details,
-.dahi-details,
-.paneer-details {
-    padding: 0 20px;
-    border-left: 1px solid black;
-    border-right: 1px solid black;
-}
-
-// /////////////////////////
-// MILK
-// /////////////////////////
-.milk-pack {
-    h3 {
-        margin-bottom: 50px;
+    
+    .send-button {
+        margin-top: 30px;
+        text-align: center;
+        .submit {
+            padding: 10px 30px 4px;
+            border: 1px solid white;
+            background: $body-bg;
+            color: $brand-primary;
+            &:hover {
+                border: 1px solid white;
+            }
+        }
     }
-}
-
-.milk-variants {
-    margin-top: 50px;
-}
-
-.milk-var {
-    margin-bottom: 50px;
-}
-
-// /////////////////////////
-// PLANT
-// /////////////////////////
-.plant {
-    padding-top: 100px;
-    h2 {
-        margin-bottom: 50px;
-    }
-    .plant-detail {
-        p {
+    
+    // /////////////////////////
+    // DAHI
+    // /////////////////////////
+    .dahi-pack,
+    .milk-pack,
+    .paneer-pack {
+        text-align: center;
+        .dahi-image,
+        .milk-image,
+        .paneer-image {
+            margin: 100px 0 50px;
+        }
+        .dahi-details,
+        .milk-details,
+        .paneer-details {
             text-align: justify;
-        }
-    }
-}
-
-.slider {
-    .slide-imgholder {
-        width: 500px;
-        height: 350px;
-    }
-    .main-slidepart {
-        width: 80%;
-        margin: 0 auto;
-        .img-slide-hold {
-            width: 120px !important;
-            height: 120px;
-            border-radius: 100%;
-            background-repeat: no-repeat;
-            background-size: cover;
-        }
-    }
-    .flexslider {
-        background-color: transparent;
-        border: none;
-        .flex-direction-nav {
-            a {
-                width: 20px;
-                height: 50px;
-                color: transparent;
-                text-shadow: none;
+            .prices {
+                text-align: center;
             }
-            .flex-prev {
-                opacity: 1;
-                left: -50px;
-                background: url('../img/arrow-left.png') no-repeat;
-                &:before {
-                    display: none;
+        }
+    }
+    
+    .dahi-text,
+    .milk-text,
+    .paneer-text {
+        margin-top: 40px;
+        font-family: $font-calibri;
+        font-size: 60px;
+    }
+    
+    .energy {
+        width: 100%;
+        height: 100%;
+        padding: 20px 50px 50px;
+    }
+    
+    .past-milk,
+    .stand-milk {
+        margin-top: -10px;
+        font-size: 24px;
+    }
+    
+    .milk-details,
+    .dahi-details,
+    .paneer-details {
+        padding: 0 20px;
+        border-left: 1px solid black;
+        border-right: 1px solid black;
+    }
+    
+    // /////////////////////////
+    // MILK
+    // /////////////////////////
+    .milk-pack {
+        h3 {
+            margin-bottom: 50px;
+        }
+    }
+    
+    .milk-variants {
+        margin-top: 50px;
+    }
+    
+    .milk-var {
+        margin-bottom: 50px;
+    }
+    
+    // /////////////////////////
+    // PLANT
+    // /////////////////////////
+    .plant {
+        padding-top: 100px;
+        h2 {
+            margin-bottom: 50px;
+        }
+        .plant-detail {
+            p {
+                text-align: justify;
+            }
+        }
+    }
+    
+    .slider {
+        padding-right: 30px;
+        .slide-imgholder {
+            height: 300px;
+        }
+        .main-slidepart {
+            width: 70%;
+            margin: 0 auto;
+            .img-slide-hold {
+                width: 100px !important;
+                height: 100px;
+                border-radius: 100%;
+                background-repeat: no-repeat;
+                background-size: cover;
+            }
+            .flex-control-nav {
+                display: none;
+            }
+        }
+        .flexslider {
+            background-color: transparent;
+            border: none;
+            .flex-direction-nav {
+                a {
+                    width: 20px;
+                    height: 50px;
+                    color: transparent;
+                    text-shadow: none;
+                }
+                .flex-prev {
+                    opacity: 1;
+                    left: -50px;
+                    background: url('../img/arrow-left.png') no-repeat;
+                    &:before {
+                        display: none;
+                    }
+                }
+                .flex-next {
+                    opacity: 1;
+                    right: -50px;
+                    background: url('../img/arrow-right.png') no-repeat;
+                    &:before {
+                        display: none;
+                    }
                 }
             }
-            .flex-next {
+            .flexslider:hover .flex-direction-nav .flex-prev,
+            flex-next {
                 opacity: 1;
-                right: -50px;
-                background: url('../img/arrow-right.png') no-repeat;
-                &:before {
-                    display: none;
-                }
             }
         }
-        .flexslider:hover .flex-direction-nav .flex-prev,flex-next {
-            opacity: 1;
-        }
     }
-}
+    
     // /////////////////////////
     // HEADER
     // /////////////////////////
@@ -524,7 +525,7 @@ a:hover {
             position: relative;
             .ham-menu {
                 position: absolute;
-                top: 10px;
+                top: 9px;
                 left: 50px;
                 cursor: pointer;
                 z-index: 5;
@@ -593,20 +594,25 @@ a:hover {
             }
         }
     }
+    
     .menu-out {
         @include transform(translateY(-400px));
         transition: all 500ms ease;
     }
+    
     .menu-in {
         @include transform(translateY(60px));
         transition: all 500ms ease;
     }
+    
     .inline {
         display: inline-block;
     }
+    
     .block {
         display: block;
     }
+    
     // /////////////////////////
     // FOOTER
     // /////////////////////////
@@ -629,5 +635,6 @@ a:hover {
             }
         }
     }
+    
     @import "harsh";
     @import "mobile";
