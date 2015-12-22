@@ -87,9 +87,93 @@ table.table-curved {
     }
   }
 }
-
 .button-fix {
   line-height: 100%;
-  padding: 12px 8px 6px;
+  padding: 10px;
   font-weight: bold;
+}
+
+// HOME
+/* ////////////////////////////
+* SECTION 2 (MILK)
+//////////////////////////// */
+.milk,
+.dahi,
+.paneer {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  .milk-txt,
+  .dahi-txt,
+  .paneer-txt {
+    width: 20%;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+  .milk-image,
+  .dahi-image,
+  .paneer-image {
+    width: 100%;
+    height: 100%;
+    img {
+      width: 100%;
+      height: 100%;
+    }
+  }
+}
+.contact-bg {
+  width: 100%;
+  height: 100%;
+  background-image: url("../img/contact-bg.png");
+  background-size: cover;
+  background-position: 100% 100%;
+  //background-color: $brand-primary;
+  padding: 50px 0;
+}
+
+
+
+
+
+//// BUTTONS
+// 1
+// border: 1px solid white;
+// background-color: #feba12;
+// color: white;
+// // 2
+// background-color: white;
+// color: #feba12;
+//
+//
+// // 2
+// border: 1px solid #feba12;
+// background-color: white;
+// color: #feba12;
+// // 1
+// background-color: #feba12;
+// color: white;
+
+.butn {
+  background-color: $brand-primary;
+  color: $body-bg;
+  @include transition(all 300ms ease);
+  &:hover {
+    border: 1px solid $brand-primary;
+    background-color: $body-bg;
+    color: $brand-primary;
+    @include transition(all 300ms ease);
+  }
+}
+
+.butn-inverse {
+  background-color: $body-bg;
+  color: $brand-primary;
+  @include transition(all 300ms ease);
+  &:hover {
+    border: 1px solid $body-bg;
+    background-color: $brand-primary;
+    color: $body-bg;
+    @include transition(all 300ms ease);
+  }
 }
