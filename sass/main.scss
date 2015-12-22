@@ -333,12 +333,14 @@ a:hover {
   margin-top: 30px;
   text-align: center;
   .submit {
-    padding: 10px 30px 4px;
+   padding: 8px 34px;
     border: 1px solid white;
     background: $body-bg;
     color: $brand-primary;
+      @include transition(all 300ms linear);
     &:hover {
       border: 1px solid white;
+            @include transition(all 300ms linear);
     }
   }
 }
