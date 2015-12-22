@@ -135,10 +135,6 @@ a:hover {
 .f48 {
   font-size: 48px;
 }
-.black-line {
-  border-left: 1px solid black;
-  border-right: 1px solid black;
-}
 /* Start writing sass here */
 .pattern {
   width: 100%;
@@ -362,6 +358,9 @@ a:hover {
   .milk-details,
   .paneer-details {
     text-align: justify;
+    padding: 0 30px;
+    border-left: 1px solid black;
+    border-right: 1px solid black;
     .dahi-detail, .milk-detail, .paneer-detail {
       font-size: 12px;
     }
@@ -370,29 +369,25 @@ a:hover {
     }
   }
 }
+.dahi-title {
+  margin-right: -70px;
+  .dahi-text { margin-top: 40px; }
+  .dahi-text ~ p.made-from {
+    font-size: 18px;
+    margin-top: -10px;
+  }
+  .past-milk,
+  .stand-milk {
+    margin-top: -10px;
+    font-size: 26px;
+  }
+}
 .dahi-text,
 .milk-text,
 .paneer-text {
-  margin-top: 40px;
+  margin-top: 25px;
   font-family: $font-calibri;
-  font-size: 60px;
-}
-.energy {
-  width: 100%;
-  height: 100%;
-  padding: 20px 50px 50px;
-}
-.past-milk,
-.stand-milk {
-  margin-top: -10px;
-  font-size: 24px;
-}
-.milk-details,
-.dahi-details,
-.paneer-details {
-  padding: 0 20px;
-  border-left: 1px solid black;
-  border-right: 1px solid black;
+  font-size: 70px;
 }
 
 // /////////////////////////
@@ -401,7 +396,6 @@ a:hover {
 .milk-pack {
   h2 {
     margin-bottom: -10px;
-    font-size: 70px;
   }
   h2 ~ p {
     font-size: 26px;
