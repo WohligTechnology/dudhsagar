@@ -15,7 +15,13 @@ angular.module('phonecatControllers', ['templateservicemod', 'navigationservice'
       four: "views/section/section4.html",
       five: "views/section/section5.html",
     };
-
+   $scope.abtimages = [
+      "img/about.jpg",
+      "img/about.jpg",
+      "img/about.jpg",
+      "img/about.jpg",
+      "img/about.jpg"
+    ];
 })
 
 .controller('AboutusCtrl', function ($scope, TemplateService, NavigationService, $timeout) {
