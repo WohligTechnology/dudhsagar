@@ -89,7 +89,7 @@ table.table-curved {
 }
 .button-fix {
   line-height: 100%;
-  padding: 10px;
+  padding: 10px 10px 5px;
   font-weight: bold;
 }
 
@@ -129,7 +129,7 @@ table.table-curved {
   background-size: cover;
   z-index: 5;
   //background-color: $brand-primary;
-  padding: 50px 0;
+  padding: 100px 0 50px;
 }
 
 
@@ -137,22 +137,6 @@ table.table-curved {
 
 
 //// BUTTONS
-// 1
-// border: 1px solid white;
-// background-color: #feba12;
-// color: white;
-// // 2
-// background-color: white;
-// color: #feba12;
-//
-//
-// // 2
-// border: 1px solid #feba12;
-// background-color: white;
-// color: #feba12;
-// // 1
-// background-color: #feba12;
-// color: white;
 
 .butn {
   background-color: $brand-primary;
