@@ -44,18 +44,22 @@ table.table-curved {
     padding: 8px 25px 0 20px;
     border-left: 2px solid;
   }
+  tr:first-child td {
+    padding-top: 10px;
+  }
   tr:last-child td {
     border-bottom: 0;
+    padding-bottom: 5px;
   }
 }
 .table-milk {
-  margin-top: 10px;
+  margin-top: 5px;
 }
 .table-dahi {
-  margin-top: 25px;
+  margin: 20px 0;
 }
 .table-paneer {
-  margin: 30px 0 0 10px;
+  margin: 8px 0 0 5px;
 }
 .milk-slide {
   .milk-images {
