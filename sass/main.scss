@@ -129,8 +129,8 @@ a:hover {
 .text-right {
   text-align: right;
 }
-.f18 {
-  font-size: 18px;
+.f16 {
+  font-size: 16px;
 }
 .f48 {
   font-size: 48px;
@@ -360,15 +360,20 @@ a:hover {
   .milk-details,
   .paneer-details {
     text-align: justify;
-    padding: 0 30px;
+    padding: 0 30px 12px;
     border-left: 1px solid black;
     border-right: 1px solid black;
     .dahi-detail, .milk-detail, .paneer-detail {
       display: block;
       line-height: 18px;
       font-size: 12px;
+      margin-bottom: 20px;
     }
-    .prices { text-align: center; }
+    h4 { margin-bottom: 20px; }
+    .prices {
+      text-align: center;
+      span { display: block; }
+    }
   }
 }
 .dahi-title {
