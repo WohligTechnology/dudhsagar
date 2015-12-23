@@ -53,9 +53,11 @@
     span, p { text-align: center; }
   }
   // plant
+  .plant-image { width: 100%; }
+  .slider .slide-imgholder { height: auto; }
   .slider .main-slidepart {
     width: 100%;
-    margin: 100px 0;
+    margin: 50px 0 100px;
   }
 }
 
@@ -77,6 +79,9 @@
   // milk
   .variant-images ul li { zoom: 0.5; }
   .dahi-image, .paneer-image { zoom: 0.6; }
+  // plant
+  .slider .slide-imgholder { margin-bottom: 50px; }
+  .slider .main-slidepart { display: none; }
 }
 
 @media (max-width: 550px) {}
