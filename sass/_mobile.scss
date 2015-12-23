@@ -82,6 +82,20 @@
   // milk
   .variant-images ul li { zoom: 0.5; }
   .dahi-image, .paneer-image { zoom: 0.6; }
+  .milk-slide {
+    .milk-images {
+      height: auto;
+      img {
+        width: 100%;
+      }
+    }
+  }
+  .milk-text {
+    font-size: 40px;
+    .milk-pack & ~ p {
+      font-size: 18px;
+    }
+  }
   // plant
   .slider .slide-imgholder { margin-bottom: 50px; }
   .slider .main-slidepart { display: none; }
