@@ -8,3 +8,58 @@
 // @media (max-width: @screen-xs-max) {
 //
 // }
+
+
+// media query
+@media (max-width: $screen-md-max) {
+  // About us
+  .team-members {
+    .manan, .aadil, .viraj { margin: 55px 0 0 20px; }
+    .member-detail { margin-top: 65px; }
+  }
+}
+
+@media (max-width: $screen-sm-max) {
+  // About us
+  .team-members {
+    .manan, .aadil, .viraj { margin: 70px 0 0 -15px; }
+  }
+  // contact us
+  .contact-add { margin: 0; }
+  // milk
+  .classic {
+    margin-bottom: 50px;
+    h2, p { text-align: center; }
+  }
+  .milk-pack {
+    .milk-details {
+      border: none;
+      margin-bottom: 50px;
+    }
+  }
+  .table-curved { margin: 0 auto; }
+}
+
+@media (max-width: $screen-xs-max) {
+  // About us
+  .team-members {
+    .manan, .aadil, .viraj { margin: 0 auto; }
+    .member-detail {
+      margin: 0;
+      text-align: center;
+    }
+  }
+  // footer
+  .footer {
+    text-align: center;
+    .credits { margin-bottom: 50px; }
+    .social { margin-top: 50px; }
+  }
+  // milk
+  .variant-images ul li { zoom: 0.5; }
+}
+
+@media (max-width: 550px) {}
+
+// landscape
+@media (max-width: $screen-xs-max) and (orientation: landscape) {}

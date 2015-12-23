@@ -105,6 +105,7 @@ ul {
   margin: 0;
   padding: 0;
 }
+span { display: block; }
 a:hover {
   color: $brand-primary;
   transition: all 0.5s ease;
@@ -209,7 +210,7 @@ a:hover {
               bottom: 50px;
               z-index: 11;
             }
-            
+
         }
     }
 }
@@ -249,7 +250,7 @@ a:hover {
     background-image: url(../img/viraj.png);
   }
   .member-detail {
-    transform: translate(0%, 25%);
+    margin-top: 50px;
     p {
       margin-top: 10px;
     }
@@ -316,7 +317,7 @@ a:hover {
   }
 }
 .contact-add {
-  transform: translate(0%, 25%);
+  margin-top: 75px;
 }
 .add,
 .add-head {
@@ -498,7 +499,7 @@ a:hover {
       }
       .flex-prev {
         opacity: 1;
-        left: -50px;
+        left: 0px;
         background: url(../img/arrow-left.png) no-repeat;
         &:before {
           display: none;
@@ -506,7 +507,7 @@ a:hover {
       }
       .flex-next {
         opacity: 1;
-        right: -50px;
+        right: 0px;
         background: url(../img/arrow-right.png) no-repeat;
         &:before {
           display: none;
