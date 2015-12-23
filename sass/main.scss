@@ -45,6 +45,12 @@ $instagram: #396d9a !default;
 
 .section {
   position: relative;
+  &.two {
+    z-index: 1;
+  }
+  &.three {
+    margin-top: -24%;
+  }
 }
 .primary {
   color: $brand-primary;
@@ -54,6 +60,9 @@ $instagram: #396d9a !default;
 }
 .white {
   color: $body-bg;
+}
+a, .btn {
+  cursor: pointer;
 }
 .btn-white {
   border: 1px solid #fff;
@@ -79,9 +88,7 @@ $instagram: #396d9a !default;
 .primary-gradient {
   position: relative;
   background: #ea8806;
-  background: -moz-linear-gradient(top, #ea8806 0%, #feba12 30%, #feba12 30%, #feba12 100%, #feba12 100%);
-  background: -webkit-linear-gradient(top, #ea8806 0%, #feba12 30%, #feba12 30%, #feba12 100%, #feba12 100%);
-  background: linear-gradient(to bottom, #ea8806 0%, #feba12 30%, #feba12 30%, #feba12 100%, #feba12 100%);
+  @include linear-gradient(to bottom, #ea8806 0%, #feba12 30%, #feba12 30%, #feba12 100%, #feba12 100%);
 }
 .font-funky {
   font-family: $font-funky;
@@ -214,6 +221,13 @@ a:hover {
         }
         .flex-control-paging li a.flex-active {
           background: white;
+        }
+        .flexslider .slides img {
+            -o-border-radius: 50% 50% 50% 50% / 60% 60% 40% 40%;
+            -ms-border-radius: 50% 50% 50% 50% / 60% 60% 40% 40%;
+            -moz-border-radius: 50% 50% 50% 50% / 60% 60% 40% 40%;
+            -webkit-border-radius: 50% 50% 50% 50% / 60% 60% 40% 40%;
+            border-radius: 50% 50% 50% 50% / 60% 60% 40% 40%;
         }
     }
 }
