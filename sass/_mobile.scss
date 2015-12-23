@@ -21,7 +21,10 @@
   .table-milk { margin-top: 28px; }
   .table-dahi { margin-top: 20px; }
   .table-paneer { margin-top: 35px; }
-  .paneer-title { margin: 65px -75px 0 0; }
+  .paneer-title {
+    margin: 65px -75px 0 0;
+    h2 { font-size: 60px; }
+  }
   // plant
   .slider .main-slidepart { width: 90%; }
 }
