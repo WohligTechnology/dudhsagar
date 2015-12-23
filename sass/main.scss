@@ -209,10 +209,16 @@ a:hover {
             }
 
         }
+        .flex-control-paging li a {
+              background: rgba(255, 255, 255, 0.6);
+        }
+        .flex-control-paging li a.flex-active {
+          background: white;
+        }
     }
 }
 .about-bg {
-    background-color: #fff;
+    @include linear-gradient(to bottom, #F0F0F0 0%, #FFFFFF 30%);
 }
 
 // /////////////////////////
