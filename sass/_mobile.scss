@@ -22,6 +22,8 @@
   .table-dahi { margin-top: 20px; }
   .table-paneer { margin-top: 35px; }
   .paneer-title { margin: 65px -75px 0 0; }
+  // plant
+  .slider .main-slidepart { width: 90%; }
 }
 
 @media (max-width: $screen-sm-max) {
@@ -49,6 +51,11 @@
   .table-curved { margin: 0 auto; }
   .price {
     span, p { text-align: center; }
+  }
+  // plant
+  .slider .main-slidepart {
+    width: 100%;
+    margin: 100px 0;
   }
 }
 
