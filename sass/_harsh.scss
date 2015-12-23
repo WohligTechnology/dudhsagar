@@ -27,6 +27,9 @@
     margin: 0;
   }
 }
+.price {
+  span, p { text-align: left; }
+}
 table.table-curved {
   border: 2px solid;
   border-collapse: separate;
@@ -54,10 +57,7 @@ table.table-curved {
   }
 }
 .table-dahi {
-  margin: 26px 0;
-}
-.table-paneer {
-  margin: 12px 0 0 5px;
+  margin-top: 10px;
 }
 .milk-slide {
   .milk-images {

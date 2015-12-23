@@ -17,6 +17,11 @@
     .manan, .aadil, .viraj { margin: 55px 0 0 20px; }
     .member-detail { margin-top: 65px; }
   }
+  // milk
+  .table-milk { margin-top: 28px; }
+  .table-dahi { margin-top: 20px; }
+  .table-paneer { margin-top: 35px; }
+  .paneer-title { margin: 65px -75px 0 0; }
 }
 
 @media (max-width: $screen-sm-max) {
@@ -27,17 +32,24 @@
   // contact us
   .contact-add { margin: 0; }
   // milk
-  .classic {
-    margin-bottom: 50px;
+  .milk-title, .dahi-title, .paneer-title {
+    margin: 0 0 50px;
     h2, p { text-align: center; }
   }
-  .milk-pack {
-    .milk-details {
-      border: none;
+  .milk-pack, .dahi-pack, .paneer-pack {
+    .milk-details, .dahi-details, .paneer-details {
+      border-top: 1px solid black;
+      border-bottom: 1px solid black;
+      border-left: none;
+      border-right: none;
+      padding: 50px 0;
       margin-bottom: 50px;
     }
   }
   .table-curved { margin: 0 auto; }
+  .price {
+    span, p { text-align: center; }
+  }
 }
 
 @media (max-width: $screen-xs-max) {
@@ -57,6 +69,7 @@
   }
   // milk
   .variant-images ul li { zoom: 0.5; }
+  .dahi-image, .paneer-image { zoom: 0.6; }
 }
 
 @media (max-width: 550px) {}
