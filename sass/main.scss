@@ -42,7 +42,6 @@ $google: #dd4d3c !default;
 $twitter: #49c8f5 !default;
 $instagram: #396d9a !default;
 @import "../bower_components/bootstrap-sass/assets/stylesheets/bootstrap";
-
 .section {
   position: relative;
   &.two {
@@ -61,7 +60,8 @@ $instagram: #396d9a !default;
 .white {
   color: $body-bg;
 }
-a, .btn {
+a,
+.btn {
   cursor: pointer;
 }
 .btn-white {
@@ -116,7 +116,9 @@ ul {
   margin: 0;
   padding: 0;
 }
-span { display: block; }
+span {
+  display: block;
+}
 a:hover {
   color: $brand-primary;
   transition: all 0.5s ease;
@@ -191,48 +193,46 @@ a:hover {
   left: 50%;
   @include transform(translate(-50%, -50%));
 }
-
 .abt-slider {
-    position: relative;
-    .overlap {
-        width: 100%;
-        height: 100%;
-        position: absolute;
-        top: 0;
-        left: 0;
-        z-index: 10;
-        img {
-            height: 100%;
-        }
+  position: relative;
+  .overlap {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 10;
+    img {
+      height: 100%;
     }
-    .abt-flex {
-        .flexslider {
-            background-color: transparent;
-            border: none;
-            margin: 0;
-            .flex-control-nav {
-              bottom: 50px;
-              z-index: 11;
-            }
-
-        }
-        .flex-control-paging li a {
-              background: rgba(255, 255, 255, 0.6);
-        }
-        .flex-control-paging li a.flex-active {
-          background: white;
-        }
-        .flexslider .slides img {
-            -o-border-radius: 50% 50% 50% 50% / 60% 60% 40% 40%;
-            -ms-border-radius: 50% 50% 50% 50% / 60% 60% 40% 40%;
-            -moz-border-radius: 50% 50% 50% 50% / 60% 60% 40% 40%;
-            -webkit-border-radius: 50% 50% 50% 50% / 60% 60% 40% 40%;
-            border-radius: 50% 50% 50% 50% / 60% 60% 40% 40%;
-        }
+  }
+  .abt-flex {
+    .flexslider {
+      background-color: transparent;
+      border: none;
+      margin: 0;
+      .flex-control-nav {
+        bottom: 50px;
+        z-index: 11;
+      }
     }
+    .flex-control-paging li a {
+      background: rgba(255, 255, 255, 0.6);
+    }
+    .flex-control-paging li a.flex-active {
+      background: white;
+    }
+    .flexslider .slides img {
+      -o-border-radius: 50% 50% 50% 50% / 60% 60% 40% 40%;
+      -ms-border-radius: 50% 50% 50% 50% / 60% 60% 40% 40%;
+      -moz-border-radius: 50% 50% 50% 50% / 60% 60% 40% 40%;
+      -webkit-border-radius: 50% 50% 50% 50% / 60% 60% 40% 40%;
+      border-radius: 50% 50% 50% 50% / 60% 60% 40% 40%;
+    }
+  }
 }
 .about-bg {
-    @include linear-gradient(to bottom, #F0F0F0 0%, #FFFFFF 30%);
+  @include linear-gradient(to bottom, #F0F0F0 0%, #FFFFFF 30%);
 }
 
 // /////////////////////////
@@ -479,13 +479,16 @@ a:hover {
 }
 .slider {
   position: relative;
-  .overlap {
-    position: absolute;
-    top: 0;
-    left: 0;
-  }
   .slide-imgholder {
     height: 354px;
+    margin-bottom: 20px;
+    .plant-image {
+      -o-border-radius: 50% 50% 50% 50% / 60% 60% 40% 40%;
+      -ms-border-radius: 50% 50% 50% 50% / 60% 60% 40% 40%;
+      -moz-border-radius: 50% 50% 50% 50% / 60% 60% 40% 40%;
+      -webkit-border-radius: 50% 50% 50% 50% / 60% 60% 40% 40%;
+      border-radius: 50% 50% 50% 50% / 60% 60% 40% 40%;
+    }
   }
   .main-slidepart {
     width: 70%;
@@ -513,7 +516,7 @@ a:hover {
       }
       .flex-prev {
         opacity: 1;
-        left: 0px;
+        left: 0;
         background: url(../img/arrow-left.png) no-repeat;
         &:before {
           display: none;
@@ -521,7 +524,7 @@ a:hover {
       }
       .flex-next {
         opacity: 1;
-        right: 0px;
+        right: 0;
         background: url(../img/arrow-right.png) no-repeat;
         &:before {
           display: none;
@@ -568,25 +571,31 @@ header {
       font-weight: 700;
       text-align: center;
       z-index: 2;
-      ul {
-        margin: 0;
-        padding: 0;
-        li.inline {
-          margin-right: 30px;
-        }
-        li:last-child {
+      .menu-links {
+        ul {
           margin: 0;
+          padding: 0;
+          > li {
+            margin-right: 30px;
+            display: inline-block;
+            & > .sub-menu {
+              margin-top: 50px;
+              position: absolute;
+              left: 0;
+              top: 0;
+              font-size: 16px;
+              font-weight: 300;
+              z-index: 4;
+              > li {
+                display: block;
+                margin: 0;
+              }
+            }
+          }
+          > li:last-child {
+            margin: 0;
+          }
         }
-      }
-      .sub-menu {
-        padding-top: 50px;
-        display: none;
-        position: absolute;
-        left: 0;
-        top: 0;
-        font-size: 16px;
-        font-weight: 300;
-        z-index: 4;
       }
       .rel {
         position: relative;
