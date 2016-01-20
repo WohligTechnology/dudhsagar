@@ -118,6 +118,36 @@ table.table-curved {
       height: 100%;
     }
   }
+  .milk-section, .dahi-section, .paneer-section { position: relative; }
+  .milk-image { margin-top: -30px; }
+  .dahi-image { margin-top: 90px; position: relative; z-index: 5; }
+
+  .milk-package, .milk-all, .dahi-package, .dahi-cup, .paneer-inner { position: absolute; }
+  .milk-package {
+    width: 40%;
+    top: 335px;
+    right: 230px;
+  }
+  .milk-all {
+    width: 49%;
+    top: 330px;
+    right: -20px;
+    z-index: -1;
+  }
+  .dahi-package {
+    width: 72%;
+    top: 100px;
+    left: 100px;
+  }
+  .dahi-cup {
+    width: 17%;
+    top: 375px;
+    left: 560px;
+  }
+  .paneer-inner { width: 100%; }
+  .paneer-package {
+    margin: 100px 0 0 140px;
+  }
 }
 .contact-bg {
   width: 100%;

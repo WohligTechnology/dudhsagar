@@ -12,6 +12,27 @@
 
 // media query
 @media (max-width: $screen-md-max) {
+  // Home
+  .milk .milk-package {
+    top: 270px;
+    right: 190px;
+  }
+  .milk .milk-all {
+    top: 270px;
+    right: -15px;
+  }
+  .dahi .dahi-package {
+    top: 70px;
+    left: 100px;
+  }
+  .dahi .dahi-cup {
+    top: 310px;
+    left: 470px;
+  }
+  .paneer .paneer-package {
+    width: 30%;
+    margin-left: 120px;
+  }
   // About us
   .team-members {
     .manan, .aadil, .viraj { margin: 55px 0 0 20px; }
@@ -30,6 +51,24 @@
 }
 
 @media (max-width: $screen-sm-max) {
+  // Home
+  .milk .milk-package, .milk .milk-all { top: 200px; }
+  .milk .milk-package { right: 145px; }
+  .dahi .dahi-package {
+    top: 65px;
+    left: 75px;
+  }
+  .dahi .dahi-cup {
+    top: 240px;
+    left: 355px;
+  }
+  .paneer .paneer-txt { transform: translateY(50%); }
+  .paneer .paneer-package {
+    position: absolute;
+    right: 0;
+    margin: 100px 0 0;
+  }
+  .title { font-size: 32px; }
   // About us
   .team-members {
     .manan, .aadil, .viraj { margin: 70px 0 0 -15px; }
