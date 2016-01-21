@@ -231,9 +231,11 @@ a:hover {
     }
   }
 }
-.about-bg {
-  @include linear-gradient(to bottom, #F0F0F0 0%, #FFFFFF 30%);
+.about-bg,
+.bg-contact {
+background-color: #EAEAEA;
 }
+
 
 // /////////////////////////
 // ABOUT US

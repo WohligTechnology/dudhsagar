@@ -86,7 +86,7 @@ table.table-curved {
 }
 .button-fix {
   line-height: 100%;
-  padding: 10px 10px 5px;
+  padding: 10px 10px 8px;
   font-weight: bold;
 }
 
@@ -123,30 +123,33 @@ table.table-curved {
   .dahi-image { margin-top: 90px; position: relative; z-index: 5; }
 
   .milk-package, .milk-all, .dahi-package, .dahi-cup, .paneer-inner { position: absolute; }
-  .milk-package {
-    width: 22%;
-    top: 435px;
-    right: 325px;
-  }
+ .milk-package,.dahi-package {
+	top:0px;
+ }
   .milk-all {
     width: 22%;
     top: 475px;
     right: 115px;
     z-index: -1;
   }
-  .dahi-package {
-    width: 72%;
-    top: 100px;
-    left: 100px;
+//  .dahi-package {
+//    width: 72%;
+//    top: 100px;
+//    left: 100px;
+//  }
+//  .dahi-cup {
+//    width: 17%;
+//    top: 375px;
+//    left: 560px;
+//  }
+  .paneer-inner {
+  .paneer-txt {
+    left: 8%;
+} 
   }
-  .dahi-cup {
-    width: 17%;
-    top: 375px;
-    left: 560px;
-  }
-  .paneer-inner { width: 100%; }
   .paneer-package {
-    margin: 100px 0 0 140px;
+    top:0;
+	  position: absolute;
   }
 }
 .contact-bg {
