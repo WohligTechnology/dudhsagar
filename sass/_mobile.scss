@@ -14,12 +14,12 @@
 @media (max-width: $screen-md-max) {
   // Home
   .milk .milk-package {
-    top: 270px;
-    right: 190px;
+    top: 355px;
+    right: 270px;
   }
   .milk .milk-all {
-    top: 270px;
-    right: -15px;
+    top: 385px;
+    right: 95px;
   }
   .dahi .dahi-package {
     top: 70px;
@@ -52,8 +52,14 @@
 
 @media (max-width: $screen-sm-max) {
   // Home
-  .milk .milk-package, .milk .milk-all { top: 200px; }
-  .milk .milk-package { right: 145px; }
+  .milk .milk-package {
+    top: 265px;
+    right: 205px;
+  }
+  .milk .milk-all {
+    top: 300px;
+    right: 70px;
+  }
   .dahi .dahi-package {
     top: 65px;
     left: 75px;
@@ -62,11 +68,9 @@
     top: 240px;
     left: 355px;
   }
-  .paneer .paneer-txt { transform: translateY(50%); }
+  .paneer .paneer-txt { transform: translate(-50%, 0%); }
   .paneer .paneer-package {
-    position: absolute;
-    right: 0;
-    margin: 100px 0 0;
+    margin: 200px 0 0 60px;
   }
   .title { font-size: 32px; }
   // About us
