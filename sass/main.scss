@@ -46,9 +46,7 @@ $instagram: #396d9a !default;
   position: relative;
   &.two {
     z-index: 1;
-  }
-  &.three {
-    margin-top: -24%;
+	overflow: hidden;
   }
 }
 .primary {
@@ -652,7 +650,7 @@ footer {
     .social-icons {
       width: 35px;
       height: 35px;
-      line-height: 40px;
+      line-height: 36px;
       margin-right: 10px;
       background: black;
       display: inline-block;

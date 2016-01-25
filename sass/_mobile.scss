@@ -143,9 +143,38 @@
   .slider .slide-imgholder { margin-bottom: 50px; }
   .slider .main-slidepart { display: none; }
 	  .paneer .paneer-inner .paneer-txt { left: 10px}
+	.milk .milk-image, .dahi .milk-image, .paneer .milk-image {
+    margin-top: -0px;
+}
+	.milk .milk-txt, .milk .dahi-txt, .milk .paneer-txt, .dahi .milk-txt, .dahi .dahi-txt, .dahi .paneer-txt, .paneer .milk-txt, .paneer .dahi-txt, .paneer .paneer-txt {
+    width: 30%;
+		.title{
+			  	font-size: 24px;
+    			margin: 0;
+			}
+		p{
+		font-size: 12px;
+		}
+}
+	.button-fix {
+    padding: 5px 5px 4px;
+    font-size: 12px;
+}
+.aboutus {
+    padding-bottom: 10px;
+	 p {
+    font-size: 12px;
+    text-align: justify;
+}
+}
+	.contactus .copyright {
+    margin-right: 0;
+}
+	.text-right.cont-footer-copy{
+	text-align: center;
+	}
 }
 
-@media (max-width: 550px) {}
 
 // landscape
 @media (max-width: $screen-xs-max) and (orientation: landscape) {}

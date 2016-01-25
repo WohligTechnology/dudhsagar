@@ -14,7 +14,46 @@ angular.module('phonecatControllers', ['templateservicemod', 'navigationservice'
       three: "views/section/section3.html",
       four: "views/section/section4.html",
       five: "views/section/section5.html",
+      six: "views/section/footer.html",
     };
+//	  $scope.changeFullPage = function(no) {
+//    console.log(no);
+//    $.fn.fullpage.moveTo(no);
+//  };
+	
+	 
+//$scope.$on('$viewContentLoaded', function() {
+//    $timeout(function() {
+//     $('.fullpage').fullpage();
+//
+//      console.log($stateParams.name);
+//      $scope.homeval = $stateParams.name;
+//      switch ($scope.homeval) {
+////		  case "contact":
+////          $.fn.fullpage.moveTo(6);
+////          break;
+//        case "aboutus":
+//          $.fn.fullpage.moveTo(5);
+//          break;
+//        case "paneer":
+//          $.fn.fullpage.moveTo(4);
+//          break;
+//        case "dahi":
+//          $.fn.fullpage.moveTo(3);
+//          break;
+//        case "milk":
+//          $.fn.fullpage.moveTo(2);
+//          break;
+//        case "landing":
+//          $.fn.fullpage.moveTo(1);
+//          break;
+//        default:
+//          $.fn.fullpage.moveTo(1);
+//          break;
+//      }
+//    }, 1000);
+//  });
+	
    $scope.abtimages = [
       "img/about.jpg",
       "img/about.jpg",
@@ -91,8 +130,17 @@ angular.module('phonecatControllers', ['templateservicemod', 'navigationservice'
         else
             $scope.showme = "menu-out";
     }
-    $scope.$on('$stateChangeSuccess', function (event, toState, toParams, fromState, fromParams) {
-        $(window).scrollTop(0);
-    });
+//  $scope.$on('$stateChangeSuccess', function(event, toState, toParams, fromState, fromParams) {
+//    console.log(fromState);
+//    console.log("fromState");
+//    if(toState.url == "/home" && fromState.url != "^")
+//    {
+//      location.reload();
+//    }
+//    $(window).scrollTop(0);
+//    $("body > .loader").hide();
+//    $("body > .loadedContent").fadeIn(1000);
+//    $("body").css("overflow", "scroll");
+//  });
 
 });
