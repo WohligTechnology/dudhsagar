@@ -124,7 +124,7 @@
   }
   // milk
   .variant-images ul li { zoom: 0.5; }
-  .dahi-image, .paneer-image { zoom: 0.6; }
+  .dahi-image, .paneer-image { width: 80%; }
   .milk-slide {
     .milk-images {
       height: auto;
@@ -173,6 +173,26 @@
 	.text-right.cont-footer-copy{
 	text-align: center;
 	}
+	.dahi-title .dahi-text {
+		margin: 0;
+    font-size: 34px;
+}
+	.dahi-title .dahi-text ~ p.made-from {
+    font-size: 16px;
+    margin-top: 0px;
+}
+	.dahi-title .past-milk, .dahi-title .stand-milk {
+    margin-top: 0px;
+    font-size: 20px;
+	margin-bottom: 10px;
+}
+	.milk-title, .dahi-title, .paneer-title {
+    margin: 0 0 20px;
+}
+	.milk-pack .milk-details, .milk-pack .dahi-details, .milk-pack .paneer-details, .dahi-pack .milk-details, .dahi-pack .dahi-details, .dahi-pack .paneer-details, .paneer-pack .milk-details, .paneer-pack .dahi-details, .paneer-pack .paneer-details {
+    padding: 20px 0;
+	margin-bottom: 20px;
+}
 }
 
 

@@ -46,7 +46,6 @@ $instagram: #396d9a !default;
   position: relative;
   &.two {
     z-index: 1;
-	overflow: hidden;
   }
 }
 .primary {
@@ -661,6 +660,9 @@ footer {
       margin: 0;
     }
   }
+}
+.aboutus p {
+    text-align: justify;
 }
 @import "harsh";
 @import "mobile";
