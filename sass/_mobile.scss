@@ -8,84 +8,127 @@
 // @media (max-width: @screen-xs-max) {
 //
 // }
-
-
 // media query
 @media (max-width: $screen-md-max) {
+
   // Home
-//  .milk .milk-package {
-//    top: 355px;
-//    right: 270px;
-//  }
+  //  .milk .milk-package {
+  //    top: 355px;
+  //    right: 270px;
+  //  }
   .milk .milk-all {
     top: 385px;
     right: 95px;
   }
-//  .dahi .dahi-package {
-//    top: 70px;
-//    left: 100px;
-//  }
+
+  //  .dahi .dahi-package {
+  //    top: 70px;
+  //    left: 100px;
+  //  }
   .dahi .dahi-cup {
     top: 310px;
     left: 470px;
   }
-//  .paneer .paneer-package {
-//    width: 30%;
-//    margin-left: 120px;
-//  }
+
+  //  .paneer .paneer-package {
+  //    width: 30%;
+  //    margin-left: 120px;
+  //  }
   // About us
   .team-members {
-    .manan, .aadil, .viraj { margin: 55px 0 0 20px; }
-    .member-detail { margin-top: 65px; }
+    .manan,
+    .aadil,
+    .viraj {
+      margin: 55px 0 0 20px;
+    }
+    .member-detail {
+      margin-top: 65px;
+    }
   }
+
   // milk
-  .table-milk { margin-top: 28px; }
-  .table-dahi { margin-top: 20px; }
-  .table-paneer { margin-top: 35px; }
+  .table-milk {
+    margin-top: 28px;
+  }
+  .table-dahi {
+    margin-top: 20px;
+  }
+  .table-paneer {
+    margin-top: 35px;
+  }
   .paneer-title {
     margin: 65px -75px 0 0;
-    h2 { font-size: 60px; }
+    h2 {
+      font-size: 60px;
+    }
   }
-  // plant
-  .slider .main-slidepart { width: 90%; }
-}
 
+  // plant
+  .slider .main-slidepart {
+    width: 90%;
+  }
+}
 @media (max-width: $screen-sm-max) {
+
   // Home
-//  .milk .milk-package {
-//    top: 265px;
-//    right: 205px;
-//  }
+  //  .milk .milk-package {
+  //    top: 265px;
+  //    right: 205px;
+  //  }
   .milk .milk-all {
     top: 300px;
     right: 70px;
   }
-//  .dahi .dahi-package {
-//    top: 65px;
-//    left: 75px;
-//  }
+  .dahi .dahi-image {
+    margin-top: -30px;
+  }
+
+  //  .dahi .dahi-package {
+  //    top: 65px;
+  //    left: 75px;
+  //  }
   .dahi .dahi-cup {
     top: 240px;
     left: 355px;
   }
 
-//  .paneer .paneer-package {
-//    margin: 200px 0 0 60px;
-//  }
-  .title { font-size: 32px; }
+  //  .paneer .paneer-package {
+  //    margin: 200px 0 0 60px;
+  //  }
+  .title {
+    font-size: 32px;
+  }
+
   // About us
   .team-members {
-    .manan, .aadil, .viraj { margin: 70px 0 0 -15px; }
+    .manan,
+    .aadil,
+    .viraj {
+      margin: 70px 0 0 -15px;
+    }
   }
+
   // contact us
-  .contact-add { margin: 0; }
-  // milk
-  .milk-title, .dahi-title, .paneer-title {
-    margin: 0 0 50px;
-    h2, p { text-align: center; }
+  .contact-add {
+    margin: 0;
   }
-  .milk-pack, .dahi-pack, .paneer-pack {
-    .milk-details, .dahi-details, .paneer-details {
+
+  // milk
+  .milk-title,
+  .dahi-title,
+  .paneer-title {
+    margin: 0 0 50px;
+    h2,
+    p {
+      text-align: center;
+    }
+  }
+  .milk-pack,
+  .dahi-pack,
+  .paneer-pack {
+    .milk-details,
+    .dahi-details,
+    .paneer-details {
       border-top: 1px solid black;
       border-bottom: 1px solid black;
       border-left: none;
@@ -94,37 +137,73 @@
       margin-bottom: 50px;
     }
   }
-  .table-curved { margin: 0 auto; }
-  .price {
-    span, p { text-align: center; }
+  .table-curved {
+    margin: 0 auto;
   }
+  .price {
+    span,
+    p {
+      text-align: center;
+    }
+  }
+
   // plant
-  .plant-image { width: 100%; }
-  .slider .slide-imgholder { height: auto; }
+  .plant-image {
+    width: 100%;
+  }
+  .slider .slide-imgholder {
+    height: auto;
+  }
   .slider .main-slidepart {
     width: 100%;
     margin: 50px 0 100px;
   }
 }
-
 @media (max-width: $screen-xs-max) {
+
   // About us
   .team-members {
-    .manan, .aadil, .viraj { margin: 0 auto; }
+    .manan,
+    .aadil,
+    .viraj {
+      margin: 0 auto;
+    }
     .member-detail {
       margin: 0;
       text-align: center;
     }
   }
+  .dahi .dahi-image {
+    margin-top: -15px;
+  }
+  .menu-links {
+    ul > li {
+      margin-right: 8pxs !important;
+      .sub-menu {
+        margin-top: 35px;
+        font-size: 14px;
+      }
+      a {
+        font-size: 14px;
+      }
+    }
+  }
+
   // footer
   .footer {
     text-align: center;
-    .credits { margin-bottom: 50px; }
-    .social { margin-top: 50px; }
+    .credits {
+      margin-bottom: 50px;
+    }
+    .social {
+      margin-top: 50px;
+    }
   }
+
   // milk
-  .variant-images ul li { zoom: 0.5; }
-  .dahi-image, .paneer-image { width: 80%; }
+  .variant-images ul li {
+    zoom: 0.5;
+  }
   .milk-slide {
     .milk-images {
       height: auto;
@@ -139,62 +218,142 @@
       font-size: 18px;
     }
   }
+
   // plant
-  .slider .slide-imgholder { margin-bottom: 50px; }
-  .slider .main-slidepart { display: none; }
-	  .paneer .paneer-inner .paneer-txt { left: 10px}
-	.milk .milk-image, .dahi .milk-image, .paneer .milk-image {
+  .slider .slide-imgholder {
+    margin-bottom: 50px;
+  }
+  .slider .main-slidepart {
+      width: 100%;
+      margin: 50px 0 50px;
+  }
+  .big-menu {
+    margin-left: 0px; 
+}
+   // .slider .main-slidepart {
+  //   display: none;
+  // }
+  .paneer .paneer-inner .paneer-txt {
+    left: 10px;
+  }
+  .milk .milk-image,
+  .dahi .milk-image,
+  .paneer .milk-image {
     margin-top: -0px;
-}
-	.milk .milk-txt, .milk .dahi-txt, .milk .paneer-txt, .dahi .milk-txt, .dahi .dahi-txt, .dahi .paneer-txt, .paneer .milk-txt, .paneer .dahi-txt, .paneer .paneer-txt {
+  }
+  .milk .milk-txt,
+  .milk .dahi-txt,
+  .milk .paneer-txt,
+  .dahi .milk-txt,
+  .dahi .dahi-txt,
+  .dahi .paneer-txt,
+  .paneer .milk-txt,
+  .paneer .dahi-txt,
+  .paneer .paneer-txt {
     width: 30%;
-		.title{
-			  	font-size: 24px;
-    			margin: 0;
-			}
-		p{
-		font-size: 12px;
-		}
-}
-	.button-fix {
+    .title {
+      font-size: 24px;
+      margin: 0;
+    }
+    p {
+      font-size: 12px;
+    }
+  }
+  .button-fix {
     padding: 5px 5px 4px;
     font-size: 12px;
-}
-.aboutus {
+  }
+  .aboutus {
     padding-bottom: 10px;
-	 p {
-    font-size: 12px;
-    text-align: justify;
-}
-}
-	.contactus .copyright {
+    p {
+      font-size: 12px;
+      text-align: justify;
+    }
+  }
+  .contactus .copyright {
     margin-right: 0;
-}
-	.text-right.cont-footer-copy{
-	text-align: center;
-	}
-	.dahi-title .dahi-text {
-		margin: 0;
+  }
+  .text-right.cont-footer-copy {
+    text-align: center;
+  }
+  .dahi-title .dahi-text {
+    margin: 0;
     font-size: 34px;
-}
-	.dahi-title .dahi-text ~ p.made-from {
+  }
+  .dahi-title .dahi-text ~ p.made-from {
     font-size: 16px;
-    margin-top: 0px;
-}
-	.dahi-title .past-milk, .dahi-title .stand-milk {
-    margin-top: 0px;
+    margin-top: 0;
+  }
+  .dahi-title .past-milk,
+  .dahi-title .stand-milk {
+    margin-top: 0;
     font-size: 20px;
-	margin-bottom: 10px;
-}
-	.milk-title, .dahi-title, .paneer-title {
+    margin-bottom: 10px;
+  }
+  .milk-title,
+  .dahi-title,
+  .paneer-title {
     margin: 0 0 20px;
-}
-	.milk-pack .milk-details, .milk-pack .dahi-details, .milk-pack .paneer-details, .dahi-pack .milk-details, .dahi-pack .dahi-details, .dahi-pack .paneer-details, .paneer-pack .milk-details, .paneer-pack .dahi-details, .paneer-pack .paneer-details {
+  }
+  .milk-pack .milk-details,
+  .milk-pack .dahi-details,
+  .milk-pack .paneer-details,
+  .dahi-pack .milk-details,
+  .dahi-pack .dahi-details,
+  .dahi-pack .paneer-details,
+  .paneer-pack .milk-details,
+  .paneer-pack .dahi-details,
+  .paneer-pack .paneer-details {
     padding: 20px 0;
-	margin-bottom: 20px;
-}
-}
+    margin-bottom: 20px;
+  }
 
+  .contactus{
+text-align: center;
+    h2 {
+    text-align: center;
+}
+}
+}
 
 // landscape
-@media (max-width: $screen-xs-max) and (orientation: landscape) {}
+@media (max-width: 480px) {
+  .milk .milk-txt,
+  .milk .dahi-txt,
+  .milk .paneer-txt,
+  .dahi .milk-txt,
+  .dahi .dahi-txt,
+  .dahi .paneer-txt,
+  .paneer .milk-txt,
+  .paneer .dahi-txt,
+  .paneer .paneer-txt {
+    width: 38%;
+    p {
+      line-height: 120%;
+      margin-bottom: 2px;
+    }
+  }
+  section#milk {
+    min-height: 200px;
+  }
+  section#dhai {
+    min-height: 200px;
+  }
+  header .hamburger .menu {
+    padding: 50px 0 0px;
+  }
+  .menu-links {
+    ul > li {
+      margin-right: 0px !important;
+      display: block!important;
+      .sub-menu {
+        font-size: 14px!important;
+        margin-top: 0!important;
+        position: static!important;
+      }
+      a {
+        font-size: 14px;
+      }
+    }
+  }
+}

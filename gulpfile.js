@@ -1,9 +1,5 @@
 var jsArray = [
 './bower_components/jquery/dist/jquery.min.js',
-'./bower_components/fullpage.js/dist/jquery.fullpage.min.js',
-'./bower_components/ScrollMagic/scrollmagic/minified/ScrollMagic.min.js',
-'./bower_components/gsap/src/minified/TweenMax.min.js',
-'./bower_components/ScrollMagic/scrollmagic/minified/plugins/animation.gsap.min.js',
 './bower_components/bootstrap-sass/assets/javascripts/bootstrap.min.js',
 './bower_components/flexslider/jquery.flexslider-min.js',
 './bower_components/angular/angular.min.js',

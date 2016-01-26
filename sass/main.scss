@@ -230,7 +230,7 @@ a:hover {
 }
 .about-bg,
 .bg-contact {
-background-color: #EAEAEA;
+background-color: #EFEFEF;
 }
 
 
@@ -374,7 +374,9 @@ background-color: #EAEAEA;
     }
   }
 }
-
+.form-group input, .form-group textarea {
+    color: #fff;
+}
 // /////////////////////////
 // DAHI
 // /////////////////////////
@@ -386,6 +388,10 @@ background-color: #EAEAEA;
   .milk-image {
     margin: 100px 0 50px;
   }
+.paneer-image,
+img.dahi-image {
+    width: 60%;
+}
   .paneer-image {
     margin-top: 100px;
   }

@@ -112,7 +112,7 @@ table.table-curved {
 	.dahi-image,
 	.dahi-package{
 		img{
-	    width: 94.5%;
+	    width: 94%;
 	}
 	}
   .milk-image,
@@ -125,7 +125,7 @@ table.table-curved {
     }
   }
   .milk-section, .dahi-section, .paneer-section { position: relative; }
-  .milk-image { margin-top: -15px; }
+  .milk-image { margin-top: 15px; }
   .dahi-image { position: relative; z-index: 5; }
 
   .milk-package, .milk-all, .dahi-package, .dahi-cup, .paneer-inner { position: absolute; }
@@ -151,7 +151,7 @@ table.table-curved {
   .paneer-inner {
   .paneer-txt {
     left: 8%;
-} 
+}
   }
   .paneer-package {
     top:0;
@@ -201,6 +201,12 @@ table.table-curved {
 .milk .milk-image,
 .milk .milk-package{
 	img{
-	    width: 80%;
+	    width: 100%;
 	}
+}
+.dahi .dahi-image {
+        margin-top: -50px;
+    img{
+          width: 100%;
+    }
 }

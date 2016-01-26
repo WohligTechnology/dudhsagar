@@ -30,9 +30,6 @@
     "ui-router": "~0.2.15",
     "angular-animate": "~1.4.6",
     "Swiper": "swiper#~3.2.7",
-	"fullpage.js": "https://github.com/alvarotrigo/fullPage.js.git#~2.7.6",
-	"ScrollMagic": "~2.0.5",
-    "gsap": "https://github.com/greensock/GreenSock-JS.git#~1.18.0",
     "angular-swiper": "~0.3.2"
   },
   "resolutions": {
