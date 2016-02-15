@@ -97,3 +97,18 @@ firstapp.directive('autoHeight', function($compile, $parse) {
     }
   };
 });
+
+firstapp.directive('autoHeight2', function($compile, $parse) {
+  return {
+    restrict: 'EA',
+    replace: false,
+    link: function($scope, element, attrs) {
+      var $element = $(element);
+      var windowHeight = $(window).height();
+      $element.css("min-height", windowHeight / 2);
+      setTimeout(function() {
+        $element.css("min-height", windowHeight / 2);
+      }, 1500);
+    }
+  };
+});

@@ -158,6 +158,10 @@ a:hover {
   background-size: cover;
   background-position: center;
 }
+.section.header {
+  height: 95px;
+  background-color: white;
+}
 
 ////////
 // enquire btn
@@ -289,13 +293,15 @@ background-color: #EFEFEF;
       color: $brand-title;
     }
   }
+  p { margin: 10px 0 0 0; }
   .copyright {
     margin-right: 20px;
   }
   .follow {
     p {
-      margin-right: 10px;
+      margin: 0 10px 0 0;
       display: inline-block;
+      vertical-align: middle;
     }
     .list-inline > li {
       padding: 0;
@@ -570,7 +576,7 @@ header {
     }
     .menu {
       width: 100%;
-      padding: 100px 0 50px;
+      padding: 80px 0 0px;
       position: absolute;
       background-color: white;
       font-size: 18px;
@@ -582,7 +588,7 @@ header {
           margin: 0;
           padding: 0;
           > li {
-            margin-right: 30px;
+            margin-right: 50px;
             display: inline-block;
             & > .sub-menu {
               margin-top: 50px;
@@ -597,10 +603,18 @@ header {
                 margin: 0;
               }
             }
+            .menu-images {
+              @include size(145px, auto);
+            }
+            span { font-size: 22px; }
           }
           > li:last-child {
             margin: 0;
           }
+        }
+        ul.menu-link-list li {
+          display: block;
+          a { font-size: 22px; }
         }
       }
       .rel {
@@ -668,8 +682,10 @@ footer {
     }
   }
 }
-.aboutus p {
-    text-align: justify;
+.aboutus h2 { margin-top: 0; }
+.aboutus .about-us-desc {
+  margin: 20px 0;
+  p { text-align: justify; }
 }
 @import "harsh";
 @import "mobile";

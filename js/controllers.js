@@ -9,6 +9,7 @@ angular.module('phonecatControllers', ['templateservicemod', 'navigationservice'
     TemplateService.header = "";
     TemplateService.footer = "views/section/footer.html";
     $scope.section = {
+      header: "views/header.html",
       one: "views/section/section1.html",
       two: "views/section/section2.html",
       three: "views/section/section3.html",
@@ -20,8 +21,8 @@ angular.module('phonecatControllers', ['templateservicemod', 'navigationservice'
 //    console.log(no);
 //    $.fn.fullpage.moveTo(no);
 //  };
-	
-	 
+
+
 //$scope.$on('$viewContentLoaded', function() {
 //    $timeout(function() {
 //     $('.fullpage').fullpage();
@@ -53,7 +54,7 @@ angular.module('phonecatControllers', ['templateservicemod', 'navigationservice'
 //      }
 //    }, 1000);
 //  });
-	
+
    $scope.abtimages = [
       "img/about.jpg",
       "img/about.jpg",
