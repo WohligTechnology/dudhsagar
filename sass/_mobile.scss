@@ -259,10 +259,11 @@
   .text-right.cont-footer-copy {
     text-align: center;
   }
-  .dahi-title .dahi-text {
+  .dahi-title .dahi-text, .paneer-title h2 {
     margin: 0;
     font-size: 34px;
   }
+  .paneer-title h2:first-child { margin-bottom: 10px; }
   .dahi-title .dahi-text ~ p.made-from {
     font-size: 16px;
     margin-top: 0;
