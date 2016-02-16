@@ -554,8 +554,10 @@ img.dahi-image {
 // HEADER
 // /////////////////////////
 header {
+  width: 100%;
   padding: 25px 0 0;
-  position: relative;
+  position: fixed;
+  background-color: white;
   z-index: 99;
   text-align: center;
   .hamburger {
