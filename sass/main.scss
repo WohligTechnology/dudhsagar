@@ -523,7 +523,7 @@ background-color: #EFEFEF;
       }
       .flex-prev {
         opacity: 1;
-        left: 0;
+        left: -25px;
         background: url(../img/arrow-left.png) no-repeat;
         &:before {
           display: none;
