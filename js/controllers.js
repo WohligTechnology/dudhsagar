@@ -78,6 +78,12 @@ angular.module('phonecatControllers', ['templateservicemod', 'navigationservice'
     $scope.menutitle = NavigationService.makeactive("Contactus");
     TemplateService.title = $scope.menutitle;
     $scope.navigation = NavigationService.getnav();
+
+    $scope.submitform = function(formenquire,formvalid) {
+      if(formenquire.$valid) {
+        $scope.formComplete = true;
+      }
+    };
 })
 
 .controller('DahiCtrl', function ($scope, TemplateService, NavigationService, $timeout) {

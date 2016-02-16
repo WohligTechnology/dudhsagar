@@ -365,8 +365,10 @@ background-color: #EFEFEF;
   }
   textarea {
     height: 200px;
+    resize: none;
   }
 }
+.top-ten { margin-top: 10px; }
 .send-button {
   margin-top: 30px;
   text-align: center;
