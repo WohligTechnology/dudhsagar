@@ -133,7 +133,7 @@ a:hover {
   font-weight: bold;
 }
 .mar-top {
-  margin-top: 100px;
+  margin-top: 150px;
 }
 .big-menu {
   margin-left: 40px;
@@ -393,15 +393,10 @@ background-color: #EFEFEF;
   text-align: center;
   .dahi-image,
   .milk-image {
-    margin: 100px 0 50px;
+    margin: 150px 0 50px;
   }
-.paneer-image,
-img.dahi-image {
-    width: 60%;
-}
-  .paneer-image {
-    margin-top: 100px;
-  }
+  img.dahi-image { width: 35%; }
+  .paneer-image { width: 45%; margin-top: 150px; }
   .dahi-details,
   .milk-details,
   .paneer-details {
@@ -479,7 +474,7 @@ img.dahi-image {
 // PLANT
 // /////////////////////////
 .plant {
-  padding-top: 100px;
+  padding-top: 150px;
   h2 {
     margin-bottom: 50px;
   }
