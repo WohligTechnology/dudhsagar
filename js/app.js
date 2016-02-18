@@ -53,6 +53,12 @@ firstapp.config(function($stateProvider, $urlRouterProvider,$httpProvider) {
         url: "/plant",
         templateUrl: "views/template.html",
         controller: 'PlantCtrl'
+    })
+
+    .state('careers', {
+        url: "/careers",
+        templateUrl: "views/template.html",
+        controller: 'CareersCtrl'
     });
     $urlRouterProvider.otherwise("/home");
 

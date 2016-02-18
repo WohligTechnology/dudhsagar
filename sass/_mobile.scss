@@ -145,6 +145,13 @@
     width: 100%;
     margin: 50px 0 100px;
   }
+  // Careers
+  .careers {
+    .careers-main {
+      h2 { font-size: 40px; }
+      p { font-size: 14px; }
+    }
+  }
 }
 @media (max-width: $screen-xs-max) {
   // About us
@@ -348,4 +355,11 @@
   // header
   header .hamburger .menu .menu-links ul > li .menu-images { width: 80px; }
   header .hamburger .menu .menu-links ul > li span { font-size: 14px; }
+  // Careers
+  .careers {
+    .careers-main {
+      h2 { font-size: 28px; }
+      p { font-size: 12px; }
+    }
+  }
 }

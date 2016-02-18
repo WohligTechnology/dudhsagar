@@ -251,3 +251,22 @@ table.table-curved {
 .fp-viewing-0 .sticky-bottom {
   top: calc(100%);
 }
+
+///////////////////////////////
+// CAREERS PAGE
+//////////////////////////////
+.careers {
+  .careers-head {
+    img { width: 100%; }
+  }
+  .careers-main {
+    h2 {
+      margin: 50px 0;
+      font-size: 48px;
+    }
+    p {
+      margin-bottom: 180px;
+      font-size: 16px;
+    }
+  }
+}
