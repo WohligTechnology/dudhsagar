@@ -169,10 +169,14 @@ angular.module('phonecatControllers', ['templateservicemod', 'navigationservice'
   $scope.template = TemplateService;
   $scope.showme = "menu-out";
   $scope.getnav = function() {
-    if ($scope.showme == "menu-out")
+    if ($scope.showme == "menu-out") {
       $scope.showme = "menu-in";
-    else
+      $scope.changeColor = "change-me";
+    }
+    else {
       $scope.showme = "menu-out";
+      $scope.changeColor = "";
+    }
   };
   $scope.$on('$stateChangeSuccess', function(event, toState, toParams, fromState, fromParams) {
     console.log(fromState);

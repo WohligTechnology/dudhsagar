@@ -23,6 +23,7 @@ $brand-danger: #fc483f !default;
 $button-color:#0D58C8!default;
 $brand-info: #000072 !default;
 $brand-title: #0d58c8 !default;
+$brand-brown: #67322A !default;
 $font-color: #242424 !default;
 $body-bg: #fff !default;
 $text-color: $font-color !default;
@@ -571,14 +572,14 @@ header {
       cursor: pointer;
       z-index: 5;
       padding: 8px;
-      background-color: $brand-primary;
+      background-color: $brand-brown;
       border-radius: 50%;
       span {
         width: 25px;
         height: 2px;
         margin: 5px 0;
         display: block;
-        background-color: black;
+        background-color: $brand-primary;
       }
     }
     .menu {
@@ -672,6 +673,12 @@ header {
   @include transform(translateY(0px));
   opacity: 1;
   transition: all 500ms ease;
+}
+.change-me {
+  .ham-menu {
+    background-color: $brand-primary !important;
+    span { background-color: $brand-brown !important; }
+  }
 }
 .inline {
   display: inline-block;
