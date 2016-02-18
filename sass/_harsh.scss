@@ -271,3 +271,30 @@ table.table-curved {
     }
   }
 }
+///////////////////////////////
+// ABOUT PAGE
+//////////////////////////////
+.adya-plant {
+  margin: 100px 0;
+  .plant-images {
+    margin-top: 50px;
+    .plant-one, .plant-two, .plant-three,
+    .plant-four, .plant-five, .plant-six {
+      img { @include square(100%); }
+    }
+    .plant-one, .plant-two {
+      height: 350px;
+      display: inline-block;
+    }
+    .plant-three, .plant-four, .plant-five, .plant-six {
+      height: 450px;
+      display: inline-block;
+    }
+    .plant-one { width: 59%; margin-right: 4px;  }
+    .plant-two { width: 40%; }
+    .plant-three { width: 35%; margin-right: 4px;  }
+    .plant-four { width: 64%; }
+    .plant-five { width: 59%; margin-right: 4px;  }
+    .plant-six { width: 40%; }
+  }
+}

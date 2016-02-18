@@ -241,13 +241,10 @@ a:hover {
 // /////////////////////////
 // ABOUT US
 // /////////////////////////
-.about,
-.team {
-  margin-top: 100px;
+.about{
+  margin: 0 200px;
   text-align: justify;
-  h2 {
-    margin-bottom: 50px;
-  }
+  h2 { margin-bottom: 50px; }
 }
 .team-members {
   margin-bottom: 20px;
