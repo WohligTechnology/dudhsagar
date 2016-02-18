@@ -328,11 +328,8 @@ a:hover {
     }
   }
 }
-.cont {
-  margin-bottom: -150px;
-}
 .contact-address {
-  margin-top: 50px;
+  h4 { margin: 80px 0 40px; }
 }
 .address {
   margin: 0;
@@ -343,16 +340,18 @@ a:hover {
 .contact-add {
   margin-top: 75px;
 }
-.add,
-.add-head {
-  font-size: 16px;
-  font-weight: 700;
+.add, .add-head { font-size: 16px; }
+.corporate-address {
+  margin-right: 20px;
 }
-.add-head {
-  margin-bottom: 0;
+.plant-address {
+  height: 160px;
+  margin-left: -15px;
+  padding-left: 30px;
+  border-left: 1px solid black;
 }
 .enquire {
-  margin: 100px 0 20px;
+  margin: 60px 0 100px;
   h2 {
     margin-bottom: 50px;
   }
@@ -376,19 +375,14 @@ a:hover {
   text-align: center;
   .submit {
     padding: 8px 34px;
-    border: 1px solid white;
+    border: 1px solid $brand-title;
     background: $body-bg;
-    color: $brand-primary;
     @include transition(all 300ms linear);
     &:hover {
       border: 1px solid white;
       @include transition(all 300ms linear);
     }
   }
-}
-.form-group input,
-.form-group textarea {
-  color: #fff;
 }
 // /////////////////////////
 // DAHI

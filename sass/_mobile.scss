@@ -319,6 +319,21 @@
       p { display: inline-block; }
     }
   }
+  // Contact
+  .contact, .enquire {
+    .title h2 { font-size: 38px; }
+  }
+  .corporate-address, .plant-address { text-align: center; }
+  .corporate-address {
+    margin: 0 0 40px 0;
+    float: none !important;
+  }
+  .plant-address {
+    height: auto;
+    margin: 0;
+    padding: 0;
+    border: none;
+  }
 }
 // landscape
 @media (max-width: 480px) {
@@ -362,4 +377,9 @@
       p { font-size: 12px; }
     }
   }
+  // Contact
+  .contact, .enquire {
+    .title h2 { font-size: 28px; }
+  }
+  .contact-address { font-size: 12px; }
 }
