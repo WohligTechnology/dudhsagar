@@ -159,7 +159,6 @@ a:hover {
 }
 .section.header {
   height: 95px;
-  background-color: white;
 }
 ////////
 // enquire btn
@@ -560,9 +559,7 @@ a:hover {
 // /////////////////////////
 header {
   width: 100%;
-  padding: 25px 0 0;
   position: fixed;
-  background-color: white;
   z-index: 99;
   text-align: center;
   .hamburger {
@@ -573,9 +570,12 @@ header {
       left: 50px;
       cursor: pointer;
       z-index: 5;
+      padding: 8px;
+      background-color: $brand-primary;
+      border-radius: 50%;
       span {
-        width: 30px;
-        height: 3px;
+        width: 25px;
+        height: 2px;
         margin: 5px 0;
         display: block;
         background-color: black;
@@ -583,13 +583,16 @@ header {
     }
     .menu {
       width: 100%;
-      padding: 80px 0 0;
+      height: 567px;
+      padding: 200px 0 0;
       position: absolute;
-      background-color: white;
       font-size: 18px;
       font-weight: 700;
       text-align: center;
       z-index: 2;
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-image: url('../img/pattern_white_home.png');
       .menu-links {
         ul {
           margin: 0;
@@ -644,13 +647,16 @@ header {
         position: absolute;
         bottom: -150px;
       }
+      .pattern-white-home {
+        background-image: url("../img/pattern_white_home.png");
+      }
     }
   }
   .logo {
     width: 165px;
     height: 80px;
     position: relative;
-    margin: 0 auto -10px;
+    margin: 0 0 0 120px;
     z-index: 3;
     img {
       cursor: pointer;
@@ -658,11 +664,11 @@ header {
   }
 }
 .menu-out {
-  @include transform(translateY(-400px));
+  @include transform(translateY(-580px));
   transition: all 500ms ease;
 }
 .menu-in {
-  @include transform(translateY(60px));
+  @include transform(translateY(-100px));
   transition: all 500ms ease;
 }
 .inline {

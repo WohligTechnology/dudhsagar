@@ -53,7 +53,7 @@ firstapp.config(function($stateProvider, $urlRouterProvider,$httpProvider) {
         url: "/plant",
         templateUrl: "views/template.html",
         controller: 'PlantCtrl'
-    })
+    });
     $urlRouterProvider.otherwise("/home");
 
 });
@@ -93,21 +93,6 @@ firstapp.directive('autoHeight', function($compile, $parse) {
       $element.css("min-height", windowHeight);
       setTimeout(function() {
         $element.css("min-height", windowHeight);
-      }, 1500);
-    }
-  };
-});
-
-firstapp.directive('autoHeight2', function($compile, $parse) {
-  return {
-    restrict: 'EA',
-    replace: false,
-    link: function($scope, element, attrs) {
-      var $element = $(element);
-      var windowHeight = $(window).height();
-      $element.css("min-height", windowHeight / 2);
-      setTimeout(function() {
-        $element.css("min-height", windowHeight / 2);
       }, 1500);
     }
   };
