@@ -5,22 +5,22 @@
 @import "../bower_components/font-awesome/css/font-awesome.min.css";
 @font-face {
   font-family: "Armonioso";
-  src: url(../fonts/armonioso.otf);
+  src: url("../fonts/armonioso.otf");
 }
 @font-face {
   font-family: "ITCAvantGarde";
-  src: url(../fonts/itcavantgarde.otf);
+  src: url("../fonts/itcavantgarde.otf");
 }
 @font-face {
   font-family: "Calibri";
-  src: url(../fonts/calibri.ttf);
+  src: url("../fonts/calibri.ttf");
 }
-
 /* Bootstrap Variables Goes Here */
 $brand-primary: #feba12 !default;
 $brand-success: #84ce3c !default;
 $brand-warning: #ffec39 !default;
 $brand-danger: #fc483f !default;
+$button-color:#0D58C8!default;
 $brand-info: #000072 !default;
 $brand-title: #0d58c8 !default;
 $font-color: #242424 !default;
@@ -147,14 +147,13 @@ a:hover {
 .f48 {
   font-size: 48px;
 }
-
 /* Start writing sass here */
 .pattern {
   width: 100%;
   height: 238px;
   position: relative;
   margin: -150px 0 30px;
-  background-image: url(../img/pattern.png);
+  background-image: url("../img/pattern.png");
   background-size: cover;
   background-position: center;
 }
@@ -162,7 +161,6 @@ a:hover {
   height: 95px;
   background-color: white;
 }
-
 ////////
 // enquire btn
 ////////
@@ -184,15 +182,13 @@ a:hover {
     }
   }
 }
-
 // /////////////////////////
 // HOME
 // /////////////////////////
 .home-logo {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  @include transform(translate(-50%, -50%));
+  img {
+    width: 100%;
+  }
 }
 .abt-slider {
   position: relative;
@@ -232,12 +228,16 @@ a:hover {
     }
   }
 }
-.about-bg,
 .bg-contact {
-background-color: #EFEFEF;
+  background-color: #EFEFEF;
 }
-
-
+.aboutus {
+  position: absolute;
+  top: 170px;
+}
+.about-bg {
+  background-color: #ffffff;
+}
 // /////////////////////////
 // ABOUT US
 // /////////////////////////
@@ -248,7 +248,9 @@ background-color: #EFEFEF;
     margin-bottom: 50px;
   }
 }
-.team { margin-top: 100px; }
+.team {
+  margin-top: 100px;
+}
 .team-members {
   margin-bottom: 20px;
   .manan,
@@ -262,13 +264,13 @@ background-color: #EFEFEF;
     background-position: 100% 100%;
   }
   .manan {
-    background-image: url(../img/manan.png);
+    background-image: url("../img/manan.png");
   }
   .aadil {
-    background-image: url(../img/aadil.png);
+    background-image: url("../img/aadil.png");
   }
   .viraj {
-    background-image: url(../img/viraj.png);
+    background-image: url("../img/viraj.png");
   }
   .member-detail {
     margin-top: 50px;
@@ -280,7 +282,6 @@ background-color: #EFEFEF;
     }
   }
 }
-
 // /////////////////////////
 // CONTACT US
 // /////////////////////////
@@ -294,7 +295,9 @@ background-color: #EFEFEF;
       color: $brand-title;
     }
   }
-  p { margin: 10px 0 0 0; }
+  p {
+    margin: 10px 0 0;
+  }
   .copyright {
     margin-right: 20px;
   }
@@ -305,7 +308,6 @@ background-color: #EFEFEF;
       vertical-align: middle;
     }
     .list-inline > li {
-      padding: 0;
       padding: 0;
     }
   }
@@ -368,7 +370,9 @@ background-color: #EFEFEF;
     resize: none;
   }
 }
-.top-ten { margin-top: 10px; }
+.top-ten {
+  margin-top: 10px;
+}
 .send-button {
   margin-top: 30px;
   text-align: center;
@@ -384,8 +388,9 @@ background-color: #EFEFEF;
     }
   }
 }
-.form-group input, .form-group textarea {
-    color: #fff;
+.form-group input,
+.form-group textarea {
+  color: #fff;
 }
 // /////////////////////////
 // DAHI
@@ -398,8 +403,13 @@ background-color: #EFEFEF;
   .milk-image {
     margin: 150px 0 50px;
   }
-  img.dahi-image { width: 35%; }
-  .paneer-image { width: 45%; margin-top: 150px; }
+  img.dahi-image {
+    width: 35%;
+  }
+  .paneer-image {
+    width: 45%;
+    margin-top: 150px;
+  }
   .dahi-details,
   .milk-details,
   .paneer-details {
@@ -450,7 +460,6 @@ background-color: #EFEFEF;
   font-family: $font-calibri;
   font-size: 70px;
 }
-
 // /////////////////////////
 // MILK
 // /////////////////////////
@@ -472,7 +481,6 @@ background-color: #EFEFEF;
     margin-top: 50px;
   }
 }
-
 // /////////////////////////
 // PLANT
 // /////////////////////////
@@ -527,7 +535,7 @@ background-color: #EFEFEF;
       .flex-prev {
         opacity: 1;
         left: -25px;
-        background: url(../img/arrow-left.png) no-repeat;
+        background: url("../img/arrow-left.png") no-repeat;
         &:before {
           display: none;
         }
@@ -535,7 +543,7 @@ background-color: #EFEFEF;
       .flex-next {
         opacity: 1;
         right: 0;
-        background: url(../img/arrow-right.png) no-repeat;
+        background: url("../img/arrow-right.png") no-repeat;
         &:before {
           display: none;
         }
@@ -547,7 +555,6 @@ background-color: #EFEFEF;
     }
   }
 }
-
 // /////////////////////////
 // HEADER
 // /////////////////////////
@@ -576,7 +583,7 @@ header {
     }
     .menu {
       width: 100%;
-      padding: 80px 0 0px;
+      padding: 80px 0 0;
       position: absolute;
       background-color: white;
       font-size: 18px;
@@ -606,7 +613,9 @@ header {
             .menu-images {
               @include size(145px, auto);
             }
-            span { font-size: 22px; }
+            span {
+              font-size: 22px;
+            }
           }
           > li:last-child {
             margin: 0;
@@ -615,7 +624,9 @@ header {
         ul.menu-link-list li {
           margin: 0;
           display: block;
-          a { font-size: 22px; }
+          a {
+            font-size: 22px;
+          }
         }
       }
       .rel {
@@ -627,7 +638,7 @@ header {
       .pattern-white {
         width: 100%;
         height: 164px;
-        background-image: url(../img/pattern_white.png);
+        background-image: url("../img/pattern_white.png");
         background-size: cover;
         background-position: center;
         position: absolute;
@@ -660,7 +671,6 @@ header {
 .block {
   display: block;
 }
-
 // /////////////////////////
 // FOOTER
 // /////////////////////////
@@ -683,10 +693,18 @@ footer {
     }
   }
 }
-.aboutus h2 { margin-top: 0; }
+.aboutus h2 {
+  margin-top: 0;
+}
 .aboutus .about-us-desc {
   margin: 20px 0;
-  p { text-align: justify; }
+  p {
+    text-align: justify;
+  }
+}
+.color-blue {
+    color: #17adbb;
+    text-align: center!important;
 }
 @import "harsh";
 @import "mobile";

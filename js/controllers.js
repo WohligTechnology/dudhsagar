@@ -6,33 +6,33 @@ angular.module('phonecatControllers', ['templateservicemod', 'navigationservice'
     $scope.menutitle = NavigationService.makeactive("Home");
     TemplateService.title = $scope.menutitle;
     $scope.navigation = NavigationService.getnav();
-    TemplateService.header = "";
+    // TemplateService.header = "";
     TemplateService.footer = "views/section/footer.html";
     $scope.section = {
-      header: "views/header.html",
+      // header: "views/header.html",
       one: "views/section/section1.html",
       two: "views/section/section2.html",
       three: "views/section/section3.html",
       four: "views/section/section4.html",
       five: "views/section/section5.html",
-      six: "views/section/footer.html",
+      // six: "views/section/footer.
     };
-//	  $scope.changeFullPage = function(no) {
-//    console.log(no);
-//    $.fn.fullpage.moveTo(no);
-//  };
+	  $scope.changeFullPage = function(no) {
+   console.log(no);
+   $.fn.fullpage.moveTo(no);
+ };
 
-
-//$scope.$on('$viewContentLoaded', function() {
+//
+// $scope.$on('$viewContentLoaded', function() {
 //    $timeout(function() {
 //     $('.fullpage').fullpage();
 //
 //      console.log($stateParams.name);
 //      $scope.homeval = $stateParams.name;
 //      switch ($scope.homeval) {
-////		  case "contact":
-////          $.fn.fullpage.moveTo(6);
-////          break;
+// 		  case "contact":
+//          $.fn.fullpage.moveTo(6);
+//          break;
 //        case "aboutus":
 //          $.fn.fullpage.moveTo(5);
 //          break;
@@ -54,6 +54,45 @@ angular.module('phonecatControllers', ['templateservicemod', 'navigationservice'
 //      }
 //    }, 1000);
 //  });
+
+
+$scope.changeFullPage = function(no) {
+   console.log(no);
+   $.fn.fullpage.moveTo(no);
+   };
+
+
+   $scope.$on('$viewContentLoaded', function() {
+         $timeout(function() {
+               $('.fullpage').fullpage();
+
+               console.log($stateParams.name);
+               $scope.homeval = $stateParams.name;
+               switch ($scope.homeval) {
+                 //		  case "contact":
+                 //          $.fn.fullpage.moveTo(6);
+                 //          break;
+                 case "aboutus":
+                   $.fn.fullpage.moveTo(5);
+                   break;
+                 case "paneer":
+                   $.fn.fullpage.moveTo(4);
+                   break;
+case "dahi":
+         $.fn.fullpage.moveTo(3);
+         break;
+       case "milk":
+         $.fn.fullpage.moveTo(2);
+         break;
+       case "landing":
+         $.fn.fullpage.moveTo(1);
+         break;
+       default:
+         $.fn.fullpage.moveTo(1);
+         break;
+     }
+   }, 1000);
+ });
 
    $scope.abtimages = [
       "img/about.jpg",
@@ -137,17 +176,16 @@ angular.module('phonecatControllers', ['templateservicemod', 'navigationservice'
         else
             $scope.showme = "menu-out";
     }
-//  $scope.$on('$stateChangeSuccess', function(event, toState, toParams, fromState, fromParams) {
-//    console.log(fromState);
-//    console.log("fromState");
-//    if(toState.url == "/home" && fromState.url != "^")
-//    {
-//      location.reload();
-//    }
-//    $(window).scrollTop(0);
-//    $("body > .loader").hide();
-//    $("body > .loadedContent").fadeIn(1000);
-//    $("body").css("overflow", "scroll");
-//  });
+ $scope.$on('$stateChangeSuccess', function(event, toState, toParams, fromState, fromParams) {
+   console.log(fromState);
+   console.log("fromState");
+   if (toState.url == "/home" && fromState.url != "^") {
+     location.reload();
+   }
+   $(window).scrollTop(0);
+   $("body > .loader").hide();
+   $("body > .loadedContent").fadeIn(1000);
+   $("body").css("overflow", "scroll");
+ });
 
 });

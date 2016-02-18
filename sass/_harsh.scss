@@ -28,7 +28,10 @@
   }
 }
 .price {
-  span, p { text-align: left; }
+  span,
+  p {
+    text-align: left;
+  }
 }
 table.table-curved {
   border: 2px solid;
@@ -89,7 +92,6 @@ table.table-curved {
   padding: 10px 10px 8px;
   font-weight: bold;
 }
-
 // HOME
 /* ////////////////////////////
 * SECTION 2 (MILK)
@@ -100,22 +102,23 @@ table.table-curved {
   width: 100%;
   height: 100%;
   position: relative;
-  .milk-section { margin-top: 100px; }
+  // .milk-section { margin-top: 100px; }
   .milk-txt,
   .dahi-txt,
   .paneer-txt {
     width: 20%;
     position: absolute;
-    top: 50%;
     transform: translateY(-50%);
-	  z-index: 9;
+    z-index: 9;
   }
-	.dahi-image,
-	.dahi-package{
-		img{
-	    width: 94%;
-	}
-	}
+  .dahi-txt {
+    right: 10%;
+    top: 50%;
+  }
+  .milk-txt {
+    left: 22%;
+    top: 68%;
+  }
   .milk-image,
   .paneer-image {
     width: 100%;
@@ -125,38 +128,52 @@ table.table-curved {
       height: 100%;
     }
   }
-  .milk-section, .dahi-section, .paneer-section { position: relative; }
-  .milk-image { margin-top: 15px; }
-  .dahi-image { position: relative; z-index: 5; }
-
-  .milk-package, .milk-all, .dahi-package, .dahi-cup, .paneer-inner { position: absolute; }
- .milk-package,.dahi-package {
-	top:0px;
- }
+  .milk-section,
+  .dahi-section,
+  .paneer-section {
+    position: relative;
+  }
+  // .milk-image { margin-top: 15px; }
+  .dahi-image {
+    position: relative;
+    z-index: 5;
+  }
+  .milk-package,
+  .milk-all,
+  .dahi-package,
+  .dahi-cup,
+  .paneer-inner {
+    position: absolute;
+  }
+  .milk-package,
+  .dahi-package {
+    top: 0;
+  }
   .milk-all {
     width: 22%;
     top: 475px;
     right: 115px;
     z-index: -1;
   }
-//  .dahi-package {
-//    width: 72%;
-//    top: 100px;
-//    left: 100px;
-//  }
-//  .dahi-cup {
-//    width: 17%;
-//    top: 375px;
-//    left: 560px;
-//  }
+  //  .dahi-package {
+  //    width: 72%;
+  //    top: 100px;
+  //    left: 100px;
+  //  }
+  //  .dahi-cup {
+  //    width: 17%;
+  //    top: 375px;
+  //    left: 560px;
+  //  }
   .paneer-inner {
-  .paneer-txt {
-    left: 8%;
-}
+    .paneer-txt {
+      left: 8%;
+      top: 26%;
+    }
   }
   .paneer-package {
-    top:0;
-	  position: absolute;
+    top: 0;
+    position: absolute;
   }
 }
 .contact-bg {
@@ -168,25 +185,31 @@ table.table-curved {
   //background-color: $brand-primary;
   padding: 100px 0 50px;
 }
-
-
-
-
-
 //// BUTTONS
-
 .butn {
   background-color: $brand-primary;
   color: $body-bg;
+  border: 1px solid $body-bg;
   @include transition(all 300ms ease);
   &:hover {
-    border: 1px solid $brand-primary;
-    background-color: transparent;
+    border: 1px solid $body-bg;
+    background-color: $body-bg;
     color: $brand-primary;
     @include transition(all 300ms ease);
   }
 }
-
+.button-blue {
+  background: $body-bg;
+  color: $button-color;
+  border: 1px solid $button-color;
+  @include transition(all 300ms ease);
+  &:hover {
+    border: 1px solid $body-bg;
+    background-color: $button-color;
+    color: $body-bg;
+    @include transition(all 300ms ease);
+  }
+}
 .butn-inverse {
   background-color: $body-bg;
   color: $brand-primary;
@@ -200,20 +223,28 @@ table.table-curved {
 }
 .start-img,
 .milk .milk-image,
-.milk .milk-package{
-	img{
-	    width: 100%;
-	}
+.milk .milk-package {
+  img {
+    width: 100%;
+  }
 }
 .dahi .dahi-image {
-  margin-top: -50px;
-  img{ width: 100%; }
+  img {
+    width: 100%;
+  }
 }
-
 // Changes 16 Feb 16
-.section.five { padding-bottom: 100px; }
-
+.section.five {
+  padding-bottom: 100px;
+}
 .social-icon2 a {
   background-color: $brand-primary;
-  i { color: white; }
+  i {
+    color: white;
+  }
+}
+.ab-footer {
+  position: absolute;
+  width: 100%;
+  bottom: -20px;
 }

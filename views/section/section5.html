@@ -1,29 +1,96 @@
 <div class="about-bg">
-    <div class="container">
-        <div class="row">
-            <div class="aboutus">
-                <div class="col-sm-7">
-                    <div class="abt-slider">
-                        <div class="abt-flex">
-                            <flex-slider flex-slide="abt in abtimages track by $index" class="carousel" animation="slide" direction-nav="false">
-                                <li>
-                                    <img ng-src="{{abt}}" alt="" class="img-responsive">
-                                </li>
-                            </flex-slider>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-sm-5">
-                    <h2 class="font-funky brand-title title">about us</h2>
-                    <div class="about-us-desc">
-                      <p>Adya Dairy Products Pvt. Ltd is a joint venture between The Shalimar Group and The Chokhany Group.</p>
-                      <p>At the heart of Adya lies the dairy farmer and his well-being. By procuring milk directly from the farmer, the company not only benefits him but also succeeds in delivering fresh and healthy milk to thousands of families in West Bengal.</p>
-                      <p>Adya Dairy has an integrated dairy plant capable of handling over 1,50,000 litres of milk per day.The milk collected through the chilling centres across villages is processed and packed at the state of the art dairy plant, which is located in the Howrah district of West Bengal.</p>
-                      <p>The product portfolio of the company at present include pasteurised milk in different varieties like Toned Milk, Double Toned Milk, Cow Milk and Standardized Milk. Other products include Paneer, Ghee, Dahi and Skimmed Milk Powder. Adya Dairy, with its wide array of products continually strives to make India pure, fresh and tasty.</p>
-                    </div>
-                    <a href="#/aboutus" class="btn butn button-fix text-uppercase">Know More</a>
-                </div>
-            </div>
-        </div>
+  <div class="paneer">
+    <div class="paneer-image">
+      <img src="img/section5.png" alt="Paneer" class="img-responsive" />
     </div>
+  </div>
+</div>
+<div class="">
+  <div class="row">
+    <div class="aboutus">
+      <!-- <div class="col-sm-7">
+          <div class="abt-slider">
+            <div class="abt-flex">
+              <flex-slider flex-slide="abt in abtimages track by $index" class="carousel" animation="slide" direction-nav="false">
+                <li>
+                  <img ng-src="{{abt}}" alt="" class="img-responsive">
+                </li>
+              </flex-slider>
+            </div>
+          </div>
+        </div> -->
+      <!-- <div class="col-sm-5">
+        <h2 class="font-funky brand-title title">about us</h2>
+      </div> -->
+      <div class="col-md-offset-3 col-sm-6 text-center">
+        <div class="about-us-desc text-center">
+          <p>Adya Dairy Products Pvt. Ltd is a joint venture between The Shalimar Group and The Chokhany Group.</p>
+          <p>At the heart of Adya lies the dairy farmer and his well-being. By procuring milk directly from the farmer, the company not only benefits him but also succeeds in delivering fresh and healthy milk to thousands of families in West Bengal.</p>
+          <!-- <p>Adya Dairy has an integrated dairy plant capable of handling over 1,50,000 litres of milk per day.The milk collected through the chilling centres across villages is processed and packed at the state of the art dairy plant, which is located in
+            the Howrah district of West Bengal.</p> -->
+          <p class="color-blue">Adya Dairy has an integrated dairy plant capable of handling over 1,50,000 litres of milk per day.</p>
+        </div>
+        <a href="#/aboutus" class="btn button-blue button-fix text-uppercase">Know More</a>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="footer ab-footer">
+  <div class="bg-contact" ng-controller="HomeCtrl" id="contact">
+    <div class="contact-bg">
+      <div class="container">
+        <div class="row">
+          <div class="contactus white">
+            <!-- <div class="col-md-3">
+          <h2 class="font-funky brand-title title">contact us</h2>
+        </div>
+        <div class="col-md-3">
+          <address class="address">Adya Dairy Products Pvt. Ltd.
+            <br> Vill - Sankarhati, P.O.- Munsirhat,
+            <br> Dist - Howrah, West Bengal - 711410
+            <a href="mailto:customercare@adyadairy.com" class="white block">customercare@adyadairy.com</a>
+            <span class="block"><a href="tel:18002583333" class="white">1800-258-3333</a> (Toll Free)</span>
+          </address>
+        </div>
+        <div class="col-md-offset-3 col-md-3">
+          <div class="text-right cont-footer-copy">
+            <p class="copyright">&copy; {{template.year}} ADYA</p>
+            <div class="follow">
+              <p>Follow us on</p>
+              <div class="social-icon">
+                <ul class="list-inline">
+                  <li><a href="" target="_blank" class="block text-center"><i class="fa fa-facebook"></i></a></li>
+                  <li><a href="" target="_blank" class="block text-center"><i class="fa fa-twitter"></i></a></li>
+                  <li><a href="" target="_blank" class="block text-center"><i class="fa fa-instagram"></i></a></li>
+                </ul>
+              </div>
+            </div>
+            <p class="text-uppercase">Designed by <a href="http://www.ting.in/" class="white" target="_blank">TING.IN</a></p>
+          </div>
+        </div> -->
+
+            <div class="col-md-3 col-sm-3">
+              <p class="">&copy; {{template.year}} Adya Dairy Pvt. Ltd.</p>
+            </div>
+            <div class="col-md-offset-1 col-md-4 col-sm-5">
+              <div class="follow text-center">
+                <p>Follow us on</p>
+                <div class="social-icon">
+                  <ul class="list-inline">
+                    <li><a href="" target="_blank" class="block text-center"><i class="fa fa-facebook"></i></a></li>
+                    <li><a href="" target="_blank" class="block text-center"><i class="fa fa-twitter"></i></a></li>
+                    <li><a href="" target="_blank" class="block text-center"><i class="fa fa-instagram"></i></a></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-offset-1 col-md-3 col-sm-3">
+              <p class="text-uppercase text-right">Designed by <a href="http://www.ting.in/" class="white" target="_blank">TING</a></p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
 </div>
