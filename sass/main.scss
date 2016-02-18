@@ -583,8 +583,8 @@ header {
     }
     .menu {
       width: 100%;
-      height: 567px;
-      padding: 200px 0 0;
+      height: 457px;
+      padding: 100px 0 0;
       position: absolute;
       font-size: 18px;
       font-weight: 700;
@@ -665,10 +665,12 @@ header {
 }
 .menu-out {
   @include transform(translateY(-580px));
+  opacity: 0;
   transition: all 500ms ease;
 }
 .menu-in {
-  @include transform(translateY(-100px));
+  @include transform(translateY(0px));
+  opacity: 1;
   transition: all 500ms ease;
 }
 .inline {
