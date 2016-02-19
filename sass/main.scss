@@ -23,6 +23,7 @@ $brand-danger: #fc483f !default;
 $button-color:#0D58C8!default;
 $brand-info: #000072 !default;
 $brand-title: #0d58c8 !default;
+$brand-milk: #16aebd !default;
 $brand-brown: #67322A !default;
 $font-color: #242424 !default;
 $body-bg: #fff !default;
@@ -55,6 +56,7 @@ $instagram: #396d9a !default;
 .brand-title {
   color: $brand-title;
 }
+.brand-milk { color: $brand-milk; }
 .white {
   color: $body-bg;
 }
@@ -166,18 +168,18 @@ a:hover {
 ////////
 .enquire-now {
   position: fixed;
-  top: 220px;
-  right: -62px;
+  top: 185px;
+  right: -48px;
   z-index: 50;
   @include transform(rotate(-90deg));
   .enquire-btn {
-    border: 1px solid $body-bg;
-    padding: 10px 32px;
-    color: $body-bg;
+    border: 2px solid $brand-primary;
+    padding: 10px 15px;
+    color: black;
     @include transition(all 500ms ease);
     &:hover {
-      background-color: $body-bg;
-      color: $brand-primary;
+      background-color: $brand-primary;
+      color: black;
       @include transition(all 500ms ease);
     }
   }
@@ -387,6 +389,7 @@ a:hover {
 .dahi-pack,
 .milk-pack,
 .paneer-pack {
+  margin-top: 100px;
   text-align: center;
   .dahi-image,
   .milk-image {
@@ -404,8 +407,6 @@ a:hover {
   .paneer-details {
     text-align: justify;
     padding: 0 30px;
-    border-left: 1px solid black;
-    border-right: 1px solid black;
     .dahi-detail,
     .milk-detail,
     .paneer-detail {
@@ -447,7 +448,7 @@ a:hover {
 .paneer-text2 {
   margin-top: 25px;
   font-family: $font-calibri;
-  font-size: 70px;
+  font-size: 100px;
 }
 // /////////////////////////
 // MILK
@@ -457,17 +458,18 @@ a:hover {
     margin-bottom: -10px;
   }
   h2 ~ p {
-    font-size: 26px;
+    font-size: 34px;
   }
 }
 .milk-variants {
-  margin-top: 50px;
-  span {
-    font-size: 28px;
-    font-weight: 100;
-  }
+  margin: 40px 0 150px;
+  font-size: 18px;
   .variant-images {
-    margin-top: 50px;
+    margin-top: 20px;
+    ul li {
+      width: 32.5%;
+      img { width: 110%; }
+    }
   }
 }
 // /////////////////////////
