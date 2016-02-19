@@ -345,7 +345,7 @@ a:hover {
   margin-right: 20px;
 }
 .plant-address {
-  height: 160px;
+  height: 200px;
   margin-left: -15px;
   padding-left: 30px;
   border-left: 1px solid black;
@@ -704,13 +704,14 @@ footer {
   margin-top: 0;
 }
 .aboutus .about-us-desc {
-  margin: 20px 0;
+  margin: 100px 0;
   p {
     text-align: justify;
   }
 }
 .color-blue {
     color: #17adbb;
+    font-size: 20px;
     text-align: center!important;
 }
 @import "harsh";
