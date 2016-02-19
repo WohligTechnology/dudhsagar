@@ -286,9 +286,9 @@
 ///////////////////////////////
 // PRODUCT PAGE
 //////////////////////////////
-.milk-details {
+.milk-details, .dahi-details {
   margin: 0 50px;
-  .milk-detail p {
+  .milk-detail p, .dahi-detail p {
     font-size: 16px;
     line-height: 24px;
   }
@@ -333,11 +333,15 @@ table.table-curved {
     }
     td:last-child { padding-right: 25px; }
   }
+  .dahi-price-table {
+    td + td { padding: 0 5px; }
+    td:last-child { padding-right: 5px; }
+  }
 }
 .milk-circle {
   width: 740px;
   height: 740px;
-  margin-left: -290px;
+  margin-left: -200px;
   position: relative;
   background-image: url("../img/product-circle.png");
   background-size: cover;

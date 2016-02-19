@@ -95,6 +95,7 @@ a,
 }
 body {
   font-family: $font-family-sans-serif;
+  overflow-y: scroll !important;
 }
 img.loading {
   text-align: center;
@@ -417,10 +418,10 @@ a:hover {
     }
   }
 }
+.dahi-pack { margin: 100px; }
 .dahi-title {
-  margin-right: -70px;
   .dahi-text {
-    margin-top: 40px;
+    margin-bottom: 0;
   }
   .dahi-text ~ p.made-from {
     font-size: 18px;
@@ -429,7 +430,7 @@ a:hover {
   .past-milk,
   .stand-milk {
     margin-top: -10px;
-    font-size: 26px;
+    font-size: 34px;
   }
 }
 .paneer-title {
