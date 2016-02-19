@@ -94,8 +94,9 @@ a,
   font-family: $font-funky;
 }
 body {
+  height: auto !important;
   font-family: $font-family-sans-serif;
-  overflow-y: scroll !important;
+  overflow: none !important;
 }
 img.loading {
   text-align: center;
