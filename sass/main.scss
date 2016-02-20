@@ -97,6 +97,7 @@ body {
   height: auto !important;
   font-family: $font-family-sans-serif;
   overflow: none !important;
+  // overflow-y: scroll !important;
 }
 img.loading {
   text-align: center;
@@ -419,7 +420,7 @@ a:hover {
     }
   }
 }
-.dahi-pack { margin: 100px; }
+.dahi-pack, .paneer-pack { margin: 100px; }
 .dahi-title {
   .dahi-text {
     margin-bottom: 0;
@@ -437,10 +438,10 @@ a:hover {
 .paneer-title {
   .paneer-text,
   .paneer-text2 {
-    margin: 0;
+    margin-bottom: 0;
   }
   .paneer-text2 {
-    margin-top: -15px;
+    margin-top: -20px;
   }
 }
 .dahi-text,
@@ -477,7 +478,7 @@ a:hover {
 // PLANT
 // /////////////////////////
 .plant {
-  padding-top: 150px;
+  padding: 100px 0;
   h2 {
     margin-bottom: 50px;
   }
