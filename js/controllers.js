@@ -160,12 +160,20 @@ angular.module('phonecatControllers', ['templateservicemod', 'navigationservice'
               subtitle: 'Slim Milk',
               desc: 'With the richness of balanced cream and milk, Adya\'s Classic standardised milk is rich in proteins and calcium to help build strong bones!',
               table: [{
-                property: '',
-                value: ''
-              }],
-              available: [{
-                property: '',
-                value: ''
+                property: 'Energy',
+                value: '73kcal'
+              }, {
+                property: 'Total Fat',
+                value: '4.5g'
+              }, {
+                property: 'Total Carbohydrate',
+                value: '4.7g'
+              }, {
+                property: 'Protein',
+                value: '3.0g'
+              }, {
+                property: 'Added Sugar',
+                value: '0g'
               }],
               variants: [{
                 image: 'img/products/pack_milk.png',
@@ -186,12 +194,20 @@ angular.module('phonecatControllers', ['templateservicemod', 'navigationservice'
               subtitle: 'Nourished Milk',
               desc: 'With the richness of balanced cream and milk, Adya\'s Classic standardised milk is rich in proteins and calcium to help build strong bones!',
               table: [{
-                property: '',
-                value: ''
-              }],
-              available: [{
-                property: '',
-                value: ''
+                property: 'Energy',
+                value: '73kcal'
+              }, {
+                property: 'Total Fat',
+                value: '4.5g'
+              }, {
+                property: 'Total Carbohydrate',
+                value: '4.7g'
+              }, {
+                property: 'Protein',
+                value: '3.0g'
+              }, {
+                property: 'Added Sugar',
+                value: '0g'
               }],
               variants: [{
                 image: 'img/milk-slim.png',
@@ -212,12 +228,20 @@ angular.module('phonecatControllers', ['templateservicemod', 'navigationservice'
               subtitle: 'Helathy Milk',
               desc: 'With the richness of balanced cream and milk, Adya\'s Classic standardised milk is rich in proteins and calcium to help build strong bones!',
               table: [{
-                property: '',
-                value: ''
-              }],
-              available: [{
-                property: '',
-                value: ''
+                property: 'Energy',
+                value: '73kcal'
+              }, {
+                property: 'Total Fat',
+                value: '4.5g'
+              }, {
+                property: 'Total Carbohydrate',
+                value: '4.7g'
+              }, {
+                property: 'Protein',
+                value: '3.0g'
+              }, {
+                property: 'Added Sugar',
+                value: '0g'
               }],
               variants: [{
                 image: 'img/milk-slim.png',
@@ -238,12 +262,20 @@ angular.module('phonecatControllers', ['templateservicemod', 'navigationservice'
               subtitle: 'Standardized Milk',
               desc: 'With the richness of balanced cream and milk, Adya\'s Classic standardised milk is rich in proteins and calcium to help build strong bones!',
               table: [{
-                property: '',
-                value: ''
-              }],
-              available: [{
-                property: '',
-                value: ''
+                property: 'Energy',
+                value: '73kcal'
+              }, {
+                property: 'Total Fat',
+                value: '4.5g'
+              }, {
+                property: 'Total Carbohydrate',
+                value: '4.7g'
+              }, {
+                property: 'Protein',
+                value: '3.0g'
+              }, {
+                property: 'Added Sugar',
+                value: '0g'
               }],
               variants: [{
                 image: 'img/milk-slim.png',

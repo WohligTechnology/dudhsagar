@@ -24,25 +24,9 @@
             <div class="milk-table">
               <table class="table-curved text-bold table-milk">
                 <tbody>
-                  <tr>
-                    <td>Energy</td>
-                    <td>73kcal</td>
-                  </tr>
-                  <tr>
-                    <td>Total Fat</td>
-                    <td>4.5g</td>
-                  </tr>
-                  <tr>
-                    <td>Total Carbohydrate</td>
-                    <td>4.7g</td>
-                  </tr>
-                  <tr>
-                    <td>Protein</td>
-                    <td>3.0g</td>
-                  </tr>
-                  <tr>
-                    <td>Added Sugar</td>
-                    <td>0g</td>
+                  <tr ng-repeat="tab in milkJSON.table">
+                    <td>{{tab.property}}</td>
+                    <td>{{tab.value}}</td>
                   </tr>
                 </tbody>
               </table>
