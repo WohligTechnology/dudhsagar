@@ -7,18 +7,18 @@
       <div class="row">
         <div class="col-md-6">
           <div class="milk-circle">
-            <img src="img/products/pack_milk.png" class="img-responsive" alt="">
+            <img ng-src="{{milkJSON.image}}" class="img-responsive" alt="">
           </div>
         </div>
         <div class="col-md-6">
           <div class="milk-details">
             <div class="milk-title text-center brand-milk">
-              <h2 class="milk-text text-up">Classic</h2>
-              <p class="stand-milk">Standardized Milk</p>
+              <h2 class="milk-text text-up">{{milkJSON.title}}</h2>
+              <p class="stand-milk">{{milkJSON.subtitle}}</p>
             </div>
 
             <div class="milk-detail">
-              <p class="">With the richness of balanced cream and milk, Adya's Classic standardised milk is rich in proteins and calcium to help build strong bones!</p>
+              <p class="">{{milkJSON.desc}}</p>
             </div>
 
             <div class="milk-table">
@@ -71,15 +71,15 @@
                 <span class="milk-var text-center text-up text-bold">Milk Variants</span>
                 <div class="variant-images">
                   <ul>
-                    <li>
-                      <img src="img/milk-slim.png" alt="Milk Slim">
+                    <li ng-repeat="vari in milkJSON.variants">
+                      <a href="" ng-click="changeURL(vari.url)"><img ng-src="{{vari.image}}" alt="Milk Slim"></a>
+                    </li>
+                    <!-- <li>
+                      <a href="" ng-click="changeURL('nourish')"><img src="img/milk-nourish.png" alt="Milk Nourish"></a>
                     </li>
                     <li>
-                      <img src="img/milk-nourish.png" alt="Milk Nourish">
-                    </li>
-                    <li>
-                      <img src="img/milk-health.png" alt="Milk Health">
-                    </li>
+                      <a href="" ng-click="changeURL('health')"><img src="img/milk-health.png" alt="Milk Health"></a>
+                    </li> -->
                   </ul>
                 </div>
               </div>

@@ -131,7 +131,7 @@ angular.module('phonecatControllers', ['templateservicemod', 'navigationservice'
   $scope.navigation = NavigationService.getnav();
 })
 
-.controller('MilkCtrl', function($scope, TemplateService, NavigationService, $timeout) {
+.controller('MilkCtrl', function($scope, $state, TemplateService, NavigationService, $timeout, $stateParams, $document, $location) {
     //Used to name the .html file
     $scope.template = TemplateService.changecontent("milk");
     $scope.menutitle = NavigationService.makeactive("Milk");
@@ -143,6 +143,130 @@ angular.module('phonecatControllers', ['templateservicemod', 'navigationservice'
       "img/products/milk_pack.png",
       "img/products/milk_pack.png"
     ];
+
+    var myid = 'classic';
+
+    function forMilkProduct(id) {
+      if (!_.isEmpty(id) && id == "slim") {
+        // Slim JSON
+        myid = 'slim';
+        $scope.milkJSON = {
+          image: 'img/milk-slim.png',
+          title: 'Slim',
+          subtitle: 'Slim Milk',
+          desc: 'With the richness of balanced cream and milk, Adya\'s Classic standardised milk is rich in proteins and calcium to help build strong bones!',
+          table: [{
+            property: '',
+            value: ''
+          }],
+          available: [{
+            property: '',
+            value: ''
+          }],
+          variants: [{
+            image: 'img/products/pack_milk.png',
+            url: 'classic'
+          }, {
+            image: 'img/milk-nourish.png',
+            url: 'nourish'
+          }, {
+            image: 'img/milk-health.png',
+            url: 'health'
+          }]
+        };
+      } else if (!_.isEmpty(id) && id == "nourish") {
+        myid = 'nourish';
+        $scope.milkJSON = {
+          image: 'img/milk-nourish.png',
+          title: 'Nourish',
+          subtitle: 'Nourished Milk',
+          desc: 'With the richness of balanced cream and milk, Adya\'s Classic standardised milk is rich in proteins and calcium to help build strong bones!',
+          table: [{
+            property: '',
+            value: ''
+          }],
+          available: [{
+            property: '',
+            value: ''
+          }],
+          variants: [{
+            image: 'img/milk-slim.png',
+            url: 'slim'
+          }, {
+            image: 'img/products/pack_milk.png',
+            url: 'classic'
+          }, {
+            image: 'img/milk-health.png',
+            url: 'health'
+          }]
+        };
+      } else if (!_.isEmpty(id) && id == "health") {
+        myid = 'health';
+        $scope.milkJSON = {
+          image: 'img/milk-health.png',
+          title: 'Health',
+          subtitle: 'Helathy Milk',
+          desc: 'With the richness of balanced cream and milk, Adya\'s Classic standardised milk is rich in proteins and calcium to help build strong bones!',
+          table: [{
+            property: '',
+            value: ''
+          }],
+          available: [{
+            property: '',
+            value: ''
+          }],
+          variants: [{
+            image: 'img/milk-slim.png',
+            url: 'slim'
+          }, {
+            image: 'img/milk-nourish.png',
+            url: 'nourish'
+          }, {
+            image: 'img/products/pack_milk.png',
+            url: 'classic'
+          }]
+        };
+      } else if (!_.isEmpty(id) && id == "classic") { // default classic
+        myid = 'classic';
+        $scope.milkJSON = {
+          image: 'img/products/pack_milk.png',
+          title: 'Classic',
+          subtitle: 'Standardized Milk',
+          desc: 'With the richness of balanced cream and milk, Adya\'s Classic standardised milk is rich in proteins and calcium to help build strong bones!',
+          table: [{
+            property: '',
+            value: ''
+          }],
+          available: [{
+            property: '',
+            value: ''
+          }],
+          variants: [{
+            image: 'img/milk-slim.png',
+            url: 'slim'
+          }, {
+            image: 'img/milk-nourish.png',
+            url: 'nourish'
+          }, {
+            image: 'img/milk-health.png',
+            url: 'health'
+          }]
+        };
+      }
+    }
+
+    $scope.changeURL = function(id) {
+      $state.transitionTo('milkproduct', {
+        id: id
+      }, {
+        notify: false
+      });
+      myid = id;
+      $location.replace();
+      forMilkProduct(id);
+    };
+    forMilkProduct(myid);
+
   })
   .controller('PaneerCtrl', function($scope, TemplateService, NavigationService, $timeout) {
     //Used to name the .html file

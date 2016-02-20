@@ -59,6 +59,12 @@ firstapp.config(function($stateProvider, $urlRouterProvider,$httpProvider) {
         url: "/careers",
         templateUrl: "views/template.html",
         controller: 'CareersCtrl'
+    })
+
+    .state('milkproduct', {
+      url: "/milk/:id",
+      templateUrl: "views/template.html",
+      controller: 'MilkCtrl'
     });
     $urlRouterProvider.otherwise("/home");
 
