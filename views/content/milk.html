@@ -72,7 +72,7 @@
                 <div class="variant-images">
                   <ul>
                     <li ng-repeat="vari in milkJSON.variants">
-                      <a href="" ng-click="changeURL(vari.url)"><img ng-src="{{vari.image}}" alt="Milk Slim"></a>
+                      <a ui-sref="milkproduct({id:vari.url})"><img ng-src="{{vari.image}}" alt="Milk Slim"></a>
                     </li>
                     <!-- <li>
                       <a href="" ng-click="changeURL('nourish')"><img src="img/milk-nourish.png" alt="Milk Nourish"></a>
