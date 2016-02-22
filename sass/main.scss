@@ -15,6 +15,14 @@
   font-family: "Calibri";
   src: url("../fonts/calibri.ttf");
 }
+@font-face {
+  font-family: "Proxima";
+  src: url("../fonts/proxima.otf");
+}
+@font-face {
+  font-family: "Proxima Semi";
+  src: url("../fonts/proxima-semi.otf");
+}
 /* Bootstrap Variables Goes Here */
 $brand-primary: #feba12 !default;
 $brand-success: #84ce3c !default;
@@ -25,6 +33,8 @@ $brand-info: #000072 !default;
 $brand-title: #0d58c8 !default;
 $brand-milk: #16aebd !default;
 $brand-brown: #67322A !default;
+$brand-purple: #663c94 !default;
+$brand-green: #3a6f00 !default;
 $font-color: #242424 !default;
 $body-bg: #fff !default;
 $text-color: $font-color !default;
@@ -36,6 +46,8 @@ $font-family-sans-serif: "ITCAvantGarde", "Helvetica Neue", Helvetica, Arial, sa
 $font-family-serif: "ITCAvantGarde", Georgia, "Times New Roman", Times, serif !default;
 $font-funky: "Armonioso", "Helvetiva Neue", Helvetica !default;
 $font-calibri: "Calibri", "Helvetiva Neue", Helvetica !default;
+$font-proxima: "Proxima", "Helvetiva Neue", Helvetiva !default;
+$font-proxima-semi: "Proxima Semi", "Helvetiva Neue", Helvetiva !default;
 $border-radius-base: 0 !default;
 $border-radius-large: 0 !default;
 $border-radius-small: 0 !default;
@@ -57,9 +69,12 @@ $instagram: #396d9a !default;
   color: $brand-title;
 }
 .brand-milk { color: $brand-milk; }
-.white {
-  color: $body-bg;
-}
+.brand-purple { color: $brand-purple; }
+.brand-green { color: $brand-green; }
+.brand-brown { color: $brand-brown; }
+.white { color: $body-bg; }
+.font-proxima { font-family: $font-proxima; }
+.font-proxima-semi { font-family: $font-proxima-semi; }
 a,
 .btn {
   cursor: pointer;
@@ -563,6 +578,7 @@ header {
   width: 100%;
   position: fixed;
   text-align: center;
+  z-index: 10;
   .hamburger {
     position: relative;
     .ham-menu {
@@ -714,17 +730,26 @@ footer {
   margin-top: 0;
 }
 .aboutus .about-us-desc {
-  margin: 100px 0;
+  margin-top: 150px;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
   h2 {
     margin-bottom: 20px;
     font-size: 70px;
   }
-  p { text-align: justify; }
+  p {
+    text-align: justify;
+    font-size: 18px;
+  }
 }
 .color-blue {
-    color: #17adbb;
-    font-size: 20px;
-    text-align: center!important;
+  color: #17adbb;
+  font-size: 22px !important;
+  text-align: center!important;
 }
 @import "harsh";
 @import "mobile";

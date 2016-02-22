@@ -136,6 +136,7 @@
   .paneer-inner {
     position: absolute;
   }
+  .paneer-inner { top: 39%; }
   .milk-package,
   .dahi-package {
     top: 0;
@@ -158,8 +159,7 @@
   //  }
   .paneer-inner {
     .paneer-txt {
-      left: 8%;
-      top: 26%;
+      left: 10%;
     }
   }
   .paneer-package {
@@ -180,16 +180,17 @@
 .butn {
   background-color: $brand-primary;
   color: $body-bg;
-  border: 1px solid $body-bg;
+  border: 2px solid $body-bg;
   @include transition(all 300ms ease);
   &:hover {
-    border: 1px solid $body-bg;
+    border: 2px solid $body-bg;
     background-color: $body-bg;
     color: $brand-primary;
     @include transition(all 300ms ease);
   }
 }
 .button-blue {
+  margin-top: 20px;
   background: $body-bg;
   color: $button-color;
   border: 2px solid $button-color;
@@ -366,4 +367,7 @@ table.table-curved {
     width: 92%;
     transform: translate(-47%, -50%);
   }
+}
+.home-title {
+  font-size: 120px;
 }
