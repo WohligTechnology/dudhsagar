@@ -96,8 +96,8 @@ a,
 body {
   height: auto !important;
   font-family: $font-family-sans-serif;
-  overflow: none !important;
-  // overflow-y: scroll !important;
+  overflow-x: hidden !important;
+  overflow-y: scroll !important;
 }
 img.loading {
   text-align: center;
@@ -191,9 +191,11 @@ a:hover {
 // HOME
 // /////////////////////////
 .home-logo {
-  img {
-    width: 100%;
-  }
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  img { width: 100%; }
 }
 .abt-slider {
   position: relative;
