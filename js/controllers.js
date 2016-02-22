@@ -64,8 +64,8 @@ angular.module('phonecatControllers', ['templateservicemod', 'navigationservice'
     $timeout(function() {
       $('.fullpage').fullpage();
 
-      console.log($stateParams.name);
-      $scope.homeval = $stateParams.name;
+      // console.log($stateParams.name);
+      // $scope.homeval = $stateParams.name;
       switch ($scope.homeval) {
         //		  case "contact":
         //          $.fn.fullpage.moveTo(6);
@@ -155,7 +155,7 @@ angular.module('phonecatControllers', ['templateservicemod', 'navigationservice'
         switch (id) {
           case "slim":
             $scope.milkJSON = {
-              image: 'img/milk-slim.png',
+              image: 'img/products/slim_pack.png',
               title: 'Slim',
               subtitle: 'Slim Milk',
               desc: 'With the richness of balanced cream and milk, Adya\'s Classic standardised milk is rich in proteins and calcium to help build strong bones!',
@@ -179,17 +179,17 @@ angular.module('phonecatControllers', ['templateservicemod', 'navigationservice'
                 image: 'img/products/pack_milk.png',
                 url: 'classic'
               }, {
-                image: 'img/milk-nourish.png',
+                image: 'img/products/nourish_pack.png',
                 url: 'nourish'
               }, {
-                image: 'img/milk-health.png',
+                image: 'img/products/health_pack.png',
                 url: 'health'
               }]
             };
             break;
           case "nourish":
             $scope.milkJSON = {
-              image: 'img/milk-nourish.png',
+              image: 'img/products/nourish_pack.png',
               title: 'Nourish',
               subtitle: 'Nourished Milk',
               desc: 'With the richness of balanced cream and milk, Adya\'s Classic standardised milk is rich in proteins and calcium to help build strong bones!',
@@ -210,20 +210,20 @@ angular.module('phonecatControllers', ['templateservicemod', 'navigationservice'
                 value: '0g'
               }],
               variants: [{
-                image: 'img/milk-slim.png',
+                image: 'img/products/slim_pack.png',
                 url: 'slim'
               }, {
                 image: 'img/products/pack_milk.png',
                 url: 'classic'
               }, {
-                image: 'img/milk-health.png',
+                image: 'img/products/health_pack.png',
                 url: 'health'
               }]
             };
             break;
           case "health":
             $scope.milkJSON = {
-              image: 'img/milk-health.png',
+              image: 'img/products/health_pack.png',
               title: 'Health',
               subtitle: 'Helathy Milk',
               desc: 'With the richness of balanced cream and milk, Adya\'s Classic standardised milk is rich in proteins and calcium to help build strong bones!',
@@ -244,10 +244,10 @@ angular.module('phonecatControllers', ['templateservicemod', 'navigationservice'
                 value: '0g'
               }],
               variants: [{
-                image: 'img/milk-slim.png',
+                image: 'img/products/slim_pack.png',
                 url: 'slim'
               }, {
-                image: 'img/milk-nourish.png',
+                image: 'img/products/nourish_pack.png',
                 url: 'nourish'
               }, {
                 image: 'img/products/pack_milk.png',
@@ -278,13 +278,13 @@ angular.module('phonecatControllers', ['templateservicemod', 'navigationservice'
                 value: '0g'
               }],
               variants: [{
-                image: 'img/milk-slim.png',
+                image: 'img/products/slim_pack.png',
                 url: 'slim'
               }, {
-                image: 'img/milk-nourish.png',
+                image: 'img/products/nourish_pack.png',
                 url: 'nourish'
               }, {
-                image: 'img/milk-health.png',
+                image: 'img/products/health_pack.png',
                 url: 'health'
               }]
             };
