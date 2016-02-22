@@ -94,6 +94,7 @@ a,
   font-family: $font-funky;
 }
 body {
+  height: auto !important;
   font-family: $font-family-sans-serif;
   overflow-x: hidden!important;
   overflow-y: scroll!important;
@@ -194,6 +195,15 @@ a:hover {
   position: absolute;
   bottom: 0;
   left: 0;
+  .logo {
+    width: 150px;
+    height: auto;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -100%);
+    cursor: pointer;
+  }
   img { width: 100%; }
 }
 .abt-slider {
@@ -237,12 +247,9 @@ a:hover {
 .bg-contact {
   background-color: #EFEFEF;
 }
-.aboutus {
-  position: absolute;
-  top: 170px;
-}
 .about-bg {
-  background-color: #ffffff;
+  background-image: url('../img/home/section5.png');
+  background-size: cover;
 }
 // /////////////////////////
 // ABOUT US
@@ -555,7 +562,6 @@ a:hover {
 header {
   width: 100%;
   position: fixed;
-  z-index: 99;
   text-align: center;
   .hamburger {
     position: relative;
@@ -662,11 +668,13 @@ header {
   @include transform(translateY(-580px));
   opacity: 0;
   transition: all 500ms ease;
+  z-index: 1000;
 }
 .menu-in {
   @include transform(translateY(0px));
   opacity: 1;
   transition: all 500ms ease;
+  z-index: 1000;
 }
 .change-me {
   .ham-menu {
@@ -707,9 +715,11 @@ footer {
 }
 .aboutus .about-us-desc {
   margin: 100px 0;
-  p {
-    text-align: justify;
+  h2 {
+    margin-bottom: 20px;
+    font-size: 70px;
   }
+  p { text-align: justify; }
 }
 .color-blue {
     color: #17adbb;
