@@ -173,7 +173,6 @@
   background-image: url("../img/contact-bg.png");
   background-size: cover;
   z-index: 5;
-  //background-color: $brand-primary;
   padding: 100px 0 50px;
 }
 //// BUTTONS
@@ -356,7 +355,7 @@ table.table-curved {
 .milk-circle {
   width: 740px;
   height: 740px;
-  margin-left: -200px;
+  margin-left: -20%;
   position: relative;
   background-image: url("../img/product-circle.png");
   background-size: cover;

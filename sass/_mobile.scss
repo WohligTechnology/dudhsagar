@@ -67,6 +67,23 @@
   .adya-plant .plant-images .plant-one, .adya-plant .plant-images .plant-two { height: 300px; }
   .adya-plant .plant-images .plant-three, .adya-plant .plant-images .plant-four,
   .adya-plant .plant-images .plant-five, .adya-plant .plant-images .plant-six { height: 400px; }
+  // footer
+  .contact-bg {
+    background-size: contain;
+    background-repeat: no-repeat;
+  }
+  // MILK PAGE
+  .milk-circle {
+    @include square(600px);
+    margin-top: 100px;
+  }
+  .milk-pack .milk-details, .dahi-pack .dahi-details,
+  .paneer-pack .paneer-details { padding: 0; }
+  .prices .price-table td:last-child { padding: 2px 15px 0; }
+  .prices .dahi-price-table td + td,
+  .prices .paneer-price-table td + td { padding: 0 2px; }
+  .prices .price-table td:last-child { padding: 2px 5px 0; }
+  .dahi-pack, .paneer-pack { margin: 100px 0; }
 }
 @media (max-width: $screen-sm-max) {
   // Home
@@ -122,12 +139,9 @@
     .milk-details,
     .dahi-details,
     .paneer-details {
-      border-top: 1px solid black;
-      border-bottom: 1px solid black;
       border-left: none;
       border-right: none;
-      padding: 50px 0;
-      margin-bottom: 50px;
+      padding: 50px 0 0;
     }
   }
   .table-curved {
@@ -167,6 +181,12 @@
       height: 200px;
     }
   }
+  // MILK PAGE
+  .milk-circle {
+    @include square(500px);
+    margin: 0 auto;
+  }
+  .milk-variants { margin: 40px 0 50px; }
 }
 @media (max-width: $screen-xs-max) {
   // About us
@@ -361,6 +381,28 @@
     .plant-five { @include size(300px, 250px); }
     .plant-six { @include size(300px, 250px); }
   }
+  // Milk Page
+  .milk-circle { @include square(400px); }
+  .milk-pack .milk-details,
+  .dahi-pack .dahi-details,
+  .paneer-pack .paneer-details { margin: 0 20px; }
+  .milk-details .milk-detail p,
+  .dahi-details .dahi-detail p,
+  .paneer-details .paneer-detail p {
+    font-size: 14px;
+    line-height: 22px;
+  }
+  .milk-table { font-size: 12px; }
+  .prices .price-table td:first-child span { font-size: 16px; }
+  .prices .price-table td + td {
+    padding: 2px 15px 0;
+    font-size: 14px;
+  }
+  .prices .dahi-price-table td + td,
+  .prices .dahi-price-table td:last-child,
+  .prices .paneer-price-table td + td,
+  .prices .paneer-price-table td:last-child { padding: 2px 0 0; }
+  .prices .paneer-price-table td:first-child { padding: 0; }
 }
 // landscape
 @media (max-width: 480px) {
@@ -381,7 +423,6 @@
   }
   section#milk { min-height: 200px; }
   section#dhai { min-height: 200px; }
-  header .hamburger .menu { padding: 50px 0 0; }
   .menu-links {
     ul > li {
       margin-right: 10px !important;
@@ -411,4 +452,9 @@
   .contact-address { font-size: 12px; }
   // About Page
   .about { margin: 0 20px; }
+  // Milk Page
+  .milk-circle { @include square(250px); }
+  .prices .price-table td:first-child span { font-size: 12px; }
+  .prices .price-table td + td { font-size: 12px; }
+  table.table-curved td { padding: 8px 30px 0; }
 }
