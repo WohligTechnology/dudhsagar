@@ -9,41 +9,103 @@
   left: 0;
   transform: translate(0, 0);
 }
-.section.five {
-  padding: 0;
+.section.five { padding: 0; }
+.ab-footer { position: relative; }
+.bg-contact { background-color: $brand-primary; }
+
+@media (min-width: 1200px) {
+  .dahi .dahi-image { margin-top: -2px; }
 }
-.ab-footer {
-  position: relative;
+@media (max-width: 1200px) {
+  .dahi .dahi-image { margin-top: -2px; }
 }
-.bg-contact {
-  background-color: $brand-primary;
+
+@media (max-width: $screen-md-max) {
+  .home-title { font-size: 90px; }
 }
+
 @media (max-width: $screen-xs-max) {
-  .section.one {
-    padding-top: 110px;
-  }
-  .home-logo {
-    .logo {
-      width: 100px;
+  // header
+  header .logo {
+    margin: 0 auto;
+    .ham-menu {
+      position: absolute;
+      top: 15px;
+      left: -10%;
+      cursor: pointer;
+      z-index: 5;
+      padding: 10px;
+      background-color: #67322A;
+      border-radius: 50%;
+      span {
+        width: 25px;
+        height: 2px;
+        margin: 5px 0;
+        display: block;
+        background-color: #feba12;
+      }
     }
   }
-  .dahi .dahi-txt {
-    right: 0;
-  }
+  .section.one { padding-top: 110px; }
+  .home-logo .logo { width: 100px; }
+  .dahi .dahi-txt { right: 0; }
   .aboutus .about-us-desc {
     margin: 20px 0 0;
     padding: 20px;
   }
   .aboutus .about-us-desc {
-    h2 {
-      font-size: 24px;
-    }
-    p {
-      font-size: 14px;
-    }
+    p { font-size: 16px; }
   }
   .color-blue {
-    font-size: 14px !important;
+    color: $brand-title;
+    font-size: 16px !important;
   }
   .contact-bg { padding: 50px 0; }
+  .milk-image-mob {
+    position: relative;
+    .start {
+      width: 150%;
+      margin: 20px 0 -3% -25%;
+    }
+  }
+  .milk .milk-txt {
+    left: 20%;
+    top: 38%;
+    text-align: center;
+  }
+  .milk_var {
+    width: 30%;
+    position: absolute;
+    bottom: 0;
+    left: 38%;
+  }
+  .dahi-section { margin-top: 50px; }
+  .dahi .dahi-txt {
+    width: 100% !important;
+    position: relative;
+    text-align: center;
+    margin-bottom: -40px;
+    transform: translateY(0);
+  }
+  .paneer .paneer-inner {
+    position: relative;
+    margin: 50px 0 -150px;
+    .paneer-txt {
+      width: 100%;
+      left: 0;
+      text-align: center;
+      position: relative;
+      transform: translateY(0);
+    }
+  }
+  .paneer .paneer-image {
+    width: 200%;
+    margin-left: -42%;
+  }
+}
+
+@media (max-width: 480px) {
+  .home-title, .aboutus .about-us-desc h2 { font-size: 50px; }
+  .paneer .paneer-inner { margin: 50px 0 -100px; }
+  .button-fix { padding: 6px 6px 4px; }
 }

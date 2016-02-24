@@ -96,7 +96,7 @@
     right: 70px;
   }
   .dahi .dahi-image {
-    margin-top: -30px;
+    // margin-top: -30px;
   }
   //  .dahi .dahi-package {
   //    top: 65px;
@@ -109,9 +109,6 @@
   //  .paneer .paneer-package {
   //    margin: 200px 0 0 60px;
   //  }
-  .title {
-    font-size: 32px;
-  }
   // About us
   .team-members {
     .manan,
@@ -202,7 +199,7 @@
     }
   }
   .dahi .dahi-image {
-    margin-top: -15px;
+    // margin-top: -15px;
   }
   .menu-links {
     ul > li {
@@ -276,17 +273,8 @@
   .paneer .dahi-txt,
   .paneer .paneer-txt {
     width: 30%;
-    .title {
-      font-size: 24px;
-      margin: 0;
-    }
-    p {
-      font-size: 12px;
-    }
-  }
-  .button-fix {
-    padding: 5px 5px 4px;
-    font-size: 12px;
+    .title { margin: 0; }
+    p { font-size: 12px; }
   }
   .aboutus {
     padding-bottom: 10px;
