@@ -12,6 +12,11 @@
 .section.five { padding: 0; }
 .ab-footer { position: relative; }
 .bg-contact { background-color: $brand-primary; }
+.home-paneer-title {
+  position: absolute;
+  top: 18%;
+  left: 10%;
+}
 
 @media (min-width: 1200px) {
   .dahi .dahi-image { margin-top: -2px; }

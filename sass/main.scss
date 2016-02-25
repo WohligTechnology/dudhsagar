@@ -782,13 +782,15 @@ footer {
   text-align: center!important;
 }
 .home-header {
-  position: absolute;
-  top: calc(101% - 4px);
-  z-index: 999;
+  opacity: 0;
+  @include transition(all ease 300ms);
+  @include transform(translateY (-250px));
   &.affix {
     position: fixed;
-    top: 0px;
+    top: 0;
+    @include transform(translateY (-0px));
     z-index: 999;
+    opacity: 1;
   }
 }
 @import "harsh";
