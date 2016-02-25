@@ -1,0 +1,85 @@
+<header ng-controller="headerctrl" class="sticky-bottom home-header" scroll>
+  <!-- <nav class="navbar navbar-default navbar-fixed-top">
+    <div class="container">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#nav-collapse" aria-expanded="false">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="#/home"><img src="img/logo.png" alt="logo" width="20"> </a>
+        </div>
+
+        <div class="collapse navbar-collapse" id="nav-collapse">
+               <div ng-include="template.menu" class="template menu"></div>
+        </div>
+    </div>
+</nav> -->
+  <nav>
+<!--    <div class="header-up">-->
+      <div class="hamburger {{changeColor}}">
+        <div class="ham-menu hidden-xs"  ng-click="getnav();">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+        <div class="menu {{showme}}">
+          <!-- <div class="menu-links">
+            <ul>
+              <li><a href="#/home" title="Home">Home</a></li>
+              <li class="rel"><a href="#/overview" title="Overview">Overview</a>
+                <ul class="sub-menu">
+                  <li><a href="#/aboutus" title="About us">About us</a></li>
+                  <li><a href="#/aboutus#team" title="Team">Team</a></li>
+                </ul>
+              </li>
+              <li class="rel"><a href="#/products" title="Products">Products</a>
+                <ul class="sub-menu">
+                  <li><a href="#/milk" title="Milk">Milk</a></li>
+                  <li><a href="#/paneer" title="Paneer">Paneer</a></li>
+                  <li><a href="#/dahi" title="Dahi">Dahi</a></li>
+                </ul>
+              </li>
+              <li><a href="#/plant" title="Plant">Plant</a></li>
+              <li><a href="#/media" title="Media corner">Media corner</a></li>
+              <li><a href="#/contactus" title="Contact us">Contact us</a></li>
+            </ul><br>
+          </div> -->
+          <div class="menu-links">
+            <ul>
+              <li><a href="#/milk" title="Milk">
+                <div class="menu-images"><img src="img/products/milk.png" alt="Milk" class="img-responsive"></div>
+                <span>Milk</span></a></li>
+              <li><a href="#/dahi" title="Dahi">
+                <div class="menu-images"><img src="img/products/dahi.png" alt="Dahi" class="img-responsive"></div>
+                <span>Dahi</span></a></li>
+              <li><a href="#/paneer" title="Paneer">
+                <div class="menu-images"><img src="img/products/paneer.png" alt="Paneer" class="img-responsive"></div>
+                <span>Paneer</span></a></li>
+              <li>
+                <ul class="menu-link-list text-left">
+                  <li><p><a href="#/plant" title="Plant">Plant</a></p></li>
+                  <li><p><a href="#/aboutus" title="About us">About us</p></li>
+                  <li><p><a href="#/careers" title="Careers">Careers</a></p></li>
+                  <li><p><a href="#/contactus" title="Contact us">Contact us</a></p></li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+          <!-- <div class="pattern-white pattern-white-home"></div> -->
+        </div>
+      </div>
+      <div class="logo">
+        <div class="ham-menu hidden-sm hidden-md hidden-lg"  ng-click="getnav();">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+        <a href="#/home">
+          <img src="img/logo_white_top.png" alt="" class="img-responsive">
+        </a>
+      </div>
+<!--    </div>-->
+  </nav>
+</header>

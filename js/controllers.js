@@ -7,6 +7,7 @@ angular.module('phonecatControllers', ['templateservicemod', 'navigationservice'
   TemplateService.title = $scope.menutitle;
   $scope.navigation = NavigationService.getnav();
   TemplateService.footer = "views/section/footer.html";
+  TemplateService.header = "views/section/header.html";
   $scope.section = {
     one: "views/section/section1.html",
     two: "views/section/section2.html",
@@ -157,20 +158,20 @@ angular.module('phonecatControllers', ['templateservicemod', 'navigationservice'
             $scope.milkJSON = {
               image: 'img/products/slim_pack.png',
               title: 'Slim',
-              subtitle: 'Slim Milk',
+              subtitle: 'Double Toned Milk',
               desc: 'With the richness of balanced cream and milk, Adya\'s Classic standardised milk is rich in proteins and calcium to help build strong bones!',
               table: [{
                 property: 'Energy',
-                value: '73kcal'
+                value: '45.9kcal'
               }, {
                 property: 'Total Fat',
-                value: '4.5g'
+                value: '1.5g'
               }, {
                 property: 'Total Carbohydrate',
-                value: '4.7g'
+                value: '5.0g'
               }, {
                 property: 'Protein',
-                value: '3.0g'
+                value: '3.1g'
               }, {
                 property: 'Added Sugar',
                 value: '0g'
@@ -191,14 +192,14 @@ angular.module('phonecatControllers', ['templateservicemod', 'navigationservice'
             $scope.milkJSON = {
               image: 'img/products/nourish_pack.png',
               title: 'Nourish',
-              subtitle: 'Nourished Milk',
+              subtitle: 'Cow Milk',
               desc: 'With the richness of balanced cream and milk, Adya\'s Classic standardised milk is rich in proteins and calcium to help build strong bones!',
               table: [{
                 property: 'Energy',
-                value: '73kcal'
+                value: '63.6kcal'
               }, {
                 property: 'Total Fat',
-                value: '4.5g'
+                value: '3.5g'
               }, {
                 property: 'Total Carbohydrate',
                 value: '4.7g'
@@ -225,14 +226,14 @@ angular.module('phonecatControllers', ['templateservicemod', 'navigationservice'
             $scope.milkJSON = {
               image: 'img/products/health_pack.png',
               title: 'Health',
-              subtitle: 'Helathy Milk',
+              subtitle: 'Toned Milk',
               desc: 'With the richness of balanced cream and milk, Adya\'s Classic standardised milk is rich in proteins and calcium to help build strong bones!',
               table: [{
                 property: 'Energy',
-                value: '73kcal'
+                value: '57.8kcal'
               }, {
                 property: 'Total Fat',
-                value: '4.5g'
+                value: '3.0g'
               }, {
                 property: 'Total Carbohydrate',
                 value: '4.7g'

@@ -28,7 +28,7 @@ $brand-primary: #feba12 !default;
 $brand-success: #84ce3c !default;
 $brand-warning: #ffec39 !default;
 $brand-danger: #fc483f !default;
-$button-color:#0D58C8!default;
+$button-color: #0D58C8!default;
 $brand-info: #000072 !default;
 $brand-title: #0d58c8 !default;
 $brand-milk: #16aebd !default;
@@ -68,13 +68,27 @@ $instagram: #396d9a !default;
 .brand-title {
   color: $brand-title;
 }
-.brand-milk { color: $brand-milk; }
-.brand-purple { color: $brand-purple; }
-.brand-green { color: $brand-green; }
-.brand-brown { color: $brand-brown; }
-.white { color: $body-bg; }
-.font-proxima { font-family: $font-proxima; }
-.font-proxima-semi { font-family: $font-proxima-semi; }
+.brand-milk {
+  color: $brand-milk;
+}
+.brand-purple {
+  color: $brand-purple;
+}
+.brand-green {
+  color: $brand-green;
+}
+.brand-brown {
+  color: $brand-brown;
+}
+.white {
+  color: $body-bg;
+}
+.font-proxima {
+  font-family: $font-proxima;
+}
+.font-proxima-semi {
+  font-family: $font-proxima-semi;
+}
 a,
 .btn {
   cursor: pointer;
@@ -219,7 +233,9 @@ a:hover {
     transform: translate(-50%, -100%);
     cursor: pointer;
   }
-  img { width: 100%; }
+  img {
+    width: 100%;
+  }
 }
 .abt-slider {
   position: relative;
@@ -269,10 +285,12 @@ a:hover {
 // /////////////////////////
 // ABOUT US
 // /////////////////////////
-.about{
+.about {
   margin: 0 200px;
   text-align: justify;
-  h2 { margin-bottom: 50px; }
+  h2 {
+    margin-bottom: 50px;
+  }
 }
 .team-members {
   margin-bottom: 20px;
@@ -354,7 +372,9 @@ a:hover {
   }
 }
 .contact-address {
-  h4 { margin: 80px 0 40px; }
+  h4 {
+    margin: 80px 0 40px;
+  }
 }
 .address {
   margin: 0;
@@ -365,7 +385,10 @@ a:hover {
 .contact-add {
   margin-top: 75px;
 }
-.add, .add-head { font-size: 16px; }
+.add,
+.add-head {
+  font-size: 16px;
+}
 .corporate-address {
   margin-right: 20px;
 }
@@ -443,7 +466,10 @@ a:hover {
     }
   }
 }
-.dahi-pack, .paneer-pack { margin: 100px; }
+.dahi-pack,
+.paneer-pack {
+  margin: 100px;
+}
 .dahi-title {
   .dahi-text {
     margin-bottom: 0;
@@ -493,7 +519,9 @@ a:hover {
     margin-top: 20px;
     ul li {
       width: 32.5%;
-      img { width: 110%; }
+      img {
+        width: 110%;
+      }
     }
   }
 }
@@ -695,7 +723,9 @@ header {
 .change-me {
   .ham-menu {
     background-color: $brand-primary !important;
-    span { background-color: $brand-brown !important; }
+    span {
+      background-color: $brand-brown !important;
+    }
   }
 }
 .inline {
@@ -750,6 +780,16 @@ footer {
   color: #17adbb;
   font-size: 22px !important;
   text-align: center!important;
+}
+.home-header {
+  position: absolute;
+  top: calc(101% - 4px);
+  z-index: 999;
+  &.affix {
+    position: fixed;
+    top: 0px;
+    z-index: 999;
+  }
 }
 @import "harsh";
 @import "home";
