@@ -15,10 +15,10 @@ angular.module('phonecatControllers', ['templateservicemod', 'navigationservice'
     five: "views/section/section5.html",
     // six: "views/section/footer.
   };
-  $scope.changeFullPage = function(no) {
-    console.log(no);
-    $.fn.fullpage.moveTo(no);
-  };
+  // $scope.changeFullPage = function(no) {
+  //   console.log(no);
+  //   $.fn.fullpage.moveTo(no);
+  // };
 
   //
   // $scope.$on('$viewContentLoaded', function() {
@@ -54,10 +54,10 @@ angular.module('phonecatControllers', ['templateservicemod', 'navigationservice'
   //  });
 
 
-  $scope.changeFullPage = function(no) {
-    console.log(no);
-    $.fn.fullpage.moveTo(no);
-  };
+  // $scope.changeFullPage = function(no) {
+  //   console.log(no);
+  //   $.fn.fullpage.moveTo(no);
+  // };
 
 
   $scope.$on('$viewContentLoaded', function() {
