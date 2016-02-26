@@ -195,27 +195,6 @@ a:hover {
 .section.header {
   height: 95px;
 }
-////////
-// enquire btn
-////////
-.enquire-now {
-  position: fixed;
-  top: 185px;
-  right: -48px;
-  z-index: 50;
-  @include transform(rotate(-90deg));
-  .enquire-btn {
-    border: 2px solid $brand-primary;
-    padding: 10px 15px;
-    color: black;
-    @include transition(all 500ms ease);
-    &:hover {
-      background-color: $brand-primary;
-      color: black;
-      @include transition(all 500ms ease);
-    }
-  }
-}
 // /////////////////////////
 // HOME
 // /////////////////////////
@@ -403,34 +382,34 @@ a:hover {
   h2 {
     margin-bottom: 50px;
   }
-}
-.form-group {
-  input,
-  textarea {
-    background: transparent;
-    border: 1px solid white;
+  .form-group {
+    input,
+    textarea {
+      background: transparent;
+      border: 1px solid white;
+    }
+    textarea {
+      height: 200px;
+      resize: none;
+    }
   }
-  textarea {
-    height: 200px;
-    resize: none;
+  .send-button {
+    margin-top: 30px;
+    text-align: center;
+    .submit {
+      padding: 8px 34px;
+      border: 1px solid $brand-title;
+      background: $body-bg;
+      @include transition(all 300ms linear);
+      &:hover {
+        border: 1px solid white;
+        @include transition(all 300ms linear);
+      }
+    }
   }
 }
 .top-ten {
   margin-top: 10px;
-}
-.send-button {
-  margin-top: 30px;
-  text-align: center;
-  .submit {
-    padding: 8px 34px;
-    border: 1px solid $brand-title;
-    background: $body-bg;
-    @include transition(all 300ms linear);
-    &:hover {
-      border: 1px solid white;
-      @include transition(all 300ms linear);
-    }
-  }
 }
 // /////////////////////////
 // DAHI

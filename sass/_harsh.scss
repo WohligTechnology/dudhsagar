@@ -370,3 +370,28 @@ table.table-curved {
 .home-title {
   font-size: 120px;
 }
+
+
+////////
+// enquire btn
+////////
+.mini-enquire {
+  position: fixed;
+  top: 185px;
+  right: -48px;
+  z-index: 50;
+  .enquire-now {
+    @include transform(rotate(-90deg));
+    .enquire-btn {
+      border: 2px solid $brand-primary;
+      padding: 10px 15px;
+      color: black;
+      @include transition(all 500ms ease);
+      &:hover {
+        background-color: $brand-primary;
+        color: black;
+        @include transition(all 500ms ease);
+      }
+    }
+  }
+}
