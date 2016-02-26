@@ -37,11 +37,8 @@
                 <table class="price-table">
                   <tr>
                     <td><span class="text-up text-bold">Available in:</span></td>
-                    <td>
-                      <span>500ml</span>
-                    </td>
-                    <td>
-                      <span>1 litre</span>
+                    <td ng-repeat="price in milkJSON.prices">
+                      <span>{{price.value}}</span>
                     </td>
                   </tr>
                 </table>

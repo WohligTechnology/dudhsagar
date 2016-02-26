@@ -176,6 +176,11 @@ angular.module('phonecatControllers', ['templateservicemod', 'navigationservice'
                 property: 'Added Sugar',
                 value: '0g'
               }],
+              prices: [{
+                value: '500ml'
+              }, {
+                value: '1 litre'
+              }],
               variants: [{
                 image: 'img/products/pack_milk.png',
                 url: 'classic'
@@ -209,6 +214,11 @@ angular.module('phonecatControllers', ['templateservicemod', 'navigationservice'
               }, {
                 property: 'Added Sugar',
                 value: '0g'
+              }],
+              prices: [{
+                value: '200ml'
+              }, {
+                value: '500ml'
               }],
               variants: [{
                 image: 'img/products/slim_pack.png',
@@ -244,6 +254,11 @@ angular.module('phonecatControllers', ['templateservicemod', 'navigationservice'
                 property: 'Added Sugar',
                 value: '0g'
               }],
+              prices: [{
+                value: '500ml'
+              }, {
+                value: '1 litre'
+              }],
               variants: [{
                 image: 'img/products/slim_pack.png',
                 url: 'slim'
@@ -277,6 +292,11 @@ angular.module('phonecatControllers', ['templateservicemod', 'navigationservice'
               }, {
                 property: 'Added Sugar',
                 value: '0g'
+              }],
+              prices: [{
+                value: '500ml'
+              }, {
+                value: '1 litre'
               }],
               variants: [{
                 image: 'img/products/slim_pack.png',
