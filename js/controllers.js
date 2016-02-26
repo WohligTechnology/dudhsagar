@@ -159,7 +159,7 @@ angular.module('phonecatControllers', ['templateservicemod', 'navigationservice'
               image: 'img/products/slim_pack.png',
               title: 'Slim',
               subtitle: 'Double Toned Milk',
-              desc: 'With the richness of balanced cream and milk, Adya\'s Classic standardised milk is rich in proteins and calcium to help build strong bones!',
+              desc: 'With the richness of balanced cream and milk, Adya\'s Classic standardised milk is rich in protein and calcium to help build strong bones!',
               table: [{
                 property: 'Energy',
                 value: '45.9kcal'
@@ -198,7 +198,7 @@ angular.module('phonecatControllers', ['templateservicemod', 'navigationservice'
               image: 'img/products/nourish_pack.png',
               title: 'Nourish',
               subtitle: 'Cow Milk',
-              desc: 'With the richness of balanced cream and milk, Adya\'s Classic standardised milk is rich in proteins and calcium to help build strong bones!',
+              desc: 'With the richness of balanced cream and milk, Adya\'s Classic standardised milk is rich in protein and calcium to help build strong bones!',
               table: [{
                 property: 'Energy',
                 value: '63.6kcal'
@@ -237,7 +237,7 @@ angular.module('phonecatControllers', ['templateservicemod', 'navigationservice'
               image: 'img/products/health_pack.png',
               title: 'Health',
               subtitle: 'Toned Milk',
-              desc: 'With the richness of balanced cream and milk, Adya\'s Classic standardised milk is rich in proteins and calcium to help build strong bones!',
+              desc: 'With the richness of balanced cream and milk, Adya\'s Classic standardised milk is rich in protein and calcium to help build strong bones!',
               table: [{
                 property: 'Energy',
                 value: '57.8kcal'
@@ -276,7 +276,7 @@ angular.module('phonecatControllers', ['templateservicemod', 'navigationservice'
               image: 'img/products/pack_milk.png',
               title: 'Classic',
               subtitle: 'Standardized Milk',
-              desc: 'With the richness of balanced cream and milk, Adya\'s Classic standardised milk is rich in proteins and calcium to help build strong bones!',
+              desc: 'With the richness of balanced cream and milk, Adya\'s Classic standardised milk is rich in protein and calcium to help build strong bones!',
               table: [{
                 property: 'Energy',
                 value: '73kcal'
