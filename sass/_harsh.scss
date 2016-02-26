@@ -375,12 +375,12 @@ table.table-curved {
 ////////
 // enquire btn
 ////////
-.mini-enquire {
-  position: fixed;
-  top: 185px;
-  right: -48px;
-  z-index: 50;
+//.mini-enquire {
   .enquire-now {
+    position: fixed;
+    top: 185px;
+    right: -48px;
+    z-index: 50;
     @include transform(rotate(-90deg));
     .enquire-btn {
       border: 2px solid $brand-primary;
@@ -394,4 +394,4 @@ table.table-curved {
       }
     }
   }
-}
+//}
