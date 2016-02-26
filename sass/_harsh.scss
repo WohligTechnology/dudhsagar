@@ -337,11 +337,14 @@ table.table-curved {
       font-size: 18px;
       //margin-top: 6px;
     }
-    td:last-child { padding-right: 25px; }
+    td:last-child { padding-right: 15px; }
+  }
+  .milk-prices {
+    td:last-child { padding-right: 10px; }
   }
   .dahi-price-table, .paneer-price-table {
-    td + td { padding: 0 5px; }
-    td:last-child { padding-right: 5px; }
+    //td + td { padding: 0 5px; }
+    //td:last-child { padding-right: 5px; }
   }
   .paneer-price-table {
     font-size: 14px;
@@ -349,7 +352,7 @@ table.table-curved {
       padding-left: 10px;
       span { font-size: 16px; }
     }
-    td:last-child { padding-right: 10px; }
+    //td:last-child { padding-right: 10px; }
   }
 }
 .milk-circle {
@@ -367,9 +370,8 @@ table.table-curved {
     transform: translate(-47%, -50%);
   }
 }
-.home-title {
-  font-size: 120px;
-}
+.home-title { font-size: 120px; }
+.other-header { position: absolute; }
 
 
 ////////

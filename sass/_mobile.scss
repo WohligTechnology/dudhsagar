@@ -79,10 +79,10 @@
   }
   .milk-pack .milk-details, .dahi-pack .dahi-details,
   .paneer-pack .paneer-details { padding: 0; }
-  .prices .price-table td:last-child { padding: 2px 15px 0; }
+  //.prices .price-table td:last-child { padding: 2px 15px 0; }
   .prices .dahi-price-table td + td,
-  .prices .paneer-price-table td + td { padding: 0 2px; }
-  .prices .price-table td:last-child { padding: 2px 5px 0; }
+  //.prices .paneer-price-table td + td { padding: 0 2px; }
+  //.prices .price-table td:last-child { padding: 2px 5px 0; }
   .dahi-pack, .paneer-pack { margin: 100px 0; }
 }
 @media (max-width: $screen-sm-max) {
@@ -383,13 +383,13 @@
   .milk-table { font-size: 12px; }
   .prices .price-table td:first-child span { font-size: 16px; }
   .prices .price-table td + td {
-    padding: 2px 15px 0;
+    padding: 2px 5px 0;
     font-size: 14px;
   }
   .prices .dahi-price-table td + td,
   .prices .dahi-price-table td:last-child,
   .prices .paneer-price-table td + td,
-  .prices .paneer-price-table td:last-child { padding: 2px 0 0; }
+  //.prices .paneer-price-table td:last-child { padding: 2px 0 0; }
   .prices .paneer-price-table td:first-child { padding: 0; }
 }
 // landscape
