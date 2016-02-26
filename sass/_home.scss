@@ -68,6 +68,7 @@
   .contact-bg { padding: 50px 0; }
   .milk-image-mob {
     position: relative;
+    overflow: hidden;
     .start {
       width: 150%;
       margin: 20px 0 -3% -25%;
@@ -92,9 +93,15 @@
     margin-bottom: -40px;
     transform: translateY(0);
   }
+  .home-paneer-title {
+    margin-top: 50px;
+    position: relative;
+    left: 0;
+    text-align: center;
+  }
   .paneer .paneer-inner {
     position: relative;
-    margin: 50px 0 -150px;
+    margin-top: 0 !important;
     .paneer-txt {
       width: 100%;
       left: 0;
@@ -102,10 +109,6 @@
       position: relative;
       transform: translateY(0);
     }
-  }
-  .paneer .paneer-image {
-    width: 200%;
-    margin-left: -42%;
   }
 }
 
