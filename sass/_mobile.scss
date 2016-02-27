@@ -84,6 +84,13 @@
   //.prices .paneer-price-table td + td { padding: 0 2px; }
   //.prices .price-table td:last-child { padding: 2px 5px 0; }
   .dahi-pack, .paneer-pack { margin: 100px 0; }
+
+  // ENQUIRE NOW
+  .mini-enquire .enquire-main {
+    width: 500px;
+    padding: 28px 60px 19px;
+  }
+  .mini-enquire .ebutton { right: 456px; }
 }
 @media (max-width: $screen-sm-max) {
   // Home
@@ -392,6 +399,20 @@
   .prices .paneer-price-table td + td,
   //.prices .paneer-price-table td:last-child { padding: 2px 0 0; }
   .prices .paneer-price-table td:first-child { padding: 0; }
+
+  // ENQUIRE NOW
+  .mini-enquire .enquire-main {
+    width: 100%;
+    right: -750px;
+    padding: 28px 70px 19px 40px;
+    transition: all 500ms cubic-bezier(0.81, 0, 0.15, 1.03);
+  }
+  .enquire-out {
+    right: auto;
+    left: 30px;
+    transition: all 500ms cubic-bezier(0.81, 0, 0.15, 1.03);
+  }
+  .mini-enquire .ebutton { right: auto; left: -44px; }
 }
 // landscape
 @media (max-width: 480px) {
@@ -448,4 +469,8 @@
   table.table-curved td { padding: 8px 30px 0; }
   .prices .dahi-price-table td:first-child { padding-left: 0px; }
   .prices .paneer-price-table td:last-child { padding: 0 10px 0 0px; }
+
+  // ENQUIRE NOW
+  .mini-enquire .enquire-main { padding: 23px 60px 12px 30px; }
+  .mini-enquire .enquire-main .form-group textarea.form-control { height: 100px; }
 }
