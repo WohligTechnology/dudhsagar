@@ -64,6 +64,7 @@ $instagram: #396d9a !default;
 }
 .primary {
   color: $brand-primary;
+  &:hover, &:active, &:focus { color: $brand-primary; }
 }
 .brand-title {
   color: $brand-title;
@@ -93,6 +94,9 @@ a,
 .btn {
   cursor: pointer;
 }
+a, button {
+  &:focus { outline: none !important; }
+}
 .btn-white {
   border: 1px solid #fff;
   background-color: #fff;
@@ -110,6 +114,9 @@ a,
 }
 .brand-title-bg {
   background-color: $brand-title;
+}
+.brand-brown-bg {
+  background-color: $brand-brown;
 }
 .title {
   font-size: 45px;

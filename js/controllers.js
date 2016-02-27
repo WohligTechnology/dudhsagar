@@ -130,6 +130,23 @@ angular.module('phonecatControllers', ['templateservicemod', 'navigationservice'
   $scope.menutitle = NavigationService.makeactive("Dahi");
   TemplateService.title = $scope.menutitle;
   $scope.navigation = NavigationService.getnav();
+  $scope.section = {
+    enquire: "views/content/enquiry.html"
+  };
+  $scope.enquiry = function() {
+    if ($scope.showme == "enquire-out") {
+      $scope.showme = "enquire-in";
+      $scope.ebutton = "";
+    } else {
+      $scope.showme = "enquire-out";
+      $scope.ebutton = "ebutton";
+    }
+  };
+  $scope.submitform = function(formenquire, formvalid) {
+    if (formenquire.$valid) {
+      $scope.formComplete = true;
+    }
+  };
 })
 
 .controller('MilkCtrl', function($scope, $state, TemplateService, NavigationService, $timeout, $stateParams, $document, $location) {
@@ -314,6 +331,24 @@ angular.module('phonecatControllers', ['templateservicemod', 'navigationservice'
       }
     }
     forMilkProduct(myid);
+
+    $scope.section = {
+      enquire: "views/content/enquiry.html"
+    };
+    $scope.enquiry = function() {
+      if ($scope.showme == "enquire-out") {
+        $scope.showme = "enquire-in";
+        $scope.ebutton = "";
+      } else {
+        $scope.showme = "enquire-out";
+        $scope.ebutton = "ebutton";
+      }
+    };
+    $scope.submitform = function(formenquire, formvalid) {
+      if (formenquire.$valid) {
+        $scope.formComplete = true;
+      }
+    };
   })
   .controller('PaneerCtrl', function($scope, TemplateService, NavigationService, $timeout) {
     //Used to name the .html file
@@ -321,6 +356,24 @@ angular.module('phonecatControllers', ['templateservicemod', 'navigationservice'
     $scope.menutitle = NavigationService.makeactive("Paneer");
     TemplateService.title = $scope.menutitle;
     $scope.navigation = NavigationService.getnav();
+
+    $scope.section = {
+      enquire: "views/content/enquiry.html"
+    };
+    $scope.enquiry = function() {
+      if ($scope.showme == "enquire-out") {
+        $scope.showme = "enquire-in";
+        $scope.ebutton = "";
+      } else {
+        $scope.showme = "enquire-out";
+        $scope.ebutton = "ebutton";
+      }
+    };
+    $scope.submitform = function(formenquire, formvalid) {
+      if (formenquire.$valid) {
+        $scope.formComplete = true;
+      }
+    };
   })
   .controller('PlantCtrl', function($scope, TemplateService, NavigationService, $timeout) {
     //Used to name the .html file

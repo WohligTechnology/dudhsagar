@@ -1,6 +1,9 @@
 <section class="">
-  <div class="enquire-now">
-    <a href="#/contactus#enquire" class="enquire-btn">Enquire Now</a>
+  <div class="mini-enquire">
+    <div class="enquire-now {{ebutton}}">
+      <a ng-click="enquiry();" class="enquire-btn">Enquire Now</a>
+    </div>
+    <section class="enquiry" ng-include="section.enquire"></section>
   </div>
   <div class="paneer-pack">
     <div class="container">

@@ -84,6 +84,7 @@
 /* ////////////////////////////
 * SECTION 2 (MILK)
 //////////////////////////// */
+.home { overflow: hidden; }
 .milk,
 .dahi,
 .paneer {
@@ -343,16 +344,16 @@ table.table-curved {
     td:last-child { padding-right: 10px; }
   }
   .dahi-price-table, .paneer-price-table {
-    //td + td { padding: 0 5px; }
-    //td:last-child { padding-right: 5px; }
+    td + td { padding: 0 10px; }
+    td:last-child { padding: 0 10px 0 5px; }
   }
+  .dahi-price-table td:first-child { padding-left: 10px; }
   .paneer-price-table {
     font-size: 14px;
     td:first-child {
-      padding-left: 10px;
       span { font-size: 16px; }
     }
-    //td:last-child { padding-right: 10px; }
+    td:last-child { padding: 0 10px 0 5px; }
   }
 }
 .milk-circle {
@@ -377,12 +378,14 @@ table.table-curved {
 ////////
 // enquire btn
 ////////
-//.mini-enquire {
+textarea { resize: none; }
+.mini-enquire {
   .enquire-now {
     position: fixed;
     top: 185px;
     right: -48px;
     z-index: 50;
+    transition: all 500ms cubic-bezier(0.81, 0, 0.15, 1.03);
     @include transform(rotate(-90deg));
     .enquire-btn {
       border: 2px solid $brand-primary;
@@ -396,4 +399,38 @@ table.table-curved {
       }
     }
   }
-//}
+  .enquire-main {
+    width: 600px;
+    padding: 28px 70px 19px;
+    position: fixed;
+    top: 135px;
+    right: -600px;
+    z-index: 50;
+    transition: all 500ms cubic-bezier(0.81, 0, 0.15, 1.03);
+    .form-group {
+      margin-bottom: 10px;
+      input.form-control {
+        height: 45px;
+        padding: 12px 12px 8px;
+      }
+      textarea.form-control {
+        height: 150px;
+        padding: 12px 12px;
+      }
+    }
+    .enquire-name, .enquire-number, .enquire-email, .enquire-button { display: inline-block; }
+    .enquire-name { width: 49%; }
+    .enquire-number { width: 49%; }
+    .enquire-email { width: 69%; }
+    .enquire-button {
+      width: 29%;
+      button {
+        width: 100%;
+        height: 45px;
+      }
+    }
+    .msgform-complete { margin-top: -10px; }
+  }
+  .enquire-out { right: 0; }
+  .ebutton { right: 556px; }
+}

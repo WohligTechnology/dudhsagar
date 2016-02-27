@@ -184,6 +184,7 @@
     margin: 0 auto;
   }
   .milk-variants { margin: 40px 0 50px; }
+  .prices .paneer-price-table td:last-child { padding: 0 20px 0 10px; }
 }
 @media (max-width: $screen-xs-max) {
   // About us
@@ -445,4 +446,6 @@
   .prices .price-table td:first-child span { font-size: 12px; }
   .prices .price-table td + td { font-size: 12px; }
   table.table-curved td { padding: 8px 30px 0; }
+  .prices .dahi-price-table td:first-child { padding-left: 0px; }
+  .prices .paneer-price-table td:last-child { padding: 0 10px 0 0px; }
 }
