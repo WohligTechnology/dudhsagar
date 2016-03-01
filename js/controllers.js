@@ -177,6 +177,7 @@ angular.module('phonecatControllers', ['templateservicemod', 'navigationservice'
               title: 'Slim',
               subtitle: 'Double Toned Milk',
               desc: 'Rich in protein with a very low fat content plus an ideal milk for weight conscious people. Adya Slim helps to reduce cholesterol levels and keeps your heart healthy.',
+              color: 'brand-slim',
               table: [{
                 property: 'Energy',
                 value: '45.9kcal'
@@ -216,6 +217,7 @@ angular.module('phonecatControllers', ['templateservicemod', 'navigationservice'
               title: 'Nourish',
               subtitle: 'Cow Milk',
               desc: 'The most natural milk which provides nourishment similar to that of Mother Cow. Adya Nourish provides a balanced mix of fat and protein contents.',
+              color: 'brand-nourish',
               table: [{
                 property: 'Energy',
                 value: '63.6kcal'
@@ -255,6 +257,7 @@ angular.module('phonecatControllers', ['templateservicemod', 'navigationservice'
               title: 'Health',
               subtitle: 'Toned Milk',
               desc: 'If you love the taste of milk but are wary of its fat content then go for Adya Health, which gives you a perfect blend of wholesome taste and nutrition.',
+              color: 'brand-health',
               table: [{
                 property: 'Energy',
                 value: '57.8kcal'
@@ -294,6 +297,7 @@ angular.module('phonecatControllers', ['templateservicemod', 'navigationservice'
               title: 'Classic',
               subtitle: 'Standardized Milk',
               desc: 'With the richness of taste and nutrition, Adya Classic consists of high protein and calcium which boosts our energy and builds strong bones!',
+              color: 'brand-milk',
               table: [{
                 property: 'Energy',
                 value: '73kcal'

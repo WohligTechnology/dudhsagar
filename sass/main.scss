@@ -32,6 +32,11 @@ $button-color: #0D58C8!default;
 $brand-info: #000072 !default;
 $brand-title: #0d58c8 !default;
 $brand-milk: #16aebd !default;
+$brand-slim: #EF4D73 !default;
+$brand-nourish: #693E98 !default;
+$brand-health: #1BAA4B !default;
+$brand-dahi: #78B341 !default;
+$brand-paneer: #ECBB15 !default;
 $brand-brown: #67322A !default;
 $brand-purple: #663c94 !default;
 $brand-green: #3a6f00 !default;
@@ -69,9 +74,12 @@ $instagram: #396d9a !default;
 .brand-title {
   color: $brand-title;
 }
-.brand-milk {
-  color: $brand-milk;
-}
+.brand-milk { color: $brand-milk; }
+.brand-slim { color: $brand-slim; }
+.brand-nourish { color: $brand-nourish; }
+.brand-health { color: $brand-health; }
+.brand-dahi { color: $brand-dahi; }
+.brand-paneer { color: $brand-paneer; }
 .brand-purple {
   color: $brand-purple;
 }
