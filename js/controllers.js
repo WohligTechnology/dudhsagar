@@ -176,7 +176,7 @@ angular.module('phonecatControllers', ['templateservicemod', 'navigationservice'
               image: 'img/products/slim_pack.png',
               title: 'Slim',
               subtitle: 'Double Toned Milk',
-              desc: 'Rich in protein with a very low fat content plus an ideal milk for weight conscious people. Adya Slim helps to reduce cholesterol levels and keeps your heart healthy.',
+              desc: 'Rich in protein with a very low fat content - an ideal milk for weight conscious people. Adya Slim helps to reduce cholesterol levels and keeps your heart healthy.',
               color: 'brand-slim',
               table: [{
                 property: 'Energy',
