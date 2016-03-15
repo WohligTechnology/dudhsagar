@@ -432,3 +432,42 @@ textarea { resize: none; }
   .enquire-out { right: 0; }
   .ebutton { right: 556px; }
 }
+
+
+// about New
+.life-at-adya {
+  margin: 50px 0;
+  h2 { margin: 50px 0; }
+  h3 {
+    margin: 50px 0 20px;
+    font-family: $font-proxima-semi;
+  }
+  .distribution {
+    margin-bottom: 100px;
+    p > span {
+      display: inline-block;
+      font-style: italic;
+    }
+  }
+  .processing p, .distribution p { margin-right: 50px; }
+  .cow {
+    img {
+      width: 80%;
+      margin: 0 auto;
+    }
+  }
+  .about-pattern {
+    background-color: white;
+    img { width: 100%; }
+  }
+}
+
+.vision {
+  .vision-image {
+    img {
+      margin: 50px auto;
+      width: 40%;
+    }
+  }
+  p { font-weight: 100; }
+}
