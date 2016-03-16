@@ -192,6 +192,10 @@
   }
   .milk-variants { margin: 40px 0 50px; }
   .prices .paneer-price-table td:last-child { padding: 0 20px 0 10px; }
+  .life-at-adya {
+    .procurement-image, .processing-image, .quality-control-image,
+    .distribution-image { margin-top: 60px; }
+  }
 }
 @media (max-width: $screen-xs-max) {
   // About us
@@ -413,6 +417,18 @@
     transition: all 500ms cubic-bezier(0.81, 0, 0.15, 1.03);
   }
   .mini-enquire .ebutton { right: auto; left: -44px; }
+
+  .life-at-adya {
+    .procurement-image, .processing-image, .quality-control-image,
+    .distribution-image {
+      width: 200px;
+      margin: 40px auto 0;
+      img { float: auto !important; }
+    }
+    h3, p { text-align: center; }
+    h3 { margin: 20px 0 !important; }
+    p { margin: 0 30px; }
+  }
 }
 // landscape
 @media (max-width: 480px) {
@@ -477,4 +493,16 @@
   // ENQUIRE NOW
   .mini-enquire .enquire-main { padding: 23px 60px 12px 30px; }
   .mini-enquire .enquire-main .form-group textarea.form-control { height: 100px; }
+
+  .life-at-adya {
+    h3 { font-size: 20px; }
+    p {
+      font-size: 12px;
+      margin: 0 10px !important;
+    }
+  }
+  .vision p {
+    margin: 0 10px;
+    font-size: 12px;
+  }
 }

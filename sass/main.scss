@@ -781,7 +781,8 @@ footer {
   text-align: center!important;
 }
 .home-header {
-  opacity: 0;
+  //opacity: 0;
+  display: none;
   @include transition(all ease 300ms);
   @include transform(translateY (-250px));
   &.affix {
@@ -789,7 +790,8 @@ footer {
     top: 0;
     @include transform(translateY (-0px));
     z-index: 999;
-    opacity: 1;
+    //opacity: 1;
+    display: block;
   }
 }
 @import "harsh";
