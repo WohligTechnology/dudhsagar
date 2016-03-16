@@ -386,6 +386,7 @@ textarea { resize: none; }
     transition: all 500ms cubic-bezier(0.81, 0, 0.15, 1.03);
     @include transform(rotate(-90deg));
     .enquire-btn {
+      background-color: #fff;
       border: 2px solid $brand-primary;
       padding: 10px 15px;
       color: black;
@@ -449,7 +450,6 @@ textarea { resize: none; }
       font-style: italic;
     }
   }
-  .processing p, .distribution p { margin-right: 50px; }
   .cow {
     img {
       width: 80%;
@@ -462,11 +462,42 @@ textarea { resize: none; }
   }
 }
 
+$vision-color: #3E3E3E !default;
+
 .vision {
-  .vision-image {
-    img {
-      margin: 50px auto;
-      width: 40%;
+  .vision-image img {
+    margin: 50px auto;
+    width: 40%;
+  }
+  .vision-text {
+    width: 535px;
+    margin: 50px auto;
+    font-family: $font-proxima-light;
+    span { display: inline-block; }
+    .a {
+      font-size: 24px;
+      margin-bottom: -65px;
+      color: lighten($vision-color, 0%);
+    }
+    .b {
+      margin: 25px 0 -30px;
+      font-size: 54px;
+      color: lighten($vision-color, 50%);
+      span {
+        margin-bottom: -10px;
+        font-size: 80px;
+        color: lighten($vision-color, 60%);
+      }
+    }
+    .c {
+      margin: 0 0 -20px 60px;
+      font-size: 60px;
+      color: lighten($vision-color, 45%);
+    }
+    .d {
+      margin-left: 280px;
+      font-size: 25px;
+      color: lighten($vision-color, 0%);
     }
   }
   p { font-weight: 100; }

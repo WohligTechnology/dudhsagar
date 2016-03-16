@@ -133,6 +133,7 @@ angular.module('phonecatControllers', ['templateservicemod', 'navigationservice'
   $scope.section = {
     enquire: "views/content/enquiry.html"
   };
+  $scope.formenquire = {};
   $scope.enquiry = function() {
     if ($scope.showme == "enquire-out") {
       $scope.showme = "enquire-in";
@@ -145,6 +146,14 @@ angular.module('phonecatControllers', ['templateservicemod', 'navigationservice'
   $scope.submitform = function(formenquire, formvalid) {
     if (formenquire.$valid) {
       $scope.formComplete = true;
+      $timeout(function () {
+        $scope.showme = "enquire-in";
+        $scope.ebutton = "";
+      }, 3000);
+      $timeout(function () {
+        $scope.formComplete = false;
+        $scope.formenquire = {};
+      }, 3500);
     }
   };
 })
@@ -161,6 +170,7 @@ angular.module('phonecatControllers', ['templateservicemod', 'navigationservice'
       "img/products/milk_pack.png",
       "img/products/milk_pack.png"
     ];
+    $scope.formenquire = {};
 
     var myid = $stateParams.id;
 
@@ -351,6 +361,14 @@ angular.module('phonecatControllers', ['templateservicemod', 'navigationservice'
     $scope.submitform = function(formenquire, formvalid) {
       if (formenquire.$valid) {
         $scope.formComplete = true;
+        $timeout(function () {
+          $scope.showme = "enquire-in";
+          $scope.ebutton = "";
+        }, 3000);
+        $timeout(function () {
+          $scope.formComplete = false;
+          $scope.formenquire = {};
+        }, 3500);
       }
     };
   })
@@ -360,6 +378,7 @@ angular.module('phonecatControllers', ['templateservicemod', 'navigationservice'
     $scope.menutitle = NavigationService.makeactive("Paneer");
     TemplateService.title = $scope.menutitle;
     $scope.navigation = NavigationService.getnav();
+    $scope.formenquire = {};
 
     $scope.section = {
       enquire: "views/content/enquiry.html"
@@ -373,9 +392,18 @@ angular.module('phonecatControllers', ['templateservicemod', 'navigationservice'
         $scope.ebutton = "ebutton";
       }
     };
+    $scope.refresh = {};
     $scope.submitform = function(formenquire, formvalid) {
       if (formenquire.$valid) {
         $scope.formComplete = true;
+        $timeout(function () {
+          $scope.showme = "enquire-in";
+          $scope.ebutton = "";
+        }, 3000);
+        $timeout(function () {
+          $scope.formComplete = false;
+          $scope.formenquire = {};
+        }, 3500);
       }
     };
   })
