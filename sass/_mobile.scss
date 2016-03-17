@@ -429,6 +429,27 @@
     h3 { margin: 20px 0 !important; }
     p { margin: 0 30px; }
   }
+  .vision .vision-text {
+    width: 370px;
+    .a { font-size: 18px; }
+    .b {
+      margin: 25px 0 -25px;
+      font-size: 38px;
+      span { font-size: 64px; }
+    }
+    .c {
+      margin: 0 0 -15px 45px;
+      font-size: 40px;
+    }
+    .d {
+      margin-left: 198px;
+      font-size: 17px;
+    }
+  }
+
+  .home-header {
+    display: block;
+  }
 }
 // landscape
 @media (max-width: 480px) {
@@ -502,7 +523,30 @@
     }
   }
   .vision p {
-    margin: 0 10px;
+    margin: 0 10px 10px;
     font-size: 12px;
+  }
+  .vision .vision-text {
+    width: 298px;
+    .a {
+      font-size: 14px;
+      margin-left: 0;
+      margin-bottom: -52px;
+    }
+    .b {
+      margin: 25px 0 -16px;
+      font-size: 30px;
+      span {
+        font-size: 48px;
+      }
+    }
+    .c {
+      margin: 0 0 -10px 45px;
+      font-size: 30px;
+    }
+    .d {
+      margin-left: 158px;
+      font-size: 13px;
+    }
   }
 }
