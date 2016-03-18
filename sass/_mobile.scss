@@ -10,7 +10,7 @@
 // }
 // media query
 @media (min-width: 1200px) {
-  .menu { height: 700px; }
+  .menu { height: 700px !important; }
 }
 @media (max-width: $screen-md-max) {
   // Home
