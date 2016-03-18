@@ -86,12 +86,15 @@ angular.module('phonecatControllers', ['templateservicemod', 'navigationservice'
   };
   $scope.formenquire = {};
   $scope.enquiry = function() {
+    $scope.eback = "eeback";
     if ($scope.showme == "enquire-out") {
       $scope.showme = "enquire-in";
       $scope.ebutton = "";
+      $scope.eback = "eeback";
     } else {
       $scope.showme = "enquire-out";
       $scope.ebutton = "ebutton";
+      $scope.eback = "eback";
     }
   };
   $scope.submitform = function(formenquire, formvalid) {
@@ -101,6 +104,7 @@ angular.module('phonecatControllers', ['templateservicemod', 'navigationservice'
       $timeout(function () {
         $scope.showme = "enquire-in";
         $scope.ebutton = "";
+        $scope.eback = "eeback";
       }, 3000);
       $timeout(function () {
         $scope.formComplete = false;
@@ -302,12 +306,15 @@ angular.module('phonecatControllers', ['templateservicemod', 'navigationservice'
       enquire: "views/content/enquiry.html"
     };
     $scope.enquiry = function() {
+      $scope.eback = "eeback";
       if ($scope.showme == "enquire-out") {
         $scope.showme = "enquire-in";
         $scope.ebutton = "";
+        $scope.eback = "eeback";
       } else {
         $scope.showme = "enquire-out";
         $scope.ebutton = "ebutton";
+        $scope.eback = "eback";
       }
     };
     $scope.submitform = function(formenquire, formvalid) {
@@ -317,6 +324,7 @@ angular.module('phonecatControllers', ['templateservicemod', 'navigationservice'
         $timeout(function () {
           $scope.showme = "enquire-in";
           $scope.ebutton = "";
+          $scope.eback = "eeback";
         }, 3000);
         $timeout(function () {
           $scope.formComplete = false;
@@ -337,15 +345,17 @@ angular.module('phonecatControllers', ['templateservicemod', 'navigationservice'
       enquire: "views/content/enquiry.html"
     };
     $scope.enquiry = function() {
+      $scope.eback = "eeback";
       if ($scope.showme == "enquire-out") {
         $scope.showme = "enquire-in";
         $scope.ebutton = "";
+        $scope.eback = "eeback";
       } else {
         $scope.showme = "enquire-out";
         $scope.ebutton = "ebutton";
+        $scope.eback = "eback";
       }
     };
-    $scope.refresh = {};
     $scope.submitform = function(formenquire, formvalid) {
       if (formenquire.$valid) {
         $scope.formComplete = true;
@@ -353,6 +363,7 @@ angular.module('phonecatControllers', ['templateservicemod', 'navigationservice'
         $timeout(function () {
           $scope.showme = "enquire-in";
           $scope.ebutton = "";
+          $scope.eback = "eeback";
         }, 3000);
         $timeout(function () {
           $scope.formComplete = false;
@@ -386,13 +397,20 @@ angular.module('phonecatControllers', ['templateservicemod', 'navigationservice'
 .controller('headerctrl', function($scope, TemplateService) {
   $scope.template = TemplateService;
   $scope.showme = "menu-out";
-  $scope.getnav = function() {
+  $scope.backme = "backmee";
+  $scope.getnav = function(value) {
     if ($scope.showme == "menu-out") {
-      $scope.showme = "menu-in";
-      $scope.changeColor = "change-me";
+      if(value == 1) {
+        $scope.showme = "menu-in";
+        $scope.changeColor = "change-me";
+        $scope.backme = "backme";
+      } else {}
     } else {
-      $scope.showme = "menu-out";
-      $scope.changeColor = "";
+      if(value === 1 || value === 0) {
+        $scope.showme = "menu-out";
+        $scope.changeColor = "";
+        $scope.backme = "backmee";
+      }
     }
   };
   $scope.$on('$stateChangeSuccess', function(event, toState, toParams, fromState, fromParams) {

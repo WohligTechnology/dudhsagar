@@ -55,11 +55,11 @@ firstapp.config(function($stateProvider, $urlRouterProvider, $httpProvider) {
     controller: 'PaneerCtrl'
   })
 
-  .state('plant', {
-    url: "/plant",
-    templateUrl: "views/template.html",
-    controller: 'PlantCtrl'
-  })
+  // .state('plant', {
+  //   url: "/plant",
+  //   templateUrl: "views/template.html",
+  //   controller: 'PlantCtrl'
+  // })
 
   .state('careers', {
     url: "/careers",

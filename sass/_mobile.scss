@@ -9,7 +9,7 @@
 //
 // }
 // media query
-@media (min-width: 1200px) {
+@media (min-width: 1600px + 1px) {
   .menu { height: 700px !important; }
 }
 @media (max-width: $screen-md-max) {

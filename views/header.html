@@ -1,7 +1,8 @@
 <header ng-controller="headerctrl" class="sticky-bottom">
+  <div class="header-back {{backme}}" ng-click="getnav(0);"></div>
   <nav>
     <div class="hamburger {{changeColor}}">
-      <div class="ham-menu hidden-xs" ng-click="getnav();">
+      <div class="ham-menu hidden-xs" ng-click="getnav(1);">
         <span></span>
         <span></span>
         <span></span>
@@ -43,7 +44,7 @@
       </div>
     </div>
     <div class="logo">
-      <div class="ham-menu hidden-sm hidden-md hidden-lg" ng-click="getnav();">
+      <div class="ham-menu hidden-sm hidden-md hidden-lg" ng-click="getnav(1);">
         <span></span>
         <span></span>
         <span></span>

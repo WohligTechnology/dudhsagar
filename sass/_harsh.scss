@@ -340,6 +340,17 @@ table.table-curved {
 ////////
 textarea { resize: none; }
 .mini-enquire {
+  .enquiry-back {
+    width: 100%;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+  }
+  .eback {
+    display: block;
+    z-index: 10;
+  }
+  .eeback { display: none; }
   .enquire-now {
     position: fixed;
     top: 185px;
