@@ -9,6 +9,9 @@
 //
 // }
 // media query
+@media (min-width: 1200px) {
+  .menu { height: 700px; }
+}
 @media (max-width: $screen-md-max) {
   // Home
   //  .milk .milk-package {
@@ -91,6 +94,7 @@
     padding: 28px 60px 19px;
   }
   .mini-enquire .ebutton { right: 456px; }
+  .life-at-adya .cow .cow-gif { top: -52px; }
 }
 @media (max-width: $screen-sm-max) {
   // Home
@@ -195,6 +199,15 @@
   .life-at-adya {
     .procurement-image, .processing-image, .quality-control-image,
     .distribution-image { margin-top: 60px; }
+  }
+  .life-at-adya .cow .cow-gif {
+    top: -33px;
+    left: 185px;
+    width: 140px;
+  }
+  .life-at-adya .cow .cow-gif-right {
+    left: auto;
+    right: 185px;
   }
 }
 @media (max-width: $screen-xs-max) {

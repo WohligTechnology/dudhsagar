@@ -373,10 +373,14 @@ textarea { resize: none; }
       input.form-control {
         height: 45px;
         padding: 12px 12px 8px;
+        border: none;
+        box-shadow: none;
       }
       textarea.form-control {
         height: 150px;
         padding: 12px 12px;
+        border: none;
+        box-shadow: none;
       }
     }
     .enquire-name, .enquire-number, .enquire-email, .enquire-button { display: inline-block; }
@@ -413,9 +417,23 @@ textarea { resize: none; }
     }
   }
   .cow {
+    margin: 10px 0;
+    position: relative;
     img {
       width: 80%;
       margin: 0 auto;
+    }
+    .cow-gif {
+      width: 200px;
+      position: absolute;
+      top: -45px;
+      left: 255px;
+      @include transform(scaleX(-1));
+    }
+    .cow-gif-right {
+      left: auto;
+      right: 255px;
+      @include transform(scaleX(1));
     }
   }
   .about-pattern {

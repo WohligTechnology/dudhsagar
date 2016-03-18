@@ -13,64 +13,14 @@ angular.module('phonecatControllers', ['templateservicemod', 'navigationservice'
     two: "views/section/section2.html",
     three: "views/section/section3.html",
     four: "views/section/section4.html",
-    five: "views/section/section5.html",
-    // six: "views/section/footer.
+    five: "views/section/section5.html"
   };
-  // $scope.changeFullPage = function(no) {
-  //   console.log(no);
-  //   $.fn.fullpage.moveTo(no);
-  // };
-
-  //
-  // $scope.$on('$viewContentLoaded', function() {
-  //    $timeout(function() {
-  //     $('.fullpage').fullpage();
-  //
-  //      console.log($stateParams.name);
-  //      $scope.homeval = $stateParams.name;
-  //      switch ($scope.homeval) {
-  // 		  case "contact":
-  //          $.fn.fullpage.moveTo(6);
-  //          break;
-  //        case "aboutus":
-  //          $.fn.fullpage.moveTo(5);
-  //          break;
-  //        case "paneer":
-  //          $.fn.fullpage.moveTo(4);
-  //          break;
-  //        case "dahi":
-  //          $.fn.fullpage.moveTo(3);
-  //          break;
-  //        case "milk":
-  //          $.fn.fullpage.moveTo(2);
-  //          break;
-  //        case "landing":
-  //          $.fn.fullpage.moveTo(1);
-  //          break;
-  //        default:
-  //          $.fn.fullpage.moveTo(1);
-  //          break;
-  //      }
-  //    }, 1000);
-  //  });
-
-
-  // $scope.changeFullPage = function(no) {
-  //   console.log(no);
-  //   $.fn.fullpage.moveTo(no);
-  // };
-
 
   $scope.$on('$viewContentLoaded', function() {
     $timeout(function() {
       $('.fullpage').fullpage();
 
-      // console.log($stateParams.name);
-      // $scope.homeval = $stateParams.name;
       switch ($scope.homeval) {
-        //		  case "contact":
-        //          $.fn.fullpage.moveTo(6);
-        //          break;
         case "aboutus":
           $.fn.fullpage.moveTo(5);
           break;
@@ -120,6 +70,7 @@ angular.module('phonecatControllers', ['templateservicemod', 'navigationservice'
   $scope.submitform = function(formenquire, formvalid) {
     if (formenquire.$valid) {
       $scope.formComplete = true;
+      NavigationService.enquiry(formvalid, function (data) {});
     }
   };
 })
@@ -146,6 +97,7 @@ angular.module('phonecatControllers', ['templateservicemod', 'navigationservice'
   $scope.submitform = function(formenquire, formvalid) {
     if (formenquire.$valid) {
       $scope.formComplete = true;
+      NavigationService.enquiry(formvalid, function (data) {});
       $timeout(function () {
         $scope.showme = "enquire-in";
         $scope.ebutton = "";
@@ -361,6 +313,7 @@ angular.module('phonecatControllers', ['templateservicemod', 'navigationservice'
     $scope.submitform = function(formenquire, formvalid) {
       if (formenquire.$valid) {
         $scope.formComplete = true;
+        NavigationService.enquiry(formvalid, function (data) {});
         $timeout(function () {
           $scope.showme = "enquire-in";
           $scope.ebutton = "";
@@ -396,6 +349,7 @@ angular.module('phonecatControllers', ['templateservicemod', 'navigationservice'
     $scope.submitform = function(formenquire, formvalid) {
       if (formenquire.$valid) {
         $scope.formComplete = true;
+        NavigationService.enquiry(formvalid, function (data) {});
         $timeout(function () {
           $scope.showme = "enquire-in";
           $scope.ebutton = "";
