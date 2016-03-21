@@ -88,6 +88,9 @@
       height: 100%;
     }
   }
+  .paneer-txt {
+    margin: 0 0 0 20px;
+  }
   .paneer-image {
     position: absolute;
     bottom: 0;
@@ -428,7 +431,7 @@ textarea { resize: none; }
     }
   }
   .cow {
-    margin: 10px 0;
+    margin: 0 0 10px 0;
     position: relative;
     img {
       width: 80%;

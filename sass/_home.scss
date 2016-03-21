@@ -3,7 +3,7 @@
   position: relative;
 }
 .aboutus .about-us-desc {
-  margin: 100px 0;
+  margin: 0 0 100px 0;
   position: relative;
   top: 0;
   left: 0;
@@ -11,7 +11,7 @@
 }
 .section.five { padding: 0; }
 .ab-footer { position: relative; }
-.bg-contact { background-color: $brand-primary; }
+.bg-contact { background-color: $body-bg; }
 .home-paneer-title {
   position: absolute;
   margin-top: 16%;
@@ -28,7 +28,7 @@
 @media (max-width: $screen-md-max) {
   .home-title { font-size: 90px; }
   .home-paneer-title { margin-top: 14%; }
-  .paneer .paneer-txt { margin: 25px 0 0 20px; }
+  .paneer .paneer-txt { margin: 0 0 0 20px; }
   .milk-txt { left: 17% !important; }
 }
 
