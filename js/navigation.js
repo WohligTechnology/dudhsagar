@@ -1,4 +1,4 @@
-var adminurl = "http://192.168.0.123/adyabackend/index.php/json/";
+var adminurl = "http://wohlig.co.in/adyabackend/index.php/json/";
 //var adminurl = "http://192.168.0.123/adyabackend/index.php/json/";
 
 var navigationservice = angular.module('navigationservice', [])
