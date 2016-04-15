@@ -69,8 +69,9 @@ angular.module('phonecatControllers', ['templateservicemod', 'navigationservice'
 
   $scope.submitform = function(formenquire, formvalid) {
     if (formenquire.$valid) {
-      $scope.formComplete = true;
-      NavigationService.enquiry(formvalid, function (data) {});
+      NavigationService.enquiry(formvalid, function (data) {
+        $scope.formComplete = true;
+      });
     }
   };
 })
