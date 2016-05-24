@@ -278,9 +278,13 @@ a:hover {
 }
 .about-bg {
   // background-image: url('../img/home/section5.png');
-  background-color: #EEEEEE;
-  background-size: cover;
-  background-position: 0% 10%;
+    background-color: #EEEEEE;
+    background: -webkit-linear-gradient(#EEEEEE, #fff);
+    background: -o-linear-gradient(#EEEEEE, #fff);
+    background: -moz-linear-gradient(#EEEEEE, #fff);
+    background: linear-gradient(#EEEEEE,#FFF);
+    background-size: cover;
+    background-position: 0%10%;
 }
 // /////////////////////////
 // ABOUT US
@@ -655,7 +659,7 @@ header {
           margin: 0;
           padding: 0;
           > li {
-            margin-right: 50px;
+            margin-right: 27px;
             display: inline-block;
             & > .sub-menu {
               margin-top: 50px;

@@ -125,34 +125,34 @@ angular.module('phonecatControllers', ['templateservicemod', 'navigationservice'
   $scope.section = {
     enquire: "views/content/enquiry.html"
   };
-  // $scope.formenquire = {};
-  // $scope.enquiry = function() {
-  //   $scope.eback = "eeback";
-  //   if ($scope.showme == "enquire-out") {
-  //     $scope.showme = "enquire-in";
-  //     $scope.ebutton = "";
-  //     $scope.eback = "eeback";
-  //   } else {
-  //     $scope.showme = "enquire-out";
-  //     $scope.ebutton = "ebutton";
-  //     $scope.eback = "eback";
-  //   }
-  // };
-  // $scope.submitform = function(formenquire, formvalid) {
-  //   if (formenquire.$valid) {
-  //     $scope.formComplete = true;
-  //     NavigationService.enquiry(formvalid, function (data) {});
-  //     $timeout(function () {
-  //       $scope.showme = "enquire-in";
-  //       $scope.ebutton = "";
-  //       $scope.eback = "eeback";
-  //     }, 3000);
-  //     $timeout(function () {
-  //       $scope.formComplete = false;
-  //       $scope.formenquire = {};
-  //     }, 3500);
-  //   }
-  // };
+  $scope.formenquire = {};
+  $scope.enquiry = function() {
+    $scope.eback = "eeback";
+    if ($scope.showme == "enquire-out") {
+      $scope.showme = "enquire-in";
+      $scope.ebutton = "";
+      $scope.eback = "eeback";
+    } else {
+      $scope.showme = "enquire-out";
+      $scope.ebutton = "ebutton";
+      $scope.eback = "eback";
+    }
+  };
+  $scope.submitform = function(formenquire, formvalid) {
+    if (formenquire.$valid) {
+      $scope.formComplete = true;
+      NavigationService.enquiry(formvalid, function (data) {});
+      $timeout(function () {
+        $scope.showme = "enquire-in";
+        $scope.ebutton = "";
+        $scope.eback = "eeback";
+      }, 3000);
+      $timeout(function () {
+        $scope.formComplete = false;
+        $scope.formenquire = {};
+      }, 3500);
+    }
+  };
 })
 
 
