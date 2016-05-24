@@ -55,6 +55,12 @@ firstapp.config(function($stateProvider, $urlRouterProvider, $httpProvider) {
     controller: 'PaneerCtrl'
   })
 
+  .state('lassi', {
+    url: "/lassi",
+    templateUrl: "views/template.html",
+    controller: 'LassiCtrl'
+  })
+
   // .state('plant', {
   //   url: "/plant",
   //   templateUrl: "views/template.html",

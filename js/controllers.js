@@ -13,7 +13,8 @@ angular.module('phonecatControllers', ['templateservicemod', 'navigationservice'
     two: "views/section/section2.html",
     three: "views/section/section3.html",
     four: "views/section/section4.html",
-    five: "views/section/section5.html"
+    five: "views/section/section5.html",
+    seven:"views/section/section7.html"
   };
 
   $scope.$on('$viewContentLoaded', function() {
@@ -114,6 +115,47 @@ angular.module('phonecatControllers', ['templateservicemod', 'navigationservice'
     }
   };
 })
+
+.controller('LassiCtrl', function($scope, TemplateService, NavigationService, $timeout) {
+  //Used to name the .html file
+  $scope.template = TemplateService.changecontent("lassi");
+  $scope.menutitle = NavigationService.makeactive("Lassi");
+  TemplateService.title = $scope.menutitle;
+  $scope.navigation = NavigationService.getnav();
+  $scope.section = {
+    enquire: "views/content/enquiry.html"
+  };
+  // $scope.formenquire = {};
+  // $scope.enquiry = function() {
+  //   $scope.eback = "eeback";
+  //   if ($scope.showme == "enquire-out") {
+  //     $scope.showme = "enquire-in";
+  //     $scope.ebutton = "";
+  //     $scope.eback = "eeback";
+  //   } else {
+  //     $scope.showme = "enquire-out";
+  //     $scope.ebutton = "ebutton";
+  //     $scope.eback = "eback";
+  //   }
+  // };
+  // $scope.submitform = function(formenquire, formvalid) {
+  //   if (formenquire.$valid) {
+  //     $scope.formComplete = true;
+  //     NavigationService.enquiry(formvalid, function (data) {});
+  //     $timeout(function () {
+  //       $scope.showme = "enquire-in";
+  //       $scope.ebutton = "";
+  //       $scope.eback = "eeback";
+  //     }, 3000);
+  //     $timeout(function () {
+  //       $scope.formComplete = false;
+  //       $scope.formenquire = {};
+  //     }, 3500);
+  //   }
+  // };
+})
+
+
 
 .controller('MilkCtrl', function($scope, $state, TemplateService, NavigationService, $timeout, $stateParams, $document, $location) {
     //Used to name the .html file

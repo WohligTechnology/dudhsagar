@@ -14,10 +14,29 @@
 .bg-contact { background-color: $body-bg; }
 .home-paneer-title {
   position: absolute;
-  margin-top: 16%;
+  margin-top: 9%;
   left: 10%;
 }
-
+// .home-lassi-title{
+//   position: absolute;
+//   margin-top: 9%;
+//   right: 10%;
+// }
+.home-lassi-title {
+    z-index: 1;
+    position: absolute;
+    margin-top: 15%;
+    right: 20%;
+}
+.lassi-txt{
+  position: absolute;
+  right: 17%;
+  top: 40%;
+}
+.lassi-image{
+  z-index: 5;
+  position: relative;
+}
 @media (min-width: 1200px) {
   .dahi .dahi-image { margin-top: -2px; }
 }

@@ -41,6 +41,7 @@ $brand-nourish: #693E98 !default;
 $brand-health: #1BAA4B !default;
 $brand-dahi: #78B341 !default;
 $brand-paneer: #ECBB15 !default;
+$brand-lassi:#f04900!default;
 $brand-brown: #67322A !default;
 $brand-purple: #663c94 !default;
 $brand-green: #3a6f00 !default;
@@ -85,6 +86,7 @@ $instagram: #396d9a !default;
 .brand-health { color: $brand-health; }
 .brand-dahi { color: $brand-dahi; }
 .brand-paneer { color: $brand-paneer; }
+.brand-lassi { color: $brand-lassi; }
 .brand-purple {
   color: $brand-purple;
 }
@@ -276,7 +278,7 @@ a:hover {
 }
 .about-bg {
   // background-image: url('../img/home/section5.png');
-  background-color: white;
+  background-color: #EEEEEE;
   background-size: cover;
   background-position: 0% 10%;
 }
