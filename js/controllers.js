@@ -14,7 +14,7 @@ angular.module('phonecatControllers', ['templateservicemod', 'navigationservice'
     three: "views/section/section3.html",
     four: "views/section/section4.html",
     five: "views/section/section5.html",
-    seven:"views/section/section7.html"
+    seven: "views/section/section7.html"
   };
 
   $scope.$on('$viewContentLoaded', function() {
@@ -70,7 +70,7 @@ angular.module('phonecatControllers', ['templateservicemod', 'navigationservice'
 
   $scope.submitform = function(formenquire, formvalid) {
     if (formenquire.$valid) {
-      NavigationService.enquiry(formvalid, function (data) {
+      NavigationService.enquiry(formvalid, function(data) {
         $scope.formComplete = true;
       });
     }
@@ -102,13 +102,13 @@ angular.module('phonecatControllers', ['templateservicemod', 'navigationservice'
   $scope.submitform = function(formenquire, formvalid) {
     if (formenquire.$valid) {
       $scope.formComplete = true;
-      NavigationService.enquiry(formvalid, function (data) {});
-      $timeout(function () {
+      NavigationService.enquiry(formvalid, function(data) {});
+      $timeout(function() {
         $scope.showme = "enquire-in";
         $scope.ebutton = "";
         $scope.eback = "eeback";
       }, 3000);
-      $timeout(function () {
+      $timeout(function() {
         $scope.formComplete = false;
         $scope.formenquire = {};
       }, 3500);
@@ -141,13 +141,13 @@ angular.module('phonecatControllers', ['templateservicemod', 'navigationservice'
   $scope.submitform = function(formenquire, formvalid) {
     if (formenquire.$valid) {
       $scope.formComplete = true;
-      NavigationService.enquiry(formvalid, function (data) {});
-      $timeout(function () {
+      NavigationService.enquiry(formvalid, function(data) {});
+      $timeout(function() {
         $scope.showme = "enquire-in";
         $scope.ebutton = "";
         $scope.eback = "eeback";
       }, 3000);
-      $timeout(function () {
+      $timeout(function() {
         $scope.formComplete = false;
         $scope.formenquire = {};
       }, 3500);
@@ -363,13 +363,13 @@ angular.module('phonecatControllers', ['templateservicemod', 'navigationservice'
     $scope.submitform = function(formenquire, formvalid) {
       if (formenquire.$valid) {
         $scope.formComplete = true;
-        NavigationService.enquiry(formvalid, function (data) {});
-        $timeout(function () {
+        NavigationService.enquiry(formvalid, function(data) {});
+        $timeout(function() {
           $scope.showme = "enquire-in";
           $scope.ebutton = "";
           $scope.eback = "eeback";
         }, 3000);
-        $timeout(function () {
+        $timeout(function() {
           $scope.formComplete = false;
           $scope.formenquire = {};
         }, 3500);
@@ -402,13 +402,13 @@ angular.module('phonecatControllers', ['templateservicemod', 'navigationservice'
     $scope.submitform = function(formenquire, formvalid) {
       if (formenquire.$valid) {
         $scope.formComplete = true;
-        NavigationService.enquiry(formvalid, function (data) {});
-        $timeout(function () {
+        NavigationService.enquiry(formvalid, function(data) {});
+        $timeout(function() {
           $scope.showme = "enquire-in";
           $scope.ebutton = "";
           $scope.eback = "eeback";
         }, 3000);
-        $timeout(function () {
+        $timeout(function() {
           $scope.formComplete = false;
           $scope.formenquire = {};
         }, 3500);
@@ -437,19 +437,19 @@ angular.module('phonecatControllers', ['templateservicemod', 'navigationservice'
   $scope.navigation = NavigationService.getnav();
 })
 
-.controller('headerctrl', function($scope, TemplateService) {
+.controller('headerctrl', function($scope, TemplateService, $uibModal) {
   $scope.template = TemplateService;
   $scope.showme = "menu-out";
   $scope.backme = "backmee";
   $scope.getnav = function(value) {
     if ($scope.showme == "menu-out") {
-      if(value == 1) {
+      if (value == 1) {
         $scope.showme = "menu-in";
         $scope.changeColor = "change-me";
         $scope.backme = "backme";
       } else {}
     } else {
-      if(value === 1 || value === 0) {
+      if (value === 1 || value === 0) {
         $scope.showme = "menu-out";
         $scope.changeColor = "";
         $scope.backme = "backmee";
