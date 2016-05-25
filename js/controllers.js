@@ -1,4 +1,15 @@
 angular.module('phonecatControllers', ['templateservicemod', 'navigationservice', 'ui.bootstrap', 'ngAnimate', 'ngSanitize', 'angular-flexslider', 'ngDialog'])
+  .controller('PopLassiCtrl', function($scope, TemplateService, NavigationService, $timeout, ngDialog) {
+    $scope.openLassi = function() {
+      ngDialog.open({
+        template: 'views/content/popup.html',
+        className: 'ngdialog-theme-plain',
+        scope: $scope
+      });
+    };
+
+    $scope.openLassi();
+  })
   .controller('HomeCtrl', function($scope, TemplateService, NavigationService, $timeout, ngDialog) {
     //Used to name the .html file
     $scope.template = TemplateService.changecontent("home");
@@ -16,16 +27,9 @@ angular.module('phonecatControllers', ['templateservicemod', 'navigationservice'
       seven: "views/section/section7.html"
     };
 
+
+
     $scope.value = true;
-    $scope.clickToOpen = function() {
-      ngDialog.open({
-        template: 'views/content/popup.html',
-        className: 'ngdialog-theme-plain',
-        scope: $scope
-      });
-    }
-
-
 
     $scope.$on('$viewContentLoaded', function() {
       $timeout(function() {
@@ -447,15 +451,15 @@ angular.module('phonecatControllers', ['templateservicemod', 'navigationservice'
   $scope.navigation = NavigationService.getnav();
 })
 
-.controller('PopupCtrl', function($scope, TemplateService, NavigationService, $timeout) {
-  //Used to name the .html file
-  $scope.template = TemplateService.changecontent("popup");
-  $scope.menutitle = NavigationService.makeactive("Popup");
-  TemplateService.title = $scope.menutitle;
-  $scope.navigation = NavigationService.getnav();
-})
+// .controller('PopupCtrl', function($scope, TemplateService, NavigationService, $timeout) {
+//   //Used to name the .html file
+//   $scope.template = TemplateService.changecontent("popup");
+//   $scope.menutitle = NavigationService.makeactive("Popup");
+//   TemplateService.title = $scope.menutitle;
+//   $scope.navigation = NavigationService.getnav();
+// })
 
-.controller('headerctrl', function($scope, TemplateService) {
+.controller('headerctrl', function($scope, TemplateService, ngDialog) {
   $scope.template = TemplateService;
   $scope.showme = "menu-out";
   $scope.backme = "backmee";
