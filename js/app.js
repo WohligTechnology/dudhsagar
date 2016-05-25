@@ -6,12 +6,11 @@ var firstapp = angular.module('firstapp', [
   'navigationservice'
 ]);
 
-firstapp.config(function($stateProvider, $urlRouterProvider, $httpProvider) {
+firstapp.config(function($stateProvider, $urlRouterProvider, $httpProvider, ngDialogProvider) {
 
   // for http request with session
   $httpProvider.defaults.withCredentials = true;
-
-  $stateProvider
+    $stateProvider
 
     .state('home', {
     url: "/home",

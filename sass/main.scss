@@ -3,6 +3,8 @@
 @import "../bower_components/bootstrap-sass/assets/stylesheets/bootstrap-sprockets";
 @import "../bower_components/flexslider/flexslider.css";
 @import "../bower_components/font-awesome/css/font-awesome.min.css";
+@import "../bower_components/ng-dialog/css/ngDialog.css";
+@import "../bower_components/ng-dialog/css/ngDialog-theme-plain.css";
 @font-face {
   font-family: "Armonioso";
   src: url("../fonts/armonioso.otf");
@@ -41,7 +43,7 @@ $brand-nourish: #693E98 !default;
 $brand-health: #1BAA4B !default;
 $brand-dahi: #78B341 !default;
 $brand-paneer: #ECBB15 !default;
-$brand-lassi:#f04900!default;
+$brand-lassi: #f04900!default;
 $brand-brown: #67322A !default;
 $brand-purple: #663c94 !default;
 $brand-green: #3a6f00 !default;
@@ -75,18 +77,36 @@ $instagram: #396d9a !default;
 }
 .primary {
   color: $brand-primary;
-  &:hover, &:active, &:focus { color: $brand-primary; }
+  &:hover,
+  &:active,
+  &:focus {
+    color: $brand-primary;
+  }
 }
 .brand-title {
   color: $brand-title;
 }
-.brand-milk { color: $brand-milk; }
-.brand-slim { color: $brand-slim; }
-.brand-nourish { color: $brand-nourish; }
-.brand-health { color: $brand-health; }
-.brand-dahi { color: $brand-dahi; }
-.brand-paneer { color: $brand-paneer; }
-.brand-lassi { color: $brand-lassi; }
+.brand-milk {
+  color: $brand-milk;
+}
+.brand-slim {
+  color: $brand-slim;
+}
+.brand-nourish {
+  color: $brand-nourish;
+}
+.brand-health {
+  color: $brand-health;
+}
+.brand-dahi {
+  color: $brand-dahi;
+}
+.brand-paneer {
+  color: $brand-paneer;
+}
+.brand-lassi {
+  color: $brand-lassi;
+}
 .brand-purple {
   color: $brand-purple;
 }
@@ -109,8 +129,11 @@ a,
 .btn {
   cursor: pointer;
 }
-a, button {
-  &:focus { outline: none !important; }
+a,
+button {
+  &:focus {
+    outline: none !important;
+  }
 }
 .btn-white {
   border: 1px solid #fff;
@@ -278,13 +301,13 @@ a:hover {
 }
 .about-bg {
   // background-image: url('../img/home/section5.png');
-    background-color: #EEEEEE;
-    background: -webkit-linear-gradient(#EEEEEE, #fff);
-    background: -o-linear-gradient(#EEEEEE, #fff);
-    background: -moz-linear-gradient(#EEEEEE, #fff);
-    background: linear-gradient(#EEEEEE,#FFF);
-    background-size: cover;
-    background-position: 0%10%;
+  background-color: #EEEEEE;
+  background: -webkit-linear-gradient(#EEEEEE, #fff);
+  background: -o-linear-gradient(#EEEEEE, #fff);
+  background: -moz-linear-gradient(#EEEEEE, #fff);
+  background: linear-gradient(#EEEEEE,#FFF);
+  background-size: cover;
+  background-position: 0%10%;
 }
 // /////////////////////////
 // ABOUT US
@@ -620,8 +643,12 @@ header {
     height: 100vh;
     position: fixed;
   }
-  .backmee { display: none; }
-  .backme { display: block; }
+  .backmee {
+    display: none;
+  }
+  .backme {
+    display: block;
+  }
   .hamburger {
     position: relative;
     .ham-menu {
@@ -816,48 +843,47 @@ footer {
   }
 }
 //popup//
-.lassi-popup{
+.lassi-popup {
   background-color: #ef7e22;
   position: relative;
 }
-.lassi-text{
+.lassi-text {
   margin-top: 10%;
-  p{
-  color: #fff;
+  p {
+    color: #fff;
+  }
 }
-}
-
-.lassi-katori{
+.lassi-katori {
   margin-left: 10%;
-    margin-top: 15%;
+  margin-top: 15%;
 }
-
-.home-lassis-title{
+.home-lassis-title {
   color: #fff;
-    position: absolute;
-    left: 42%;
-    top: 53%;
-}
-.cow{
   position: absolute;
-    right: 61%;
-    bottom: 18%;
-    z-index: 3;
+  left: 42%;
+  top: 53%;
 }
-
-.background{
+.cow {
+  position: absolute;
+  right: 61%;
+  bottom: 18%;
+  z-index: 3;
+}
+.background {
   position: relative;
   width: 100%;
   z-index: 1;
 }
-.lassis{
+.lassis {
   position: absolute;
-    right: 10%;
-    z-index: 3;
-    bottom: 36%;
+  right: 10%;
+  z-index: 3;
+  bottom: 36%;
 }
-
-
+.ngdialog.ngdialog-theme-plain .ngdialog-content {
+  background: #EF7E22;
+  width: 75%;
+}
 @import "harsh";
 @import "home";
 @import "mobile";

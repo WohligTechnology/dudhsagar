@@ -1,57 +1,67 @@
-angular.module('phonecatControllers', ['templateservicemod', 'navigationservice', 'ui.bootstrap', 'ngSanitize', 'angular-flexslider'])
+angular.module('phonecatControllers', ['templateservicemod', 'navigationservice', 'ui.bootstrap', 'ngAnimate', 'ngSanitize', 'angular-flexslider', 'ngDialog'])
+  .controller('HomeCtrl', function($scope, TemplateService, NavigationService, $timeout, ngDialog) {
+    //Used to name the .html file
+    $scope.template = TemplateService.changecontent("home");
+    $scope.menutitle = NavigationService.makeactive("Home");
+    TemplateService.title = $scope.menutitle;
+    $scope.navigation = NavigationService.getnav();
+    TemplateService.footer = "views/section/footer.html";
+    TemplateService.header = "views/section/header.html";
+    $scope.section = {
+      one: "views/section/section1.html",
+      two: "views/section/section2.html",
+      three: "views/section/section3.html",
+      four: "views/section/section4.html",
+      five: "views/section/section5.html",
+      seven: "views/section/section7.html"
+    };
 
-.controller('HomeCtrl', function($scope, TemplateService, NavigationService, $timeout) {
-  //Used to name the .html file
-  $scope.template = TemplateService.changecontent("home");
-  $scope.menutitle = NavigationService.makeactive("Home");
-  TemplateService.title = $scope.menutitle;
-  $scope.navigation = NavigationService.getnav();
-  TemplateService.footer = "views/section/footer.html";
-  TemplateService.header = "views/section/header.html";
-  $scope.section = {
-    one: "views/section/section1.html",
-    two: "views/section/section2.html",
-    three: "views/section/section3.html",
-    four: "views/section/section4.html",
-    five: "views/section/section5.html",
-    seven: "views/section/section7.html"
-  };
+    $scope.value = true;
+    $scope.clickToOpen = function() {
+      ngDialog.open({
+        template: 'views/content/popup.html',
+        className: 'ngdialog-theme-plain',
+        scope: $scope
+      });
+    }
 
-  $scope.$on('$viewContentLoaded', function() {
-    $timeout(function() {
-      $('.fullpage').fullpage();
 
-      switch ($scope.homeval) {
-        case "aboutus":
-          $.fn.fullpage.moveTo(5);
-          break;
-        case "paneer":
-          $.fn.fullpage.moveTo(4);
-          break;
-        case "dahi":
-          $.fn.fullpage.moveTo(3);
-          break;
-        case "milk":
-          $.fn.fullpage.moveTo(2);
-          break;
-        case "landing":
-          $.fn.fullpage.moveTo(1);
-          break;
-        default:
-          $.fn.fullpage.moveTo(1);
-          break;
-      }
-    }, 1000);
-  });
 
-  $scope.abtimages = [
-    "img/about.jpg",
-    "img/about.jpg",
-    "img/about.jpg",
-    "img/about.jpg",
-    "img/about.jpg"
-  ];
-})
+    $scope.$on('$viewContentLoaded', function() {
+      $timeout(function() {
+        $('.fullpage').fullpage();
+
+        switch ($scope.homeval) {
+          case "aboutus":
+            $.fn.fullpage.moveTo(5);
+            break;
+          case "paneer":
+            $.fn.fullpage.moveTo(4);
+            break;
+          case "dahi":
+            $.fn.fullpage.moveTo(3);
+            break;
+          case "milk":
+            $.fn.fullpage.moveTo(2);
+            break;
+          case "landing":
+            $.fn.fullpage.moveTo(1);
+            break;
+          default:
+            $.fn.fullpage.moveTo(1);
+            break;
+        }
+      }, 1000);
+    });
+
+    $scope.abtimages = [
+      "img/about.jpg",
+      "img/about.jpg",
+      "img/about.jpg",
+      "img/about.jpg",
+      "img/about.jpg"
+    ];
+  })
 
 .controller('AboutusCtrl', function($scope, TemplateService, NavigationService, $timeout) {
   //Used to name the .html file
@@ -444,9 +454,6 @@ angular.module('phonecatControllers', ['templateservicemod', 'navigationservice'
   TemplateService.title = $scope.menutitle;
   $scope.navigation = NavigationService.getnav();
 })
-
-
-
 
 .controller('headerctrl', function($scope, TemplateService) {
   $scope.template = TemplateService;
