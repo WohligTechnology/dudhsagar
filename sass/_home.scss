@@ -27,6 +27,7 @@
     position: absolute;
     margin-top: 15%;
     right: 20%;
+
 }
 .lassi-txt{
   position: absolute;
@@ -37,6 +38,8 @@
   z-index: 5;
   position: relative;
 }
+
+
 @media (min-width: 1200px) {
   .dahi .dahi-image { margin-top: -2px; }
 }
@@ -46,13 +49,27 @@
 
 @media (max-width: $screen-md-max) {
   .home-title { font-size: 90px; }
-  .home-paneer-title { margin-top: 14%; }
-  .paneer .paneer-txt { margin: 0 0 0 20px; }
+  .home-paneer-title {
+    margin-top: 8%;
+    margin-left: -8%;
+   }
+  // .paneer .paneer-txt { margin: 0 0 0 20px; }
+  .milk-txt { left: 17% !important; }
+}
+
+@media (max-width: $screen-md-max) {
+  .home-title { font-size: 90px; }
+  .home-lassi-title {
+    margin-top: 14%;
+    right: 14%;
+}
+  // .paneer .paneer-txt { margin: 0 0 0 20px; }
   .milk-txt { left: 17% !important; }
 }
 
 @media (max-width: $screen-sm-max) {
   .milk-txt { left: 14% !important; }
+
 }
 
 @media (max-width: $screen-xs-max) {
@@ -77,6 +94,23 @@
       }
     }
   }
+  .ngdialog.ngdialog-theme-plain .ngdialog-content{
+    width: 500px;
+    padding: 0;
+  }
+  .cow {
+    position: absolute;
+    left: 25%;
+    top: 175px;
+    z-index: 3;
+}
+.lassis{
+  position: absolute;
+    right: 6%;
+    z-index: 3;
+    top: 190px;
+    width: 40%;
+}
   .section.one { padding-top: 110px; }
   .home-logo .logo { width: 100px; }
   .dahi .dahi-txt { right: 0; }
@@ -136,6 +170,25 @@
       position: relative;
       transform: translateY(0);
     }
+  }
+  .lassi .lassi-inner{
+    position: relative;
+    margin: 0 0 50px !important;
+    .lassi-txt {
+      width: 100%;
+      left: 0;
+      margin: 0 !important;
+      text-align: center;
+      position: relative;
+      transform: translateY(0);
+    }
+  }
+  .home-lassi-title {
+    margin: 50px 0 0 0 !important;
+    position: relative;
+    left: auto !important;
+    text-align: center;
+    right:2%;
   }
   .paneer .paneer-image { margin-top: -200px; }
   .home-header { opacity: 1; }

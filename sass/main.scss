@@ -843,36 +843,11 @@ footer {
   }
 }
 //popup//
-.lassi-popup {
-  background-color: #ef7e22;
+.lassis-popup {
+background-image:url("../img/home/back.jpg");
   position: relative;
-}
-.lassi-text {
-  margin-top: 10%;
-  p {
-    color: #fff;
-  }
-}
-.lassi-katori {
-  margin-left: 10%;
-  margin-top: 15%;
-}
-.home-lassis-title {
-  color: #fff;
-  position: absolute;
-  left: 42%;
-  top: 53%;
-}
-.cow {
-  position: absolute;
-  right: 61%;
-  bottom: 18%;
-  z-index: 3;
-}
-.background {
-  position: relative;
-  width: 100%;
-  z-index: 1;
+  min-height: 600px;
+  background-size: cover;
 }
 .lassis {
   position: absolute;
@@ -881,8 +856,50 @@ footer {
   bottom: 36%;
 }
 .ngdialog.ngdialog-theme-plain .ngdialog-content {
-  background: #EF7E22;
-  width: 75%;
+  width: 900px;
+  padding: 0;
+}
+.ngdialog.ngdialog-theme-plain .ngdialog-close:before{
+  color: #fff!important;
+  font-size: 40px;
+}
+.ngdialog.ngdialog-theme-plain {
+    padding-top: 60px;
+}
+
+.lassis-katori{
+  margin-left: 15%;
+  margin-top: 15%;
+}
+.home-lassis-title{
+  color: #fff!important;
+  position: absolute;
+  top: 51%;
+  left: 59%;
+}
+.lassis {
+    position: absolute;
+    right: 6%;
+    z-index: 3;
+    top: 33px;
+    width: 40%;
+}
+.lassis-text{
+  margin-top: 12%;
+  p{
+    color: #fff !important;
+    font-family: $font-family-sans-serif;
+    font-size: 17px;
+    font-weight: 600;
+    letter-spacing: 1px;
+  }
+}
+
+.cow{
+  position: absolute;
+  left: 32%;
+    top: 105px;
+    z-index: 3;
 }
 @import "harsh";
 @import "home";
