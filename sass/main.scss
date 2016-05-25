@@ -815,6 +815,49 @@ footer {
     display: block;
   }
 }
+//popup//
+.lassi-popup{
+  background-color: #ef7e22;
+  position: relative;
+}
+.lassi-text{
+  margin-top: 10%;
+  p{
+  color: #fff;
+}
+}
+
+.lassi-katori{
+  margin-left: 10%;
+    margin-top: 15%;
+}
+
+.home-lassis-title{
+  color: #fff;
+    position: absolute;
+    left: 42%;
+    top: 53%;
+}
+.cow{
+  position: absolute;
+    right: 61%;
+    bottom: 18%;
+    z-index: 3;
+}
+
+.background{
+  position: relative;
+  width: 100%;
+  z-index: 1;
+}
+.lassis{
+  position: absolute;
+    right: 10%;
+    z-index: 3;
+    bottom: 36%;
+}
+
+
 @import "harsh";
 @import "home";
 @import "mobile";

@@ -31,6 +31,12 @@ firstapp.config(function($stateProvider, $urlRouterProvider, $httpProvider) {
     controller: 'ContactusCtrl'
   })
 
+  .state('popup', {
+    url: "/popup",
+    templateUrl: "views/template.html",
+    controller: 'PopupCtrl'
+  })
+
   .state('dahi', {
     url: "/dahi",
     templateUrl: "views/template.html",

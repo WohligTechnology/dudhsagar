@@ -437,7 +437,18 @@ angular.module('phonecatControllers', ['templateservicemod', 'navigationservice'
   $scope.navigation = NavigationService.getnav();
 })
 
-.controller('headerctrl', function($scope, TemplateService, $uibModal) {
+.controller('PopupCtrl', function($scope, TemplateService, NavigationService, $timeout) {
+  //Used to name the .html file
+  $scope.template = TemplateService.changecontent("popup");
+  $scope.menutitle = NavigationService.makeactive("Popup");
+  TemplateService.title = $scope.menutitle;
+  $scope.navigation = NavigationService.getnav();
+})
+
+
+
+
+.controller('headerctrl', function($scope, TemplateService) {
   $scope.template = TemplateService;
   $scope.showme = "menu-out";
   $scope.backme = "backmee";
