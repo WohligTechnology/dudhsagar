@@ -449,6 +449,7 @@ angular.module('phonecatControllers', ['templateservicemod', 'navigationservice'
   $scope.menutitle = NavigationService.makeactive("Careers");
   TemplateService.title = $scope.menutitle;
   $scope.navigation = NavigationService.getnav();
+  $scope.oneAtATime = true;
 })
 
 // .controller('PopupCtrl', function($scope, TemplateService, NavigationService, $timeout) {
