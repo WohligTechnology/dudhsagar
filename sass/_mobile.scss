@@ -97,9 +97,9 @@
     padding: 0;
   }
   //.prices .price-table td:last-child { padding: 2px 15px 0; }
-  .prices .dahi-price-table td + td,
   //.prices .paneer-price-table td + td { padding: 0 2px; }
   //.prices .price-table td:last-child { padding: 2px 5px 0; }
+  .prices .dahi-price-table td + td,
   .dahi-pack,
   .paneer-pack {
     margin: 100px 0;
@@ -124,30 +124,30 @@
   //  }
   .ngdialog.ngdialog-theme-plain .ngdialog-content {
     width: 750px;
-}
-.lassis-katori {
+  }
+  .lassis-katori {
     margin-left: 5%;
     margin-top: 5%;
-}
-.home-lassis-title {
+  }
+  .home-lassis-title {
     top: 51%;
     left: 150px;
     font-size: 70px;
-}
-.lassis-text{
-  p{
-    font-size: 13px;
   }
-}
-.lassis{
-  top:64px;
-}
-.lassis-popup{
-  min-height: 480px;
-}
-.cup {
+  .lassis-text {
+    p {
+      font-size: 13px;
+    }
+  }
+  .lassis {
+    top: 64px;
+  }
+  .lassis-popup {
+    min-height: 480px;
+  }
+  .cup {
     width: 150px;
-}
+  }
   header .hamburger .menu .menu-links ul .menu-link-list {
     margin-top: 30px;
     text-align: center;
@@ -668,6 +668,14 @@
     p {
       line-height: 120%;
       margin-bottom: 2px;
+    }
+  }
+  .white-accordion {
+    padding: 0 0 20px;
+    .panel-heading {
+      i {
+        display: none;
+      }
     }
   }
   section#milk {

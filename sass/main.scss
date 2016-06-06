@@ -899,34 +899,46 @@ footer {
   top: 105px;
   z-index: 3;
 }
+.bod-btm {
+  border-bottom: 1px solid $brand-primary;
+  margin: 0 !important;
+  padding: 30px 0;
+}
 .white-accordion {
   padding: 0 20px 20px;
   .panel-default {
     border-color: transparent;
   }
   .panel-default {
+    .panel-heading + .panel-collapse > .panel-body {
+      border-top-color: $brand-primary;
+    }
     .panel-heading {
       background-color: transparent;
       border-bottom: 1px solid $brand-primary;
-      color: #fff;
       padding: 0;
     }
     .panel-title > a {
       display: block;
       padding: 10px 15px;
+      &:hover {
+        color: inherit;
+      }
     }
   }
   .panel-group {
     .panel {
       background-color: transparent;
       border-width: 0;
+      -webkit-box-shadow: 0 1px 1px rgba(0, 0, 0, 0.00);
+      box-shadow: 0 1px 1px rgba(0, 0, 0, 0.00);
     }
     .panel + .panel {
       margin-top: 0;
     }
   }
 }
-.bold{
+.bold {
   font-weight: 800;
   display: inline-block;
 }
