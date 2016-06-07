@@ -911,11 +911,12 @@ footer {
   }
   .panel-default {
     .panel-heading + .panel-collapse > .panel-body {
-      border-top-color: $brand-primary;
+      border-top-color: transparent;
     }
     .panel-heading {
       background-color: transparent;
       border-bottom: 1px solid $brand-primary;
+      @include transition(all ease 500ms);
       padding: 0;
     }
     .panel-title > a {
@@ -924,6 +925,14 @@ footer {
       &:hover {
         color: inherit;
       }
+    }
+  }
+  .panel-open {
+    .panel-heading {
+      border-color: transparent;
+    }
+    .panel-heading + .panel-collapse > .panel-body {
+      border-bottom: 1px solid $brand-primary;
     }
   }
   .panel-group {
