@@ -8,7 +8,7 @@ angular.module('phonecatControllers', ['templateservicemod', 'navigationservice'
       });
     };
 
-    $scope.openLassi();
+    //$scope.openLassi();
   })
   .controller('HomeCtrl', function($scope, TemplateService, NavigationService, $timeout, ngDialog) {
     //Used to name the .html file

@@ -77,9 +77,9 @@ $instagram: #396d9a !default;
 }
 .primary {
   color: $brand-primary;
-  &:hover,
   &:active,
-  &:focus {
+  &:focus,
+  &:hover {
     color: $brand-primary;
   }
 }
@@ -125,8 +125,8 @@ $instagram: #396d9a !default;
 .font-proxima-semi {
   font-family: $font-proxima-semi;
 }
-a,
-.btn {
+.btn,
+a {
   cursor: pointer;
 }
 a,
@@ -325,8 +325,8 @@ a:hover {
 }
 .team-members {
   margin-bottom: 20px;
-  .manan,
   .aadil,
+  .manan,
   .viraj {
     width: 175px;
     height: 175px;
@@ -895,8 +895,8 @@ footer {
 }
 .cow {
   position: absolute;
-  left: 32%;
-  top: 105px;
+  // left: 32%;
+  // top: 105px;
   z-index: 3;
 }
 .bod-btm {
