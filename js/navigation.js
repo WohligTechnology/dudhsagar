@@ -38,7 +38,15 @@ var navigationservice = angular.module('navigationservice', [])
           "number": enquiry.number,
           "email": enquiry.email,
           "msg": enquiry.msg
-        }
+        },
+        withCredentials: true
+      }).success(callback);
+    },
+    getCareers: function (callback) {
+      return $http({
+        url: adminurl + "getCareers",
+        method: "GET",
+        withCredentials: true
       }).success(callback);
     }
 

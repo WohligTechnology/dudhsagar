@@ -24,16 +24,16 @@
               <h2 class="font-funky primary f48 bod-btm">Vacancies</h2>
             </div>
             <uib-accordion close-others="oneAtATime">
-              <uib-accordion-group is-open="status.open1">
-                <uib-accordion-heading><span class="bold">Sales Executive (Milk,Ghee,Paneer,Curd)</span>
+              <uib-accordion-group is-open="status.open1" ng-repeat = "career in careers">
+                <uib-accordion-heading><span class="bold">{{career.title}}</span>
                   <i class="pull-right fa primary" ng-class="{'fa-minus': status.open1, 'fa-plus': !status.open1}"></i>
                 </uib-accordion-heading>
-                <p><span class="bold">Exp :</span> Min-2 years
-                  <br> <span class="bold"> Educational Qualification :</span> Graduate
-                  <br> <span class="bold"> No of Positions :</span> 6
-                  <br> <span class="bold"> Area :</span> WB</p>
+                <p><span class="bold">Exp :</span> {{career.experience}}
+                  <br> <span class="bold"> Educational Qualification :</span> {{career.qualification}}
+                  <br> <span class="bold"> No of Positions :</span> {{career.openings}}
+                  <br> <span class="bold"> Area :</span> {{career.area}}</p>
               </uib-accordion-group>
-              <uib-accordion-group is-open="status.open2">
+              <!-- <uib-accordion-group is-open="status.open2">
                 <uib-accordion-heading><span class="bold">Fitter(Ammonia,welding)</span>
                   <i class="pull-right fa primary" ng-class="{'fa-minus': status.open2, 'fa-plus': !status.open2}"></i>
                 </uib-accordion-heading>
@@ -68,7 +68,7 @@
                   <br> <span class="bold"> Educational Qualification :</span> B.Sc/M.sc
                   <br> <span class="bold"> No of Positions :</span> 6
                   <br> <span class="bold"> Area :</span> WB</p>
-              </uib-accordion-group>
+              </uib-accordion-group> -->
             </uib-accordion>
           </div>
         </div>
