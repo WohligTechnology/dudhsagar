@@ -1,5 +1,5 @@
 var adminurl = "http://wohlig.co.in/adyabackend/index.php/json/";
-//var adminurl = "http://192.168.0.123/adyabackend/index.php/json/";
+// var adminurl = "http://localhost/adyabackend/index.php/json/";
 
 var navigationservice = angular.module('navigationservice', [])
 
@@ -29,6 +29,9 @@ var navigationservice = angular.module('navigationservice', [])
       }
       return menuname;
     },
+     getCareer: function(callback) {
+     $http.get(adminurl + 'getCareers').success(callback);
+   },
     enquiry: function(enquiry, callback) {
       return $http({
         url: adminurl + "contactSubmit",
