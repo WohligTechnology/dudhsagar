@@ -455,10 +455,8 @@ angular.module('phonecatControllers', ['templateservicemod', 'navigationservice'
 
     console.log("data: ", data.data);
     $scope.careers = data.data;
-    
+
   });
-
-
 })
 
 // .controller('PopupCtrl', function($scope, TemplateService, NavigationService, $timeout) {
