@@ -6,11 +6,11 @@ var firstapp = angular.module('firstapp', [
   'navigationservice'
 ]);
 
-firstapp.config(function($stateProvider, $urlRouterProvider, $httpProvider, ngDialogProvider) {
+firstapp.config(function ($stateProvider, $urlRouterProvider, $httpProvider, ngDialogProvider) {
 
   // for http request with session
   $httpProvider.defaults.withCredentials = true;
-    $stateProvider
+  $stateProvider
 
     .state('home', {
     url: "/home",
@@ -66,6 +66,12 @@ firstapp.config(function($stateProvider, $urlRouterProvider, $httpProvider, ngDi
     controller: 'LassiCtrl'
   })
 
+  .state('ghee', {
+    url: "/ghee",
+    templateUrl: "views/template.html",
+    controller: 'GheeCtrl'
+  })
+
   // .state('plant', {
   //   url: "/plant",
   //   templateUrl: "views/template.html",
@@ -82,16 +88,16 @@ firstapp.config(function($stateProvider, $urlRouterProvider, $httpProvider, ngDi
 });
 
 
-firstapp.directive('img', function($compile, $parse) {
+firstapp.directive('img', function ($compile, $parse) {
   return {
     restrict: 'E',
     replace: false,
-    link: function($scope, element, attrs) {
+    link: function ($scope, element, attrs) {
       var $element = $(element);
       if (!attrs.noloading) {
         $element.after("<img src='img/loading.gif' class='loading' />");
         var $loading = $element.next(".loading");
-        $element.load(function() {
+        $element.load(function () {
           $loading.remove();
           $(this).addClass("doneLoading");
         });
@@ -102,9 +108,9 @@ firstapp.directive('img', function($compile, $parse) {
   };
 });
 
-firstapp.directive("scroll", function($window) {
-  return function(scope, element, attrs) {
-    angular.element($window).bind("scroll", function() {
+firstapp.directive("scroll", function ($window) {
+  return function (scope, element, attrs) {
+    angular.element($window).bind("scroll", function () {
       var windowHeight = $(window).height();
       if (this.pageYOffset >= windowHeight) {
         // console.log(windowHeight);
@@ -116,15 +122,15 @@ firstapp.directive("scroll", function($window) {
   };
 });
 
-firstapp.directive('autoHeight', function($compile, $parse) {
+firstapp.directive('autoHeight', function ($compile, $parse) {
   return {
     restrict: 'EA',
     replace: false,
-    link: function($scope, element, attrs) {
+    link: function ($scope, element, attrs) {
       var $element = $(element);
       var windowHeight = $(window).height();
       $element.css("min-height", windowHeight);
-      setTimeout(function() {
+      setTimeout(function () {
         $element.css("min-height", windowHeight);
       }, 1500);
     }

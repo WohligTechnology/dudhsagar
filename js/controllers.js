@@ -1,6 +1,6 @@
 angular.module('phonecatControllers', ['templateservicemod', 'navigationservice', 'ui.bootstrap', 'ngAnimate', 'ngSanitize', 'angular-flexslider', 'ngDialog'])
-  .controller('PopLassiCtrl', function($scope, TemplateService, NavigationService, $timeout, ngDialog) {
-    $scope.openLassi = function() {
+  .controller('PopLassiCtrl', function ($scope, TemplateService, NavigationService, $timeout, ngDialog) {
+    $scope.openLassi = function () {
       ngDialog.open({
         template: 'views/content/popup.html',
         className: 'ngdialog-theme-plain',
@@ -10,7 +10,7 @@ angular.module('phonecatControllers', ['templateservicemod', 'navigationservice'
 
     //$scope.openLassi();
   })
-  .controller('HomeCtrl', function($scope, TemplateService, NavigationService, $timeout, ngDialog) {
+  .controller('HomeCtrl', function ($scope, TemplateService, NavigationService, $timeout, ngDialog) {
     //Used to name the .html file
     $scope.template = TemplateService.changecontent("home");
     $scope.menutitle = NavigationService.makeactive("Home");
@@ -24,15 +24,16 @@ angular.module('phonecatControllers', ['templateservicemod', 'navigationservice'
       three: "views/section/section3.html",
       four: "views/section/section4.html",
       five: "views/section/section5.html",
-      seven: "views/section/section7.html"
+      seven: "views/section/section7.html",
+      eight: "views/section/section8.html"
     };
 
 
 
     $scope.value = true;
 
-    $scope.$on('$viewContentLoaded', function() {
-      $timeout(function() {
+    $scope.$on('$viewContentLoaded', function () {
+      $timeout(function () {
         $('.fullpage').fullpage();
 
         switch ($scope.homeval) {
@@ -67,7 +68,7 @@ angular.module('phonecatControllers', ['templateservicemod', 'navigationservice'
     ];
   })
 
-.controller('AboutusCtrl', function($scope, TemplateService, NavigationService, $timeout) {
+.controller('AboutusCtrl', function ($scope, TemplateService, NavigationService, $timeout) {
   //Used to name the .html file
   $scope.template = TemplateService.changecontent("aboutus");
   $scope.menutitle = NavigationService.makeactive("Aboutus");
@@ -75,23 +76,23 @@ angular.module('phonecatControllers', ['templateservicemod', 'navigationservice'
   $scope.navigation = NavigationService.getnav();
 })
 
-.controller('ContactusCtrl', function($scope, TemplateService, NavigationService, $timeout) {
+.controller('ContactusCtrl', function ($scope, TemplateService, NavigationService, $timeout) {
   //Used to name the .html file
   $scope.template = TemplateService.changecontent("contactus");
   $scope.menutitle = NavigationService.makeactive("Contactus");
   TemplateService.title = $scope.menutitle;
   $scope.navigation = NavigationService.getnav();
 
-  $scope.submitform = function(formenquire, formvalid) {
+  $scope.submitform = function (formenquire, formvalid) {
     if (formenquire.$valid) {
-      NavigationService.enquiry(formvalid, function(data) {
+      NavigationService.enquiry(formvalid, function (data) {
         $scope.formComplete = true;
       });
     }
   };
 })
 
-.controller('DahiCtrl', function($scope, TemplateService, NavigationService, $timeout) {
+.controller('DahiCtrl', function ($scope, TemplateService, NavigationService, $timeout) {
   //Used to name the .html file
   $scope.template = TemplateService.changecontent("dahi");
   $scope.menutitle = NavigationService.makeactive("Dahi");
@@ -101,7 +102,7 @@ angular.module('phonecatControllers', ['templateservicemod', 'navigationservice'
     enquire: "views/content/enquiry.html"
   };
   $scope.formenquire = {};
-  $scope.enquiry = function() {
+  $scope.enquiry = function () {
     $scope.eback = "eeback";
     if ($scope.showme == "enquire-out") {
       $scope.showme = "enquire-in";
@@ -113,16 +114,16 @@ angular.module('phonecatControllers', ['templateservicemod', 'navigationservice'
       $scope.eback = "eback";
     }
   };
-  $scope.submitform = function(formenquire, formvalid) {
+  $scope.submitform = function (formenquire, formvalid) {
     if (formenquire.$valid) {
       $scope.formComplete = true;
-      NavigationService.enquiry(formvalid, function(data) {});
-      $timeout(function() {
+      NavigationService.enquiry(formvalid, function (data) {});
+      $timeout(function () {
         $scope.showme = "enquire-in";
         $scope.ebutton = "";
         $scope.eback = "eeback";
       }, 3000);
-      $timeout(function() {
+      $timeout(function () {
         $scope.formComplete = false;
         $scope.formenquire = {};
       }, 3500);
@@ -130,7 +131,7 @@ angular.module('phonecatControllers', ['templateservicemod', 'navigationservice'
   };
 })
 
-.controller('LassiCtrl', function($scope, TemplateService, NavigationService, $timeout) {
+.controller('LassiCtrl', function ($scope, TemplateService, NavigationService, $timeout) {
   //Used to name the .html file
   $scope.template = TemplateService.changecontent("lassi");
   $scope.menutitle = NavigationService.makeactive("Lassi");
@@ -140,7 +141,7 @@ angular.module('phonecatControllers', ['templateservicemod', 'navigationservice'
     enquire: "views/content/enquiry.html"
   };
   $scope.formenquire = {};
-  $scope.enquiry = function() {
+  $scope.enquiry = function () {
     $scope.eback = "eeback";
     if ($scope.showme == "enquire-out") {
       $scope.showme = "enquire-in";
@@ -152,16 +153,16 @@ angular.module('phonecatControllers', ['templateservicemod', 'navigationservice'
       $scope.eback = "eback";
     }
   };
-  $scope.submitform = function(formenquire, formvalid) {
+  $scope.submitform = function (formenquire, formvalid) {
     if (formenquire.$valid) {
       $scope.formComplete = true;
-      NavigationService.enquiry(formvalid, function(data) {});
-      $timeout(function() {
+      NavigationService.enquiry(formvalid, function (data) {});
+      $timeout(function () {
         $scope.showme = "enquire-in";
         $scope.ebutton = "";
         $scope.eback = "eeback";
       }, 3000);
-      $timeout(function() {
+      $timeout(function () {
         $scope.formComplete = false;
         $scope.formenquire = {};
       }, 3500);
@@ -171,7 +172,7 @@ angular.module('phonecatControllers', ['templateservicemod', 'navigationservice'
 
 
 
-.controller('MilkCtrl', function($scope, $state, TemplateService, NavigationService, $timeout, $stateParams, $document, $location) {
+.controller('MilkCtrl', function ($scope, $state, TemplateService, NavigationService, $timeout, $stateParams, $document, $location) {
     //Used to name the .html file
     $scope.template = TemplateService.changecontent("milk");
     $scope.menutitle = NavigationService.makeactive("Milk");
@@ -362,7 +363,7 @@ angular.module('phonecatControllers', ['templateservicemod', 'navigationservice'
     $scope.section = {
       enquire: "views/content/enquiry.html"
     };
-    $scope.enquiry = function() {
+    $scope.enquiry = function () {
       $scope.eback = "eeback";
       if ($scope.showme == "enquire-out") {
         $scope.showme = "enquire-in";
@@ -374,23 +375,23 @@ angular.module('phonecatControllers', ['templateservicemod', 'navigationservice'
         $scope.eback = "eback";
       }
     };
-    $scope.submitform = function(formenquire, formvalid) {
+    $scope.submitform = function (formenquire, formvalid) {
       if (formenquire.$valid) {
         $scope.formComplete = true;
-        NavigationService.enquiry(formvalid, function(data) {});
-        $timeout(function() {
+        NavigationService.enquiry(formvalid, function (data) {});
+        $timeout(function () {
           $scope.showme = "enquire-in";
           $scope.ebutton = "";
           $scope.eback = "eeback";
         }, 3000);
-        $timeout(function() {
+        $timeout(function () {
           $scope.formComplete = false;
           $scope.formenquire = {};
         }, 3500);
       }
     };
   })
-  .controller('PaneerCtrl', function($scope, TemplateService, NavigationService, $timeout) {
+  .controller('PaneerCtrl', function ($scope, TemplateService, NavigationService, $timeout) {
     //Used to name the .html file
     $scope.template = TemplateService.changecontent("paneer");
     $scope.menutitle = NavigationService.makeactive("Paneer");
@@ -401,7 +402,7 @@ angular.module('phonecatControllers', ['templateservicemod', 'navigationservice'
     $scope.section = {
       enquire: "views/content/enquiry.html"
     };
-    $scope.enquiry = function() {
+    $scope.enquiry = function () {
       $scope.eback = "eeback";
       if ($scope.showme == "enquire-out") {
         $scope.showme = "enquire-in";
@@ -413,23 +414,62 @@ angular.module('phonecatControllers', ['templateservicemod', 'navigationservice'
         $scope.eback = "eback";
       }
     };
-    $scope.submitform = function(formenquire, formvalid) {
+    $scope.submitform = function (formenquire, formvalid) {
       if (formenquire.$valid) {
         $scope.formComplete = true;
-        NavigationService.enquiry(formvalid, function(data) {});
-        $timeout(function() {
+        NavigationService.enquiry(formvalid, function (data) {});
+        $timeout(function () {
           $scope.showme = "enquire-in";
           $scope.ebutton = "";
           $scope.eback = "eeback";
         }, 3000);
-        $timeout(function() {
+        $timeout(function () {
           $scope.formComplete = false;
           $scope.formenquire = {};
         }, 3500);
       }
     };
   })
-  .controller('PlantCtrl', function($scope, TemplateService, NavigationService, $timeout) {
+  .controller('GheeCtrl', function ($scope, TemplateService, NavigationService, $timeout) {
+    //Used to name the .html file
+    $scope.template = TemplateService.changecontent("ghee");
+    $scope.menutitle = NavigationService.makeactive("ghee");
+    TemplateService.title = $scope.menutitle;
+    $scope.navigation = NavigationService.getnav();
+    $scope.formenquire = {};
+
+    $scope.section = {
+      enquire: "views/content/enquiry.html"
+    };
+    $scope.enquiry = function () {
+      $scope.eback = "eeback";
+      if ($scope.showme == "enquire-out") {
+        $scope.showme = "enquire-in";
+        $scope.ebutton = "";
+        $scope.eback = "eeback";
+      } else {
+        $scope.showme = "enquire-out";
+        $scope.ebutton = "ebutton";
+        $scope.eback = "eback";
+      }
+    };
+    $scope.submitform = function (formenquire, formvalid) {
+      if (formenquire.$valid) {
+        $scope.formComplete = true;
+        NavigationService.enquiry(formvalid, function (data) {});
+        $timeout(function () {
+          $scope.showme = "enquire-in";
+          $scope.ebutton = "";
+          $scope.eback = "eeback";
+        }, 3000);
+        $timeout(function () {
+          $scope.formComplete = false;
+          $scope.formenquire = {};
+        }, 3500);
+      }
+    };
+  })
+  .controller('PlantCtrl', function ($scope, TemplateService, NavigationService, $timeout) {
     //Used to name the .html file
     $scope.template = TemplateService.changecontent("plant");
     $scope.menutitle = NavigationService.makeactive("Plant");
@@ -443,7 +483,7 @@ angular.module('phonecatControllers', ['templateservicemod', 'navigationservice'
     ];
   })
 
-.controller('CareersCtrl', function($scope, TemplateService, NavigationService, $timeout) {
+.controller('CareersCtrl', function ($scope, TemplateService, NavigationService, $timeout) {
   //Used to name the .html file
   $scope.template = TemplateService.changecontent("careers");
   $scope.menutitle = NavigationService.makeactive("Careers");
@@ -451,7 +491,7 @@ angular.module('phonecatControllers', ['templateservicemod', 'navigationservice'
   $scope.navigation = NavigationService.getnav();
   $scope.oneAtATime = true;
 
-  NavigationService.getCareers(function(data) {
+  NavigationService.getCareers(function (data) {
 
     console.log("data: ", data.data);
     $scope.careers = data.data;
@@ -467,11 +507,11 @@ angular.module('phonecatControllers', ['templateservicemod', 'navigationservice'
 //   $scope.navigation = NavigationService.getnav();
 // })
 
-.controller('headerctrl', function($scope, TemplateService, ngDialog) {
+.controller('headerctrl', function ($scope, TemplateService, ngDialog) {
   $scope.template = TemplateService;
   $scope.showme = "menu-out";
   $scope.backme = "backmee";
-  $scope.getnav = function(value) {
+  $scope.getnav = function (value) {
     if ($scope.showme == "menu-out") {
       if (value == 1) {
         $scope.showme = "menu-in";
@@ -486,7 +526,7 @@ angular.module('phonecatControllers', ['templateservicemod', 'navigationservice'
       }
     }
   };
-  $scope.$on('$stateChangeSuccess', function(event, toState, toParams, fromState, fromParams) {
+  $scope.$on('$stateChangeSuccess', function (event, toState, toParams, fromState, fromParams) {
 
     if (toState.url == "/home" && fromState.url != "^") {
       location.reload();
