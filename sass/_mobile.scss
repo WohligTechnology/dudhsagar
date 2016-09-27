@@ -1,824 +1,976 @@
-// @media (max-width: 992px) {
-//   .energy { width: 50%; }
-// }
-// @media (max-width: 768px) {
-//   // paneer
-//   .energy { width: 50%; }
-// }
-// @media (max-width: @screen-xs-max) {
-//
-// }
-// media query
-@media (min-width: 1600px + 1px) {
-  .menu {
-    height: 700px !important;
-  }
-}
-@media (max-width: $screen-md-max) {
-  // Home
-  //  .milk .milk-package {
-  //    top: 355px;
-  //    right: 270px;
-  //  }
-  .milk .milk-all {
-    top: 385px;
-    right: 95px;
-  }
-  //  .dahi .dahi-package {
-  //    top: 70px;
-  //    left: 100px;
-  //  }
-  .dahi .dahi-cup {
-    top: 310px;
-    left: 470px;
-  }
-  //  .paneer .paneer-package {
-  //    width: 30%;
-  //    margin-left: 120px;
-  //  }
-  // About us
-  .team-members {
-    .aadil,
-    .manan,
-    .viraj {
-      margin: 55px 0 0 20px;
-    }
-    .member-detail {
-      margin-top: 65px;
-    }
-  }
-  // milk
-  .table-milk {
-    margin-top: 28px;
-  }
-  .table-dahi {
-    margin-top: 20px;
-  }
-  .table-paneer {
-    margin-top: 35px;
-  }
-  .paneer-title {
-    margin: 65px -75px 0 0;
-    h2 {
-      font-size: 60px;
-    }
-  }
-  // plant
-  .slider .main-slidepart {
-    width: 90%;
-  }
-  // about page
-  .about {
-    margin: 0 100px;
-  }
-  .adya-plant .plant-images .plant-one,
-  .adya-plant .plant-images .plant-two {
-    height: 300px;
-  }
-  .adya-plant .plant-images .plant-five,
-  .adya-plant .plant-images .plant-four,
-  .adya-plant .plant-images .plant-six,
-  .adya-plant .plant-images .plant-three {
-    height: 400px;
-  }
-  // footer
-  .contact-bg {
-    background-size: contain;
-    background-repeat: no-repeat;
-  }
-  // MILK PAGE
-  .milk-circle {
-    @include square(600px);
-    margin-top: 100px;
-  }
-  .dahi-pack .dahi-details,
-  .milk-pack .milk-details,
-  .paneer-pack .paneer-details {
-    padding: 0;
-  }
-  //.prices .price-table td:last-child { padding: 2px 15px 0; }
-  //.prices .paneer-price-table td + td { padding: 0 2px; }
-  //.prices .price-table td:last-child { padding: 2px 5px 0; }
-  .prices .dahi-price-table td + td,
-  .dahi-pack,
-  .paneer-pack {
-    margin: 100px 0;
-  }
-  // ENQUIRE NOW
-  .mini-enquire .enquire-main {
-    width: 500px;
-    padding: 28px 60px 19px;
-  }
-  .mini-enquire .ebutton {
-    right: 456px;
-  }
-  .life-at-adya .cow .cow-gif {
-    top: -52px;
-  }
-}
-@media (max-width: $screen-sm-max) {
-  // Home
-  //  .milk .milk-package {
-  //    top: 265px;
-  //    right: 205px;
-  //  }
-  .ngdialog.ngdialog-theme-plain .ngdialog-content {
-    width: 750px;
-  }
-  .lassis-katori {
-    margin-left: 5%;
-    margin-top: 5%;
-  }
-  .home-lassis-title {
-    top: 51%;
-    left: 150px;
-    font-size: 70px;
-  }
-  .lassis-text {
-    p {
-      font-size: 13px;
-    }
-  }
-  .lassis {
-    top: 64px;
-  }
-  .lassis-popup {
-    min-height: 480px;
-  }
-  .cup {
-    width: 150px;
-  }
-  header .hamburger .menu .menu-links ul .menu-link-list {
-    margin-top: 30px;
-    text-align: center;
-    li {
-      display: inline-block;
-      margin-right: 20px;
-      &:last-child {
-        margin: 0;
-      }
-      p {
-        display: inline-block;
-      }
-    }
-  }
-  // .home-lassis-title {
-  //   right: 6%;
-  //   z-index: 3;
-  //   top: 33px;
-  // }
-  .milk .milk-all {
-    top: 300px;
-    right: 70px;
-  }
-  .dahi .dahi-image {
-    // margin-top: -30px;
-  }
-  //  .dahi .dahi-package {
-  //    top: 65px;
-  //    left: 75px;
-  //  }
-  .dahi .dahi-cup {
-    top: 240px;
-    left: 355px;
-  }
-  //  .paneer .paneer-package {
-  //    margin: 200px 0 0 60px;
-  //  }
-  // About us
-  .team-members {
-    .aadil,
-    .manan,
-    .viraj {
-      margin: 70px 0 0 -15px;
-    }
-  }
-  // contact us
-  .contact-add {
-    margin: 0;
-  }
-  .contactus p {
-    text-align: center;
-  }
-  // milk
-  .dahi-title,
-  .milk-title,
-  .paneer-title {
-    margin: 0 0 50px;
-    h2,
-    p {
-      text-align: center;
-    }
-  }
-  .dahi-pack,
-  .milk-pack,
-  .paneer-pack {
-    .dahi-details,
-    .milk-details,
-    .paneer-details {
-      border-left: none;
-      border-right: none;
-      padding: 50px 0 0;
-    }
-  }
-  .table-curved {
-    margin: 0 auto;
-  }
-  .price {
-    p,
-    span {
-      text-align: center;
-    }
-  }
-  // plant
-  .plant-image {
-    width: 100%;
-  }
-  .slider .slide-imgholder {
-    height: auto;
-  }
-  .slider .main-slidepart {
-    width: 100%;
-    margin: 50px 0 100px;
-  }
-  // Careers
-  .careers {
-    .careers-main {
-      h2 {
-        font-size: 40px;
-      }
-      p {
-        font-size: 14px;
-      }
-    }
-  }
-  // About Page
-  .about {
-    margin: 0 50px;
-  }
-  .adya-plant .plant-images {
-    text-align: center;
-    .plant-five,
-    .plant-four,
-    .plant-one,
-    .plant-six,
-    .plant-three,
-    .plant-two {
-      width: 35%;
-      height: 200px;
-    }
-  }
-  // MILK PAGE
-  .milk-circle {
-    @include square(500px);
-    margin: 0 auto;
-  }
-  .lassi-milk-circle {
-    @include square(500px);
-    margin: 0 auto;
-  }
-  .milk-variants {
-    margin: 40px 0 50px;
-  }
-  .prices .paneer-price-table td:last-child {
-    padding: 0 20px 0 10px;
-  }
-  .life-at-adya {
-    .distribution-image,
-    .processing-image,
-    .procurement-image,
-    .quality-control-image {
-      margin-top: 60px;
-    }
-  }
-  .life-at-adya .cow .cow-gif {
-    top: -33px;
-    left: 185px;
-    width: 140px;
-  }
-  .life-at-adya .cow .cow-gif-right {
-    left: auto;
-    right: 185px;
-  }
-}
-@media (max-width: $screen-xs-max) {
-  // About us
-  .team-members {
-    .aadil,
-    .manan,
-    .viraj {
-      margin: 0 auto;
-    }
-    .member-detail {
-      margin: 0;
-      text-align: center;
-    }
-  }
-  .dahi .dahi-image {
-    // margin-top: -15px;
-  }
-  .menu-links {
-    ul > li {
-      margin-right: 8pxs !important;
-      .sub-menu {
-        margin-top: 35px;
-        font-size: 14px;
-      }
-      a {
-        font-size: 14px;
-      }
-    }
-  }
-  // footer
-  .footer {
-    text-align: center;
-    .credits {
-      margin-bottom: 50px;
-    }
-    .social {
-      margin-top: 50px;
-    }
-  }
-  // milk
-  .variant-images ul li {
-    zoom: 0.5;
-  }
-  .milk-slide {
-    .milk-images {
-      height: auto;
-      img {
-        width: 100%;
-      }
-    }
-  }
-  .milk-text {
-    font-size: 40px;
-    .milk-pack & ~ p {
-      font-size: 18px;
-    }
-  }
-  // plant
-  .slider .slide-imgholder {
-    margin-bottom: 50px;
-  }
-  .slider .main-slidepart {
-    width: 100%;
-    margin: 50px 0;
-  }
-  .big-menu {
-    margin-left: 0;
-  }
-  // .slider .main-slidepart {
-  //   display: none;
-  // }
-  .paneer .paneer-inner .paneer-txt {
-    left: 10px;
-  }
-  .dahi .milk-image,
-  .milk .milk-image,
-  .paneer .milk-image {
-    margin-top: -0px;
-  }
-  .dahi .dahi-txt,
-  .dahi .milk-txt,
-  .dahi .paneer-txt,
-  .milk .dahi-txt,
-  .milk .milk-txt,
-  .milk .paneer-txt,
-  .paneer .dahi-txt,
-  .paneer .milk-txt,
-  .paneer .paneer-txt {
-    width: 30%;
-    .title {
-      margin: 0;
-    }
-    p {
-      font-size: 12px;
-    }
-  }
-  .aboutus {
-    padding-bottom: 10px;
-    p {
-      font-size: 12px;
-      text-align: justify;
-    }
-  }
-  .contactus .copyright {
-    margin-right: 0;
-  }
-  .text-right.cont-footer-copy {
-    text-align: center;
-  }
-  .dahi-title .dahi-text,
-  .paneer-title h2 {
-    margin: 0;
-    font-size: 34px;
-  }
-  .paneer-title h2:first-child {
-    margin-bottom: 10px;
-  }
-  .dahi-title .dahi-text ~ p.made-from {
-    font-size: 16px;
-    margin-top: 0;
-  }
-  .dahi-title .past-milk,
-  .dahi-title .stand-milk {
-    margin-top: 0;
-    font-size: 20px;
-    margin-bottom: 10px;
-  }
-  .dahi-title,
-  .milk-title,
-  .paneer-title {
-    margin: 0 0 20px;
-  }
-  .dahi-pack .dahi-details,
-  .dahi-pack .milk-details,
-  .dahi-pack .paneer-details,
-  .milk-pack .dahi-details,
-  .milk-pack .milk-details,
-  .milk-pack .paneer-details,
-  .paneer-pack .dahi-details,
-  .paneer-pack .milk-details,
-  .paneer-pack .paneer-details {
-    padding: 20px 0;
-    margin-bottom: 20px;
-  }
-  .contactus {
-    text-align: center;
-    h2 {
-      text-align: center;
-    }
-  }
-  // header
-  header .hamburger .menu .menu-links ul > li span,
-  header .hamburger .menu .menu-links ul.menu-link-list li a {
-    font-size: 14px;
-  }
-  header .hamburger .menu .menu-links ul > li:last-child {
-    display: inline-block;
-  }
-  header .hamburger .menu .menu-links ul > li {
-    margin-right: 20px;
-  }
-  header .hamburger .menu .menu-links ul > li .menu-images {
-    width: 100px;
-  }
-  // Contact
-  .contact,
-  .enquire {
-    .title h2 {
-      font-size: 38px;
-    }
-  }
-  .corporate-address,
-  .plant-address {
-    text-align: center;
-  }
-  .corporate-address {
-    margin: 0 0 40px;
-    float: none !important;
-  }
-  .plant-address {
-    height: auto;
-    margin: 0;
-    padding: 0;
-    border: none;
-  }
-  // About Page
-  .about p {
-    font-size: 12px;
-  }
-  .adya-plant .plant-images {
-    .plant-five,
-    .plant-four,
-    .plant-one,
-    .plant-six,
-    .plant-three,
-    .plant-two {
-      display: block;
-      margin: 0 auto 5px;
-    }
-    .plant-one {
-      @include size(300px, 150px);
-    }
-    .plant-two {
-      @include size(300px, 250px);
-    }
-    .plant-three {
-      @include size(300px, 400px);
-    }
-    .plant-four {
-      @include size(300px, 200px);
-    }
-    .plant-five {
-      @include size(300px, 250px);
-    }
-    .plant-six {
-      @include size(300px, 250px);
-    }
-  }
-  // Milk Page
-  .milk-circle {
-    @include square(400px);
-  }
-  .dahi-pack .dahi-details,
-  .milk-pack .milk-details,
-  .paneer-pack .paneer-details {
-    margin: 0 20px;
-  }
-  .dahi-details .dahi-detail p,
-  .milk-details .milk-detail p,
-  .paneer-details .paneer-detail p {
-    font-size: 14px;
-    line-height: 22px;
-  }
-  .milk-table {
-    font-size: 12px;
-  }
-  .prices .price-table td:first-child span {
-    font-size: 16px;
-  }
-  .prices .price-table td + td {
-    padding: 2px 5px 0;
-    font-size: 14px;
-  }
-  .prices .dahi-price-table td + td,
-  .prices .dahi-price-table td:last-child,
-  .prices .paneer-price-table td + td {
-    padding: 0;
-  }
-  //.prices .paneer-price-table td:last-child { padding: 2px 0 0; }
-  .prices .paneer-price-table td:first-child {
-    padding: 0 0 0 5px;
-  }
-  // ENQUIRE NOW
-  .mini-enquire .enquire-main {
-    width: 100%;
-    right: -750px;
-    padding: 28px 70px 19px 40px;
-    transition: all 500ms cubic-bezier(0.81, 0, 0.15, 1.03);
-  }
-  .enquire-out {
-    right: auto;
-    left: 30px;
-    transition: all 500ms cubic-bezier(0.81, 0, 0.15, 1.03);
-  }
-  .mini-enquire .ebutton {
-    right: auto;
-    left: -44px;
-  }
-  .life-at-adya {
-    .distribution-image,
-    .processing-image,
-    .procurement-image,
-    .quality-control-image {
-      width: 200px;
-      margin: 40px auto 0;
-      img {
-        float: auto !important;
-      }
-    }
-    h3,
-    p {
-      text-align: center;
-    }
-    h3 {
-      margin: 20px 0 !important;
-    }
-    p {
-      margin: 0 30px;
-    }
-  }
-  .vision .vision-text {
-    width: 370px;
-    .a {
-      font-size: 18px;
-    }
-    .b {
-      margin: 25px 0 -25px;
-      font-size: 38px;
-      span {
-        font-size: 64px;
-      }
-    }
-    .c {
-      margin: 0 0 -15px 45px;
-      font-size: 40px;
-    }
-    .d {
-      margin-left: 198px;
-      font-size: 17px;
-    }
-  }
-  .home-header {
-    display: block;
-  }
-  .ngdialog.ngdialog-theme-plain .ngdialog-content {
-    width: 475px;
-    padding: 0;
-  }
-  .lassis-popup {
-    min-height: 700px;
-    .top {
-      .row {
-        margin-right: 0;
-        margin-left: 0;
-      }
-    }
-  }
-  .lassis-katori {
-    margin: 45px 0 25px 80px;
-    width: 30%;
-  }
-  .home-lassis-title {
-    position: absolute;
-    left: 38%;
-    top: 60px;
-  }
-  .cow {
-    left: 60%;
-    top: 136px;
-    z-index: 1;
-  }
-  .lassis {
-    left: 20%;
-    width: 60%;
-  }
-  .lassis-text {
-    margin-top: 3%;
-    text-align: center;
-    p {
-      font-size: 12px;
-    }
-  }
-}
-// landscape
-@media (max-width: 480px) {
-  .dahi .dahi-txt,
-  .dahi .milk-txt,
-  .dahi .paneer-txt,
-  .milk .dahi-txt,
-  .milk .milk-txt,
-  .milk .paneer-txt,
-  .paneer .dahi-txt,
-  .paneer .milk-txt,
-  .paneer .paneer-txt {
-    width: 38%;
-    p {
-      line-height: 120%;
-      margin-bottom: 2px;
-    }
-  }
-  .white-accordion {
-    padding: 0 0 20px;
-    .panel-heading {
-      i {
-        display: none;
-      }
-    }
-  }
-  section#milk {
-    min-height: 200px;
-  }
-  section#dhai {
-    min-height: 200px;
-  }
-  .menu-links {
-    ul > li {
-      margin-right: 10px !important;
-      .sub-menu {
-        font-size: 14px!important;
-        margin-top: 0 !important;
-        position: static!important;
-      }
-      a {
-        font-size: 14px;
-      }
-      // .menu-link-list {
-      //   li { margin: 0 16px !important; }
+      // @media (max-width: 992px) {
+      //   .energy { width: 50%; }
       // }
-    }
-  }
-  // header
-  header .hamburger .menu .menu-links ul > li .menu-images {
-    width: 55px;
-  }
-  header .hamburger .menu .menu-links ul > li span {
-    font-size: 14px;
-  }
-  // Careers
-  .careers {
-    .careers-main {
-      h2 {
-        font-size: 28px;
+      // @media (max-width: 768px) {
+      //   // paneer
+      //   .energy { width: 50%; }
+      // }
+      // @media (max-width: @screen-xs-max) {
+      //
+      // }
+      // media query
+      @media (min-width: 1600px + 1px) {
+        .menu {
+          height: 700px !important;
+        }
       }
-      p {
-        font-size: 12px;
+      
+      @media (max-width: $screen-md-max) {
+        // Home
+        //  .milk .milk-package {
+        //    top: 355px;
+        //    right: 270px;
+        //  }
+        .ghee-section {
+          .home-ghee-title {
+            min-height: $screen-md-max;
+            text-align: center;
+            font-size: 90px;
+          }
+        }
+        .ghee {
+          margin-top: 20%;
+        }
+        .ghee-txt {
+          margin-top: -34%;
+          left: 46%;
+        }
+        .lassi {
+          position: relative;
+          margin-top: 16%;
+        }
+        .home-lassi-title {
+          margin-top: -13%;
+          right: 46%;
+        }
+        .lassi-txt {
+          position: absolute;
+          right: 42%;
+          top: -19%;
+        }
+        .milk .milk-all {
+          top: 385px;
+          right: 95px;
+        }
+        //  .dahi .dahi-package {
+        //    top: 70px;
+        //    left: 100px;
+        //  }
+        .dahi .dahi-cup {
+          top: 310px;
+          left: 470px;
+        }
+        //  .paneer .paneer-package {
+        //    width: 30%;
+        //    margin-left: 120px;
+        //  }
+        // About us
+        .team-members {
+          .aadil,
+          .manan,
+          .viraj {
+            margin: 55px 0 0 20px;
+          }
+          .member-detail {
+            margin-top: 65px;
+          }
+        }
+        // milk
+        .table-milk {
+          margin-top: 28px;
+        }
+        .table-dahi {
+          margin-top: 20px;
+        }
+        .table-paneer {
+          margin-top: 35px;
+        }
+        .paneer-title {
+          margin: 65px -75px 0 0;
+          h2 {
+            font-size: 60px;
+          }
+        }
+        // plant
+        .slider .main-slidepart {
+          width: 90%;
+        }
+        // about page
+        .about {
+          margin: 0 100px;
+        }
+        .adya-plant .plant-images .plant-one,
+        .adya-plant .plant-images .plant-two {
+          height: 300px;
+        }
+        .adya-plant .plant-images .plant-five,
+        .adya-plant .plant-images .plant-four,
+        .adya-plant .plant-images .plant-six,
+        .adya-plant .plant-images .plant-three {
+          height: 400px;
+        }
+        // footer
+        .contact-bg {
+          background-size: contain;
+          background-repeat: no-repeat;
+        }
+        // MILK PAGE
+        .milk-circle {
+          @include square(600px);
+          margin-top: 100px;
+        }
+        .dahi-pack .dahi-details,
+        .milk-pack .milk-details,
+        .paneer-pack .paneer-details {
+          padding: 0;
+        }
+        //.prices .price-table td:last-child { padding: 2px 15px 0; }
+        //.prices .paneer-price-table td + td { padding: 0 2px; }
+        //.prices .price-table td:last-child { padding: 2px 5px 0; }
+        .prices .dahi-price-table td+td,
+        .dahi-pack,
+        .paneer-pack {
+          margin: 100px 0;
+        }
+        // ENQUIRE NOW
+        .mini-enquire .enquire-main {
+          width: 500px;
+          padding: 28px 60px 19px;
+        }
+        .mini-enquire .ebutton {
+          right: 456px;
+        }
+        .life-at-adya .cow .cow-gif {
+          top: -52px;
+        }
       }
-    }
-  }
-  // Contact
-  .contact,
-  .enquire {
-    .title h2 {
-      font-size: 28px;
-    }
-  }
-  .contact-address {
-    font-size: 12px;
-  }
-  // About Page
-  .about {
-    margin: 0 20px;
-  }
-  // Milk Page
-  .milk-circle {
-    @include square(250px);
-  }
-  .lassi-milk-circle {
-    @include square(250px);
-  }
-  .prices {
-    padding: 10px 20px;
-  }
-  .prices .price-table td:first-child span {
-    font-size: 12px;
-  }
-  .prices .price-table td + td {
-    font-size: 12px;
-  }
-  table.table-curved td {
-    padding: 8px 30px 0;
-  }
-  .prices .dahi-price-table td:first-child {
-    padding-left: 0;
-  }
-  .prices .paneer-price-table td:last-child {
-    padding: 0 10px 0 0;
-  }
-  // ENQUIRE NOW
-  .mini-enquire .enquire-main {
-    padding: 23px 60px 12px 30px;
-  }
-  .mini-enquire .enquire-main .form-group textarea.form-control {
-    height: 100px;
-  }
-  .life-at-adya {
-    h3 {
-      font-size: 20px;
-    }
-    p {
-      font-size: 12px;
-      margin: 0 10px !important;
-    }
-  }
-  .vision p {
-    margin: 0 10px 10px;
-    font-size: 12px;
-  }
-  .vision .vision-text {
-    width: 298px;
-    .a {
-      font-size: 14px;
-      margin-left: 0;
-      margin-bottom: -52px;
-    }
-    .b {
-      margin: 25px 0 -16px;
-      font-size: 30px;
-      span {
-        font-size: 48px;
+      
+      @media (min-width: 1200px) and (max-width: 1600px) {
+        //ghee 
+        .ghee-section {
+          .home-ghee-title {
+            position: absolute;
+            top: -30px;
+            left: 78px;
+            line-height: 96px;
+          }
+        }
+        .ghee-txt {
+          margin-top: 0;
+          position: absolute;
+          top: 24%;
+          left: 22%;
+        }
       }
-    }
-    .c {
-      margin: 0 0 -10px 45px;
-      font-size: 30px;
-    }
-    .d {
-      margin-left: 158px;
-      font-size: 13px;
-    }
-  }
-  .ngdialog.ngdialog-theme-plain .ngdialog-content {
-    width: 280px;
-  }
-  .home-lassis-title {
-    left: 50%;
-    top: 20px;
-    font-size: 36px;
-  }
-  .lassis-popup {
-    min-height: 500px;
-  }
-  .lassis {
-    left: 10%;
-    top: 35px;
-    width: 65%;
-  }
-  .cow {
-    left: 56%;
-    top: 10px;
-    width: 35%;
-  }
-}
+      
+      @media (min-width: 992px) and (max-width: 1200px) {
+        //lass
+        // .home-lassi-title {
+        //   z-index: 1;
+        //   position: absolute;
+        //   top: -40%;
+        //   right: 21%;
+        // }
+        // .lassi-txt {
+        //   position: absolute;
+        //   right: 17%;
+        //   top: -4%;
+        // }
+        //ghee 
+        .ghee-section {
+          .home-ghee-title {
+            position: absolute;
+            top: -12%;
+            left: 10%;
+            line-height: 96px;
+          }
+        }
+        .ghee-txt {
+          margin-top: 0;
+          position: absolute;
+          top: 24%;
+          left: 22%;
+        }
+      }
+      
+      @media (max-width: $screen-sm-max) {
+        // Home
+        //  .milk .milk-package {
+        //    top: 265px;
+        //    right: 205px;
+        //  }
+        .home-lassi-title {
+          margin: 0;
+          top: -50%;
+          right: 37%;
+        }
+        .lassi-txt {
+          position: absolute;
+          right: 40%;
+          top: -30%;
+        }
+        .ghee {
+          margin-top: 28%;
+        }
+        .ghee-section {
+          .home-ghee-title {
+            line-height: 80px;
+            position: absolute;
+            top: -48%;
+            left: 23%;
+          }
+        }
+        .ghee-txt {
+          margin: 0;
+          top: -7%;
+          left: 44%;
+        }
+        .ngdialog.ngdialog-theme-plain .ngdialog-content {
+          width: 750px;
+        }
+        .lassis-katori {
+          margin-left: 5%;
+          margin-top: 5%;
+        }
+        .home-lassis-title {
+          top: 51%;
+          left: 150px;
+          font-size: 70px;
+        }
+        .lassis-text {
+          p {
+            font-size: 13px;
+          }
+        }
+        .lassis {
+          top: 64px;
+        }
+        .lassis-popup {
+          min-height: 480px;
+        }
+        .cup {
+          width: 150px;
+        }
+        header .hamburger .menu .menu-links ul .menu-link-list {
+          margin-top: 30px;
+          text-align: center;
+          li {
+            display: inline-block;
+            margin-right: 20px;
+            &:last-child {
+              margin: 0;
+            }
+            p {
+              display: inline-block;
+            }
+          }
+        }
+        // .home-lassis-title {
+        //   right: 6%;
+        //   z-index: 3;
+        //   top: 33px;
+        // }
+        .milk .milk-all {
+          top: 300px;
+          right: 70px;
+        }
+        .dahi .dahi-image {
+          // margin-top: -30px;
+        }
+        //  .dahi .dahi-package {
+        //    top: 65px;
+        //    left: 75px;
+        //  }
+        .dahi .dahi-cup {
+          top: 240px;
+          left: 355px;
+        }
+        //  .paneer .paneer-package {
+        //    margin: 200px 0 0 60px;
+        //  }
+        // About us
+        .team-members {
+          .aadil,
+          .manan,
+          .viraj {
+            margin: 70px 0 0 -15px;
+          }
+        }
+        // contact us
+        .contact-add {
+          margin: 0;
+        }
+        .contactus p {
+          text-align: center;
+        }
+        // milk
+        .dahi-title,
+        .milk-title,
+        .paneer-title {
+          margin: 0 0 50px;
+          h2,
+          p {
+            text-align: center;
+          }
+        }
+        .dahi-pack,
+        .milk-pack,
+        .paneer-pack {
+          .dahi-details,
+          .milk-details,
+          .paneer-details {
+            border-left: none;
+            border-right: none;
+            padding: 50px 0 0;
+          }
+        }
+        .table-curved {
+          margin: 0 auto;
+        }
+        .price {
+          p,
+          span {
+            text-align: center;
+          }
+        }
+        // plant
+        .plant-image {
+          width: 100%;
+        }
+        .slider .slide-imgholder {
+          height: auto;
+        }
+        .slider .main-slidepart {
+          width: 100%;
+          margin: 50px 0 100px;
+        }
+        // Careers
+        .careers {
+          .careers-main {
+            h2 {
+              font-size: 40px;
+            }
+            p {
+              font-size: 14px;
+            }
+          }
+        }
+        // About Page
+        .about {
+          margin: 0 50px;
+        }
+        .adya-plant .plant-images {
+          text-align: center;
+          .plant-five,
+          .plant-four,
+          .plant-one,
+          .plant-six,
+          .plant-three,
+          .plant-two {
+            width: 35%;
+            height: 200px;
+          }
+        }
+        // MILK PAGE
+        .milk-circle {
+          @include square(500px);
+          margin: 0 auto;
+        }
+        .lassi-milk-circle {
+          @include square(500px);
+          margin: 0 auto;
+        }
+        .milk-variants {
+          margin: 40px 0 50px;
+        }
+        .prices .paneer-price-table td:last-child {
+          padding: 0 20px 0 10px;
+        }
+        .life-at-adya {
+          .distribution-image,
+          .processing-image,
+          .procurement-image,
+          .quality-control-image {
+            margin-top: 60px;
+          }
+        }
+        .life-at-adya .cow .cow-gif {
+          top: -33px;
+          left: 185px;
+          width: 140px;
+        }
+        .life-at-adya .cow .cow-gif-right {
+          left: auto;
+          right: 185px;
+        }
+      }
+      
+      @media (max-width: $screen-xs-max) {
+        //lassi
+        .home-lassi-title {
+          top: -18%;
+          right: 0%;
+        }
+        //ghee
+        .ghee-section .home-ghee-title {
+          line-height: 54px;
+          position: absolute;
+          top: -53%;
+          left: 23%;
+          text-align: center;
+          font-size: 50px;
+        }
+        .ghee-txt {
+          margin: 0;
+          top: -7%;
+          left: 36%;
+        }
+        // About us
+        .team-members {
+          .aadil,
+          .manan,
+          .viraj {
+            margin: 0 auto;
+          }
+          .member-detail {
+            margin: 0;
+            text-align: center;
+          }
+        }
+        // .dahi .dahi-image {
+        //    margin-top: -15px;
+        // }
+        .menu-links {
+          ul>li {
+            margin-right: 8pxs !important;
+            .sub-menu {
+              margin-top: 35px;
+              font-size: 14px;
+            }
+            a {
+              font-size: 14px;
+            }
+          }
+        }
+        // footer
+        .footer {
+          text-align: center;
+          .credits {
+            margin-bottom: 50px;
+          }
+          .social {
+            margin-top: 50px;
+          }
+        }
+        // milk
+        .variant-images ul li {
+          zoom: 0.5;
+        }
+        .milk-slide {
+          .milk-images {
+            height: auto;
+            img {
+              width: 100%;
+            }
+          }
+        }
+        .milk-text {
+          font-size: 40px;
+          .milk-pack &~p {
+            font-size: 18px;
+          }
+        }
+        // plant
+        .slider .slide-imgholder {
+          margin-bottom: 50px;
+        }
+        .slider .main-slidepart {
+          width: 100%;
+          margin: 50px 0;
+        }
+        .big-menu {
+          margin-left: 0;
+        }
+        // .slider .main-slidepart {
+        //   display: none;
+        // }
+        .paneer .paneer-inner .paneer-txt {
+          left: 10px;
+        }
+        .dahi .milk-image,
+        .milk .milk-image,
+        .paneer .milk-image {
+          margin-top: -0px;
+        }
+        .dahi .dahi-txt,
+        .dahi .milk-txt,
+        .dahi .paneer-txt,
+        .milk .dahi-txt,
+        .milk .milk-txt,
+        .milk .paneer-txt,
+        .paneer .dahi-txt,
+        .paneer .milk-txt,
+        .paneer .paneer-txt {
+          width: 30%;
+          .title {
+            margin: 0;
+          }
+          p {
+            font-size: 12px;
+          }
+        }
+        .aboutus {
+          padding-bottom: 10px;
+          p {
+            font-size: 12px;
+            text-align: justify;
+          }
+        }
+        .contactus .copyright {
+          margin-right: 0;
+        }
+        .text-right.cont-footer-copy {
+          text-align: center;
+        }
+        .dahi-title .dahi-text,
+        .paneer-title h2 {
+          margin: 0;
+          font-size: 34px;
+        }
+        .paneer-title h2:first-child {
+          margin-bottom: 10px;
+        }
+        .dahi-title .dahi-text~p.made-from {
+          font-size: 16px;
+          margin-top: 0;
+        }
+        .dahi-title .past-milk,
+        .dahi-title .stand-milk {
+          margin-top: 0;
+          font-size: 20px;
+          margin-bottom: 10px;
+        }
+        .dahi-title,
+        .milk-title,
+        .paneer-title {
+          margin: 0 0 20px;
+        }
+        .dahi-pack .dahi-details,
+        .dahi-pack .milk-details,
+        .dahi-pack .paneer-details,
+        .milk-pack .dahi-details,
+        .milk-pack .milk-details,
+        .milk-pack .paneer-details,
+        .paneer-pack .dahi-details,
+        .paneer-pack .milk-details,
+        .paneer-pack .paneer-details {
+          padding: 20px 0;
+          margin-bottom: 20px;
+        }
+        .contactus {
+          text-align: center;
+          h2 {
+            text-align: center;
+          }
+        }
+        // header
+        header .hamburger .menu .menu-links ul>li span,
+        header .hamburger .menu .menu-links ul.menu-link-list li a {
+          font-size: 14px;
+        }
+        header .hamburger .menu .menu-links ul>li:last-child {
+          display: inline-block;
+        }
+        header .hamburger .menu .menu-links ul>li {
+          margin-right: 20px;
+        }
+        header .hamburger .menu .menu-links ul>li .menu-images {
+          width: 100px;
+        }
+        // Contact
+        .contact,
+        .enquire {
+          .title h2 {
+            font-size: 38px;
+          }
+        }
+        .corporate-address,
+        .plant-address {
+          text-align: center;
+        }
+        .corporate-address {
+          margin: 0 0 40px;
+          float: none !important;
+        }
+        .plant-address {
+          height: auto;
+          margin: 0;
+          padding: 0;
+          border: none;
+        }
+        // About Page
+        .about p {
+          font-size: 12px;
+        }
+        .adya-plant .plant-images {
+          .plant-five,
+          .plant-four,
+          .plant-one,
+          .plant-six,
+          .plant-three,
+          .plant-two {
+            display: block;
+            margin: 0 auto 5px;
+          }
+          .plant-one {
+            @include size(300px, 150px);
+          }
+          .plant-two {
+            @include size(300px, 250px);
+          }
+          .plant-three {
+            @include size(300px, 400px);
+          }
+          .plant-four {
+            @include size(300px, 200px);
+          }
+          .plant-five {
+            @include size(300px, 250px);
+          }
+          .plant-six {
+            @include size(300px, 250px);
+          }
+        }
+        // Milk Page
+        .milk-circle {
+          @include square(400px);
+        }
+        .dahi-pack .dahi-details,
+        .milk-pack .milk-details,
+        .paneer-pack .paneer-details {
+          margin: 0 20px;
+        }
+        .dahi-details .dahi-detail p,
+        .milk-details .milk-detail p,
+        .paneer-details .paneer-detail p {
+          font-size: 14px;
+          line-height: 22px;
+        }
+        .milk-table {
+          font-size: 12px;
+        }
+        .prices .price-table td:first-child span {
+          font-size: 16px;
+        }
+        .prices .price-table td+td {
+          padding: 2px 5px 0;
+          font-size: 14px;
+        }
+        .prices .dahi-price-table td+td,
+        .prices .dahi-price-table td:last-child,
+        .prices .paneer-price-table td+td {
+          padding: 0;
+        }
+        //.prices .paneer-price-table td:last-child { padding: 2px 0 0; }
+        .prices .paneer-price-table td:first-child {
+          padding: 0 0 0 5px;
+        }
+        // ENQUIRE NOW
+        .mini-enquire .enquire-main {
+          width: 100%;
+          right: -750px;
+          padding: 28px 70px 19px 40px;
+          transition: all 500ms cubic-bezier(0.81, 0, 0.15, 1.03);
+        }
+        .enquire-out {
+          right: auto;
+          left: 30px;
+          transition: all 500ms cubic-bezier(0.81, 0, 0.15, 1.03);
+        }
+        .mini-enquire .ebutton {
+          right: auto;
+          left: -44px;
+        }
+        .life-at-adya {
+          .distribution-image,
+          .processing-image,
+          .procurement-image,
+          .quality-control-image {
+            width: 200px;
+            margin: 40px auto 0;
+            img {
+              float: auto !important;
+            }
+          }
+          h3,
+          p {
+            text-align: center;
+          }
+          h3 {
+            margin: 20px 0 !important;
+          }
+          p {
+            margin: 0 30px;
+          }
+        }
+        .vision .vision-text {
+          width: 370px;
+          .a {
+            font-size: 18px;
+          }
+          .b {
+            margin: 25px 0 -25px;
+            font-size: 38px;
+            span {
+              font-size: 64px;
+            }
+          }
+          .c {
+            margin: 0 0 -15px 45px;
+            font-size: 40px;
+          }
+          .d {
+            margin-left: 198px;
+            font-size: 17px;
+          }
+        }
+        .home-header {
+          display: block;
+        }
+        .ngdialog.ngdialog-theme-plain .ngdialog-content {
+          width: 475px;
+          padding: 0;
+        }
+        .lassis-popup {
+          min-height: 700px;
+          .top {
+            .row {
+              margin-right: 0;
+              margin-left: 0;
+            }
+          }
+        }
+        .lassis-katori {
+          margin: 45px 0 25px 80px;
+          width: 30%;
+        }
+        .home-lassis-title {
+          position: absolute;
+          left: 38%;
+          top: 60px;
+        }
+        .cow {
+          left: 60%;
+          top: 136px;
+          z-index: 1;
+        }
+        .lassis {
+          left: 20%;
+          width: 60%;
+        }
+        .lassis-text {
+          margin-top: 3%;
+          text-align: center;
+          p {
+            font-size: 12px;
+          }
+        }
+      }
+      
+      // landscape
+      @media (max-width: 480px) {
+        .dahi .dahi-txt,
+        .dahi .milk-txt,
+        .dahi .paneer-txt,
+        .milk .dahi-txt,
+        .milk .milk-txt,
+        .milk .paneer-txt,
+        .paneer .dahi-txt,
+        .paneer .milk-txt,
+        .paneer .paneer-txt {
+          width: 38%;
+          p {
+            line-height: 120%;
+            margin-bottom: 2px;
+          }
+        }
+        .white-accordion {
+          padding: 0 0 20px;
+          .panel-heading {
+            i {
+              display: none;
+            }
+          }
+        }
+        section#milk {
+          min-height: 200px;
+        }
+        section#dhai {
+          min-height: 200px;
+        }
+        .menu-links {
+          ul>li {
+            margin-right: 10px !important;
+            .sub-menu {
+              font-size: 14px!important;
+              margin-top: 0 !important;
+              position: static!important;
+            }
+            a {
+              font-size: 14px;
+            }
+            // .menu-link-list {
+            //   li { margin: 0 16px !important; }
+            // }
+          }
+        }
+        // header
+        header .hamburger .menu .menu-links ul>li .menu-images {
+          width: 55px;
+        }
+        header .hamburger .menu .menu-links ul>li span {
+          font-size: 14px;
+        }
+        // Careers
+        .careers {
+          .careers-main {
+            h2 {
+              font-size: 28px;
+            }
+            p {
+              font-size: 12px;
+            }
+          }
+        }
+        // Contact
+        .contact,
+        .enquire {
+          .title h2 {
+            font-size: 28px;
+          }
+        }
+        .contact-address {
+          font-size: 12px;
+        }
+        // About Page
+        .about {
+          margin: 0 20px;
+        }
+        // Milk Page
+        .milk-circle {
+          @include square(250px);
+        }
+        .lassi-milk-circle {
+          @include square(250px);
+        }
+        .prices {
+          padding: 10px 20px;
+        }
+        .prices .price-table td:first-child span {
+          font-size: 12px;
+        }
+        .prices .price-table td+td {
+          font-size: 12px;
+        }
+        table.table-curved td {
+          padding: 8px 30px 0;
+        }
+        .prices .dahi-price-table td:first-child {
+          padding-left: 0;
+        }
+        .prices .paneer-price-table td:last-child {
+          padding: 0 10px 0 0;
+        }
+        // ENQUIRE NOW
+        .mini-enquire .enquire-main {
+          padding: 23px 60px 12px 30px;
+        }
+        .mini-enquire .enquire-main .form-group textarea.form-control {
+          height: 100px;
+        }
+        .life-at-adya {
+          @media (max-width: 1200px) {
+            //ghee
+            .home-ghee-title {
+              position: absolute;
+              top: -38%;
+              left: 28%;
+              line-height: 96px;
+            }
+          }
+          h3 {
+            font-size: 20px;
+          }
+          p {
+            font-size: 12px;
+            margin: 0 10px !important;
+          }
+        }
+        .vision p {
+          margin: 0 10px 10px;
+          font-size: 12px;
+        }
+        .vision .vision-text {
+          width: 298px;
+          .a {
+            font-size: 14px;
+            margin-left: 0;
+            margin-bottom: -52px;
+          }
+          .b {
+            margin: 25px 0 -16px;
+            font-size: 30px;
+            span {
+              font-size: 48px;
+            }
+          }
+          .c {
+            margin: 0 0 -10px 45px;
+            font-size: 30px;
+          }
+          .d {
+            margin-left: 158px;
+            font-size: 13px;
+          }
+        }
+        .ngdialog.ngdialog-theme-plain .ngdialog-content {
+          width: 280px;
+        }
+        .home-lassis-title {
+          left: 50%;
+          top: 20px;
+          font-size: 36px;
+          //ghee
+          .home-ghee-title {
+            position: absolute;
+            top: -38%;
+            left: 28%;
+            line-height: 96px;
+          }
+        }
+      }
+      
+      .lassis-popup {
+        min-height: 500px;
+      }
+      
+      .lassis {
+        left: 10%;
+        top: 35px;
+        width: 65%;
+      }
+      
+      .cow {
+        left: 56%;
+        top: 10px;
+        @media (max-width: 1200px) {
+          //ghee
+          .home-ghee-title {
+            position: absolute;
+            top: -38%;
+            left: 28%;
+            line-height: 96px;
+          }
+        }
+        width: 35%;
+      }
