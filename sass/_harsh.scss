@@ -6,7 +6,8 @@
 // CONTACT PAGE
 .cont {
   .enquire {
-    input, textarea {
+    input,
+    textarea {
       border-color: black;
     }
     input:focus,
@@ -26,14 +27,17 @@
     }
   }
 }
+
 .slider {
   .flexslider {
     margin: 0;
   }
 }
+
 .table-dahi {
   margin-top: 10px;
 }
+
 .milk-slide {
   .milk-images {
     height: 400px;
@@ -48,17 +52,27 @@
     display: none;
   }
 }
-.variant-images ul li { display: inline-block; }
+
+.variant-images ul li {
+  display: inline-block;
+}
+
 .button-fix {
   line-height: 100%;
   padding: 10px 10px 8px;
   font-weight: bold;
 }
+
 // HOME
+
 /* ////////////////////////////
 * SECTION 2 (MILK)
 //////////////////////////// */
-.home { overflow: hidden; }
+
+.home {
+  overflow: hidden;
+}
+
 .milk,
 .dahi,
 .paneer,
@@ -66,8 +80,8 @@
   width: 100%;
   .milk-txt,
   .dahi-txt,
-  .paneer-txt ,
-  .lassi-txt{
+  .paneer-txt,
+  .lassi-txt {
     width: 20%;
     position: absolute;
     margin: 60px 0 0 20px;
@@ -116,7 +130,9 @@
   .paneer-inner {
     position: absolute;
   }
-  .paneer-inner { top: 39%; }
+  .paneer-inner {
+    top: 39%;
+  }
   .milk-package,
   .dahi-package {
     top: 0;
@@ -137,6 +153,7 @@
     position: absolute;
   }
 }
+
 .contact-bg {
   width: 100%;
   height: 100%;
@@ -146,6 +163,7 @@
   z-index: 5;
   padding: 100px 0 50px;
 }
+
 //// BUTTONS
 .butn {
   background-color: $brand-primary;
@@ -159,6 +177,7 @@
     @include transition(all 300ms ease);
   }
 }
+
 .button-blue {
   margin-top: 20px;
   background: $body-bg;
@@ -175,6 +194,7 @@
     outline: none;
   }
 }
+
 .butn-inverse {
   background-color: $body-bg;
   color: $brand-primary;
@@ -186,6 +206,7 @@
     @include transition(all 300ms ease);
   }
 }
+
 .start-img,
 .milk .milk-image,
 .milk .milk-package {
@@ -193,26 +214,31 @@
     width: 100%;
   }
 }
+
 .dahi .dahi-image {
   img {
     width: 100%;
   }
 }
+
 // Changes 16 Feb 16
 .section.five {
   padding-bottom: 100px;
 }
+
 .social-icon2 a {
   background-color: $brand-primary;
   i {
     color: white;
   }
 }
+
 .ab-footer {
   position: absolute;
   width: 100%;
   //bottom: -20px;
 }
+
 .fp-viewing-0 .sticky-bottom {
   top: calc(100%);
 }
@@ -221,18 +247,29 @@
 // CAREERS PAGE
 //////////////////////////////
 .head {
-  img { width: 100%; }
-}
-.careers {
-  .careers-main {
-    h2 { margin: 50px 0; }
-    p { font-size: 16px; }
-    p:last-child { margin-bottom: 100px; }
+  img {
+    width: 100%;
   }
 }
-.mb100{
+
+.careers {
+  .careers-main {
+    h2 {
+      margin: 50px 0;
+    }
+    p {
+      font-size: 16px;
+    }
+    p:last-child {
+      margin-bottom: 100px;
+    }
+  }
+}
+
+.mb100 {
   margin-bottom: 100px;
 }
+
 ///////////////////////////////
 // ABOUT PAGE
 //////////////////////////////
@@ -240,51 +277,81 @@
   margin: 100px 0;
   .plant-images {
     margin-top: 50px;
-    .plant-one, .plant-two, .plant-three,
-    .plant-four, .plant-five, .plant-six {
-      img { @include square(100%); }
+    .plant-one,
+    .plant-two,
+    .plant-three,
+    .plant-four,
+    .plant-five,
+    .plant-six {
+      img {
+        @include square(100%);
+      }
     }
-    .plant-one, .plant-two {
+    .plant-one,
+    .plant-two {
       height: 350px;
       display: inline-block;
     }
-    .plant-three, .plant-four, .plant-five, .plant-six {
+    .plant-three,
+    .plant-four,
+    .plant-five,
+    .plant-six {
       height: 450px;
       display: inline-block;
     }
-    .plant-one { width: 59%; margin-right: 4px;  }
-    .plant-two { width: 40%; }
-    .plant-three { width: 35%; margin-right: 4px;  }
-    .plant-four { width: 64%; }
-    .plant-five { width: 59%; margin-right: 4px;  }
-    .plant-six { width: 40%; }
+    .plant-one {
+      width: 59%;
+      margin-right: 4px;
+    }
+    .plant-two {
+      width: 40%;
+    }
+    .plant-three {
+      width: 35%;
+      margin-right: 4px;
+    }
+    .plant-four {
+      width: 64%;
+    }
+    .plant-five {
+      width: 59%;
+      margin-right: 4px;
+    }
+    .plant-six {
+      width: 40%;
+    }
   }
 }
 
 ///////////////////////////////
 // PRODUCT PAGE
 //////////////////////////////
-.milk-details, .dahi-details, .paneer-details {
+.milk-details,
+.dahi-details,
+.paneer-details {
   margin: 0 50px;
-  .milk-detail p, .dahi-detail p, .paneer-detail p {
+  .milk-detail p,
+  .dahi-detail p,
+  .paneer-detail p {
     font-size: 16px;
     line-height: 24px;
   }
 }
+
 table.table-curved {
   width: 100%;
   margin: 10px 0 15px;
   background-color: #ebebeb;
   border-collapse: separate;
   overflow: hidden;
-  tr + tr {
+  tr+tr {
     border-top: 1px solid;
   }
   td {
-    padding: 8px 50px 0 50px;
+    padding: 8px 50px 0 38px;
     text-align: left;
   }
-  td + td {
+  td+td {
     border-left: 2px solid $body-bg;
     text-align: center;
   }
@@ -296,12 +363,13 @@ table.table-curved {
     padding-bottom: 15px;
   }
 }
+
 .prices {
   padding: 10px;
   .price-table {
     width: 100%;
     font-size: 15px;
-    td + td {
+    td+td {
       border-left: 2px solid $body-bg;
       padding: 0 15px;
     }
@@ -309,24 +377,40 @@ table.table-curved {
       font-size: 18px;
       //margin-top: 6px;
     }
-    td:last-child { padding-right: 15px; }
+    td:last-child {
+      padding-right: 15px;
+    }
   }
   .milk-prices {
-    td:last-child { padding-right: 10px; }
+    td:last-child {
+      padding-right: 10px;
+    }
   }
-  .dahi-price-table, .paneer-price-table {
-    td + td { padding: 0 10px; }
-    td:last-child { padding: 0 10px 0 5px; }
+  .dahi-price-table,
+  .paneer-price-table {
+    td+td {
+      padding: 0 10px;
+    }
+    td:last-child {
+      padding: 0 10px 0 5px;
+    }
   }
-  .dahi-price-table td:first-child { padding-left: 10px; }
+  .dahi-price-table td:first-child {
+    padding-left: 10px;
+  }
   .paneer-price-table {
     font-size: 14px;
     td:first-child {
-      span { font-size: 16px; }
+      span {
+        font-size: 16px;
+      }
     }
-    td:last-child { padding: 0 10px 0 5px; }
+    td:last-child {
+      padding: 0 10px 0 5px;
+    }
   }
 }
+
 .milk-circle {
   width: 740px;
   height: 740px;
@@ -342,6 +426,7 @@ table.table-curved {
     transform: translate(-47%, -50%);
   }
 }
+
 .lassi-milk-circle {
   width: 600px;
   height: 600px;
@@ -358,15 +443,21 @@ table.table-curved {
   }
 }
 
+.home-title {
+  font-size: 120px;
+}
 
-.home-title { font-size: 120px; }
-.other-header { position: absolute; }
-
+.other-header {
+  position: absolute;
+}
 
 ////////
 // enquire btn
 ////////
-textarea { resize: none; }
+textarea {
+  resize: none;
+}
+
 .mini-enquire {
   .enquiry-back {
     width: 100%;
@@ -378,7 +469,9 @@ textarea { resize: none; }
     display: block;
     z-index: 10;
   }
-  .eeback { display: none; }
+  .eeback {
+    display: none;
+  }
   .enquire-now {
     position: fixed;
     top: 185px;
@@ -422,10 +515,21 @@ textarea { resize: none; }
         box-shadow: none;
       }
     }
-    .enquire-name, .enquire-number, .enquire-email, .enquire-button { display: inline-block; }
-    .enquire-name { width: 49%; }
-    .enquire-number { width: 49%; }
-    .enquire-email { width: 69%; }
+    .enquire-name,
+    .enquire-number,
+    .enquire-email,
+    .enquire-button {
+      display: inline-block;
+    }
+    .enquire-name {
+      width: 49%;
+    }
+    .enquire-number {
+      width: 49%;
+    }
+    .enquire-email {
+      width: 69%;
+    }
     .enquire-button {
       width: 29%;
       button {
@@ -433,24 +537,31 @@ textarea { resize: none; }
         height: 45px;
       }
     }
-    .msgform-complete { margin-top: -10px; }
+    .msgform-complete {
+      margin-top: -10px;
+    }
   }
-  .enquire-out { right: 0; }
-  .ebutton { right: 556px; }
+  .enquire-out {
+    right: 0;
+  }
+  .ebutton {
+    right: 556px;
+  }
 }
-
 
 // about New
 .life-at-adya {
   margin: 50px 0;
-  h2 { margin: 50px 0; }
+  h2 {
+    margin: 50px 0;
+  }
   h3 {
     margin: 50px 0 20px;
     font-family: $font-proxima-semi;
   }
   .distribution {
     margin-bottom: 100px;
-    p > span {
+    p>span {
       display: inline-block;
       font-style: italic;
     }
@@ -477,12 +588,13 @@ textarea { resize: none; }
   }
   .about-pattern {
     background-color: white;
-    img { width: 100%; }
+    img {
+      width: 100%;
+    }
   }
 }
 
 $vision-color: #3E3E3E !default;
-
 .vision {
   .vision-image img {
     margin: 50px auto;
@@ -492,7 +604,9 @@ $vision-color: #3E3E3E !default;
     width: 550px;
     margin: 50px auto;
     font-family: $font-proxima-light;
-    span { display: inline-block; }
+    span {
+      display: inline-block;
+    }
     .a {
       font-size: 24px;
       margin-bottom: -65px;
@@ -519,5 +633,7 @@ $vision-color: #3E3E3E !default;
       color: lighten($vision-color, 0%);
     }
   }
-  p { font-weight: 100; }
+  p {
+    font-weight: 100;
+  }
 }
