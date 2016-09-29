@@ -272,7 +272,8 @@
           text-align: center;
           li {
             display: inline-block;
-            margin-right: 20px;
+            margin: 0 5px;
+            // margin-right: 10px;
             &:last-child {
               margin: 0;
             }
@@ -280,6 +281,9 @@
               display: inline-block;
             }
           }
+        }
+        header .hamburger .menu .menu-links ul>li {
+          margin-right: 0;
         }
         // .home-lassis-title {
         //   right: 6%;
@@ -415,7 +419,7 @@
             margin-top: 60px;
           }
         }
-        .life-at-adya .cow .cow-gif {
+        .life-at-amargin-rightdya .cow .cow-gif {
           top: -33px;
           left: 185px;
           width: 140px;
@@ -864,7 +868,7 @@
         }
         .menu-links {
           ul>li {
-            margin-right: 10px !important;
+            margin-right: 4px !important;
             .sub-menu {
               font-size: 14px!important;
               margin-top: 0 !important;
