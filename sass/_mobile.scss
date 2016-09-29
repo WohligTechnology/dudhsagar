@@ -151,6 +151,17 @@
       }
       
       @media (min-width: 1200px) and (max-width: 1600px) {
+        .home-lassi-title {
+          z-index: 1;
+          position: absolute;
+          margin-top: -98px;
+          right: 21%;
+        }
+        .lassi-txt {
+          position: absolute;
+          right: 17%;
+          top: 0%;
+        }
         //ghee 
         .ghee-section {
           .home-ghee-title {
