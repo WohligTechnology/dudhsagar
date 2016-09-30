@@ -423,7 +423,8 @@ table.table-curved {
     top: 50%;
     left: 50%;
     width: 96%;
-    transform: translate(-47%, -50%);
+    @include transform(translate(-47%,
+    -50%));
   }
 }
 
@@ -439,7 +440,8 @@ table.table-curved {
     top: 50%;
     left: 51%;
     width: 83%;
-    transform: translate(-47%, -50%);
+    @include transform(translate(-47%,
+    -50%));
   }
 }
 
@@ -635,5 +637,17 @@ $vision-color: #3E3E3E !default;
   }
   p {
     font-weight: 100;
+  }
+}
+
+.ghee-circle {
+  width: 740px;
+  height: 740px;
+  margin-left: -30%;
+  position: relative;
+  background-image: url("../img/product-circle.png");
+  background-size: cover;
+  img {
+    width: 70%;
   }
 }

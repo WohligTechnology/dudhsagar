@@ -1090,22 +1090,6 @@ footer {
   }
 }
 
-.ghee-circle {
-  width: 740px;
-  height: 740px;
-  margin-left: -30%;
-  position: relative;
-  background-image: url("../img/product-circle.png");
-  background-size: cover;
-  img {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    width: 66%;
-    transform: translate(-47%, -50%);
-  }
-}
-
 .prices-ghee {
   padding: 10px 20px;
   .price-table {
