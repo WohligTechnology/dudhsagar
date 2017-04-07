@@ -14,7 +14,7 @@
         height: 700px !important;
       }
     }
-    
+
     @media (max-width: $screen-md-max) {
       // Home
       //  .milk .milk-package {
@@ -154,7 +154,7 @@
         top: -52px;
       }
     }
-    
+
     @media (min-width: 1200px) and (max-width: 1600px) {
       //paneer
       .home-paneer-title {
@@ -173,7 +173,7 @@
         right: 17%;
         top: 0%;
       }
-      //ghee 
+      //ghee
       .ghee-section {
         .home-ghee-title {
           position: absolute;
@@ -185,11 +185,27 @@
       .ghee-txt {
         margin-top: 0;
         position: absolute;
-        top: 24%;
+        top: 30%;
         left: 22%;
       }
+
+      .milkpowder-know{
+        position: absolute;
+        top: 35%;
+        right: 30%;
+      }
+
+      .milkpowder-section{
+        .milkpowder-title{
+          top: 0;
+          right: 5%;
+          left: auto;
+          font-size: 84px;
+          color: #663229;
+        }
+      }
     }
-    
+
     @media (min-width: 992px) and (max-width: 1200px) {
       //lass
       // .home-lassi-title {
@@ -203,7 +219,15 @@
       //   right: 17%;
       //   top: -4%;
       // }
-      //ghee 
+
+      // MILK POwDER
+      .milkpowder-know {
+        position: absolute;
+        top: 45%;
+        right: 30%;
+      }
+      // MILK POwDER END
+      //ghee
       .ghee-section {
         .home-ghee-title {
           position: absolute;
@@ -218,8 +242,19 @@
         top: 24%;
         left: 22%;
       }
+      .ghee-title .milk-text2{
+         font-size: 58px;
+      }
+
+      .milkpowder-section .milkpowder-title{
+        top: 0;
+        right: 5%;
+        left: auto;
+        font-size: 84px;
+        color: #663229;
+      }
     }
-    
+
     @media (max-width: $screen-sm-max) {
       // Home
       //  .milk .milk-package {
@@ -455,9 +490,30 @@
         left: auto;
         right: 185px;
       }
+      .milkpowder-section .milkpowder-title{
+        font-size: 75px;
+      }
+      .milkpowder-know {
+        position: absolute;
+        top: 45%;
+        right: 30%;
+      }
+      .milkpowder-know{
+        top: 10%;
+      }
     }
-    
+
     @media (max-width: $screen-xs-max) {
+
+      //MILK POWDER
+      .milkpowder-section .milkpowder-title{
+        font-size: 50px !important;
+      }
+      .milkpowder-know{
+        top: 20%;
+        right: 20%;
+      }
+      //MILK POWDER
       //lassi
       .prices-ghee {
         .ghee-price-table {
@@ -848,9 +904,31 @@
         }
       }
     }
-    
+
     // landscape
     @media (max-width: 480px) {
+      //MILK POWDER
+      .ghee-title .milk-texthead{
+        font-size: 55px;
+        line-height: initial;
+      }
+
+      .ghee-title .milk-text2{
+        font-size: 40px;
+        line-height: initial;
+      }
+
+      .ghee-title .milk-subhead{
+        font-size: 24px;
+        line-height: initial;
+      }
+      .milkpowder-section .milkpowder-title{
+        font-size: 30px !important;
+      }
+      .milkpowder-know{
+        right: 15%;
+      }
+      //MILK POWDER END
       //paneer
       .paneerm {
         margin: 0 !important;
@@ -1045,17 +1123,17 @@
         }
       }
     }
-    
+
     .lassis-popup {
       min-height: 500px;
     }
-    
+
     .lassis {
       left: 10%;
       top: 35px;
       width: 65%;
     }
-    
+
     .cow {
       left: 56%;
       top: 10px;

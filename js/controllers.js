@@ -25,7 +25,8 @@ angular.module('phonecatControllers', ['templateservicemod', 'navigationservice'
       four: "views/section/section4.html",
       five: "views/section/section5.html",
       seven: "views/section/section7.html",
-      eight: "views/section/section8.html"
+      eight: "views/section/section8.html",
+      nine: "views/section/section9.html"
     };
 
 
@@ -434,6 +435,46 @@ angular.module('phonecatControllers', ['templateservicemod', 'navigationservice'
     //Used to name the .html file
     $scope.template = TemplateService.changecontent("ghee");
     $scope.menutitle = NavigationService.makeactive("ghee");
+    TemplateService.title = $scope.menutitle;
+    $scope.navigation = NavigationService.getnav();
+    $scope.formenquire = {};
+
+    $scope.section = {
+      enquire: "views/content/enquiry.html"
+    };
+    $scope.enquiry = function () {
+      $scope.eback = "eeback";
+      if ($scope.showme == "enquire-out") {
+        $scope.showme = "enquire-in";
+        $scope.ebutton = "";
+        $scope.eback = "eeback";
+      } else {
+        $scope.showme = "enquire-out";
+        $scope.ebutton = "ebutton";
+        $scope.eback = "eback";
+      }
+    };
+    $scope.submitform = function (formenquire, formvalid) {
+      if (formenquire.$valid) {
+        $scope.formComplete = true;
+        NavigationService.enquiry(formvalid, function (data) {});
+        $timeout(function () {
+          $scope.showme = "enquire-in";
+          $scope.ebutton = "";
+          $scope.eback = "eeback";
+        }, 3000);
+        $timeout(function () {
+          $scope.formComplete = false;
+          $scope.formenquire = {};
+        }, 3500);
+      }
+    };
+  })
+
+  .controller('MilkPowderCtrl', function ($scope, TemplateService, NavigationService, $timeout) {
+    //Used to name the .html file
+    $scope.template = TemplateService.changecontent("milkpowder");
+    $scope.menutitle = NavigationService.makeactive("milkpowder");
     TemplateService.title = $scope.menutitle;
     $scope.navigation = NavigationService.getnav();
     $scope.formenquire = {};

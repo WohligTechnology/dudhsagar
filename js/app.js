@@ -72,6 +72,12 @@ firstapp.config(function ($stateProvider, $urlRouterProvider, $httpProvider, ngD
     controller: 'GheeCtrl'
   })
 
+  .state('milkpowder', {
+    url: "/milkpowder",
+    templateUrl: "views/template.html",
+    controller: 'MilkPowderCtrl'
+  })
+
   // .state('plant', {
   //   url: "/plant",
   //   templateUrl: "views/template.html",

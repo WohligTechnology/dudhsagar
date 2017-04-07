@@ -392,7 +392,7 @@ a:hover {
   background: linear-gradient(#EEEEEE, #FFF);
   background-size: cover;
   background-position: 0%10%;
-  margin-top: -19%;
+  // margin-top: -19%;
 }
 
 // /////////////////////////
@@ -1161,6 +1161,22 @@ footer {
     color: #f07a00;
   }
 }
+.ghee-title{
+  .milk-texthead, .milk-text2{
+    font-family: $font-calibri;
+    font-size: 80px;
+    color: $brand-title;
+  }
+  .milk-text2{
+    font-size: 60px;
+  }
+  .milk-subhead {
+    font-size: 38px;
+    line-height: 40px;
+    margin-bottom: 6px;
+    color: #125191;
+  }
+}
 
 .ghee-txt {
   position: absolute;
@@ -1179,6 +1195,16 @@ footer {
 
 .about-sec {
   margin-top: -26%;
+}
+
+
+.milkpowder-section{
+  .milkpowder-title{
+    font-size: 90px;
+    color: #663229;
+    left: auto;
+    right: 5%;
+  }
 }
 
 @import "harsh";
